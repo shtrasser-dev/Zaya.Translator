@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Services
+  commentId: N:Zaya.Translator.Services
+  id: Zaya.Translator.Services
+  children:
+  - Zaya.Translator.Services.ITranslationCache
+  - Zaya.Translator.Services.ITranslatorService
+  - Zaya.Translator.Services.ITranslatorSession
+  - Zaya.Translator.Services.MemoryTranslationCache
+  langs:
+  - csharp
+  - vb
+  name: Zaya.Translator.Services
+  nameWithType: Zaya.Translator.Services
+  fullName: Zaya.Translator.Services
+  type: Namespace
+  assemblies:
+  - Zaya.Translator
+references:
+- uid: Zaya.Translator.Services.ITranslationCache
+  commentId: T:Zaya.Translator.Services.ITranslationCache
+  parent: Zaya.Translator.Services
+  href: Zaya.Translator.Services.ITranslationCache.html
+  name: ITranslationCache
+  nameWithType: ITranslationCache
+  fullName: Zaya.Translator.Services.ITranslationCache
+- uid: Zaya.Translator.Services.ITranslatorService
+  commentId: T:Zaya.Translator.Services.ITranslatorService
+  parent: Zaya.Translator.Services
+  href: Zaya.Translator.Services.ITranslatorService.html
+  name: ITranslatorService
+  nameWithType: ITranslatorService
+  fullName: Zaya.Translator.Services.ITranslatorService
+- uid: Zaya.Translator.Services.ITranslatorSession
+  commentId: T:Zaya.Translator.Services.ITranslatorSession
+  parent: Zaya.Translator.Services
+  href: Zaya.Translator.Services.ITranslatorSession.html
+  name: ITranslatorSession
+  nameWithType: ITranslatorSession
+  fullName: Zaya.Translator.Services.ITranslatorSession
+- uid: Zaya.Translator.Services.MemoryTranslationCache
+  commentId: T:Zaya.Translator.Services.MemoryTranslationCache
+  href: Zaya.Translator.Services.MemoryTranslationCache.html
+  name: MemoryTranslationCache
+  nameWithType: MemoryTranslationCache
+  fullName: Zaya.Translator.Services.MemoryTranslationCache
+- uid: Zaya.Translator.Services
+  commentId: N:Zaya.Translator.Services
+  href: Zaya.html
+  name: Zaya.Translator.Services
+  nameWithType: Zaya.Translator.Services
+  fullName: Zaya.Translator.Services
+  spec.csharp:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.Translator
+    name: Translator
+    href: Zaya.Translator.html
+  - name: .
+  - uid: Zaya.Translator.Services
+    name: Services
+    href: Zaya.Translator.Services.html
+  spec.vb:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.Translator
+    name: Translator
+    href: Zaya.Translator.html
+  - name: .
+  - uid: Zaya.Translator.Services
+    name: Services
+    href: Zaya.Translator.Services.html

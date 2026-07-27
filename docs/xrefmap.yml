@@ -1,0 +1,918 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions
+  name: GoogleTranslatorServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions
+  nameWithType: GoogleTranslatorServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddGoogleTranslator(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_GoogleTranslatorServiceCollectionExtensions_AddGoogleTranslator_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator*
+  name: AddGoogleTranslator
+  href: api/Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_GoogleTranslatorServiceCollectionExtensions_AddGoogleTranslator_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator
+  nameWithType: GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator
+- uid: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
+  name: YandexTranslatorServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
+  nameWithType: YandexTranslatorServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddYandexTranslator(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_YandexTranslatorServiceCollectionExtensions_AddYandexTranslator_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: YandexTranslatorServiceCollectionExtensions.AddYandexTranslator(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator*
+  name: AddYandexTranslator
+  href: api/Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_YandexTranslatorServiceCollectionExtensions_AddYandexTranslator_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.AddYandexTranslator
+  nameWithType: YandexTranslatorServiceCollectionExtensions.AddYandexTranslator
+- uid: Zaya.Translator.Impl.Google
+  name: Zaya.Translator.Impl.Google
+  href: api/Zaya.Translator.Impl.Google.html
+  commentId: N:Zaya.Translator.Impl.Google
+  fullName: Zaya.Translator.Impl.Google
+  nameWithType: Zaya.Translator.Impl.Google
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  name: GoogleTranslateParseException
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  nameWithType: GoogleTranslateParseException
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException.#ctor
+  name: GoogleTranslateParseException()
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html#Zaya_Translator_Impl_Google_GoogleTranslateParseException__ctor
+  commentId: M:Zaya.Translator.Impl.Google.GoogleTranslateParseException.#ctor
+  name.vb: New()
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GoogleTranslateParseException()
+  fullName.vb: Zaya.Translator.Impl.Google.GoogleTranslateParseException.New()
+  nameWithType: GoogleTranslateParseException.GoogleTranslateParseException()
+  nameWithType.vb: GoogleTranslateParseException.New()
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException.#ctor*
+  name: GoogleTranslateParseException
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html#Zaya_Translator_Impl_Google_GoogleTranslateParseException__ctor_
+  commentId: Overload:Zaya.Translator.Impl.Google.GoogleTranslateParseException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GoogleTranslateParseException
+  fullName.vb: Zaya.Translator.Impl.Google.GoogleTranslateParseException.New
+  nameWithType: GoogleTranslateParseException.GoogleTranslateParseException
+  nameWithType.vb: GoogleTranslateParseException.New
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  name: GetLocalizedMessage(CultureInfo)
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html#Zaya_Translator_Impl_Google_GoogleTranslateParseException_GetLocalizedMessage_System_Globalization_CultureInfo_
+  commentId: M:Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  nameWithType: GoogleTranslateParseException.GetLocalizedMessage(CultureInfo)
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage*
+  name: GetLocalizedMessage
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html#Zaya_Translator_Impl_Google_GoogleTranslateParseException_GetLocalizedMessage_
+  commentId: Overload:Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException.GetLocalizedMessage
+  nameWithType: GoogleTranslateParseException.GetLocalizedMessage
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  name: GoogleTranslateRequestException
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  nameWithType: GoogleTranslateRequestException
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.#ctor(System.String)
+  name: GoogleTranslateRequestException(string)
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException__ctor_System_String_
+  commentId: M:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GoogleTranslateRequestException(string)
+  fullName.vb: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.New(String)
+  nameWithType: GoogleTranslateRequestException.GoogleTranslateRequestException(string)
+  nameWithType.vb: GoogleTranslateRequestException.New(String)
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.#ctor*
+  name: GoogleTranslateRequestException
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException__ctor_
+  commentId: Overload:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GoogleTranslateRequestException
+  fullName.vb: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.New
+  nameWithType: GoogleTranslateRequestException.GoogleTranslateRequestException
+  nameWithType.vb: GoogleTranslateRequestException.New
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail
+  name: Detail
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException_Detail
+  commentId: P:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail
+  nameWithType: GoogleTranslateRequestException.Detail
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail*
+  name: Detail
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException_Detail_
+  commentId: Overload:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.Detail
+  nameWithType: GoogleTranslateRequestException.Detail
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  name: GetLocalizedMessage(CultureInfo)
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException_GetLocalizedMessage_System_Globalization_CultureInfo_
+  commentId: M:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  nameWithType: GoogleTranslateRequestException.GetLocalizedMessage(CultureInfo)
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage*
+  name: GetLocalizedMessage
+  href: api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html#Zaya_Translator_Impl_Google_GoogleTranslateRequestException_GetLocalizedMessage_
+  commentId: Overload:Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.GetLocalizedMessage
+  nameWithType: GoogleTranslateRequestException.GetLocalizedMessage
+- uid: Zaya.Translator.Impl.Google.Services
+  name: Zaya.Translator.Impl.Google.Services
+  href: api/Zaya.Translator.Impl.Google.Services.html
+  commentId: N:Zaya.Translator.Impl.Google.Services
+  fullName: Zaya.Translator.Impl.Google.Services
+  nameWithType: Zaya.Translator.Impl.Google.Services
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  name: GoogleTranslatorService
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html
+  commentId: T:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  nameWithType: GoogleTranslatorService
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name: CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_CreateSessionAsync_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name.vb: CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary<string, object>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary(Of String, Object), System.Threading.CancellationToken)
+  nameWithType: GoogleTranslatorService.CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  nameWithType.vb: GoogleTranslatorService.CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  name: CreateSessionAsync(CancellationToken)
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_CreateSessionAsync_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  nameWithType: GoogleTranslatorService.CreateSessionAsync(CancellationToken)
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync*
+  name: CreateSessionAsync
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_CreateSessionAsync_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.CreateSessionAsync
+  nameWithType: GoogleTranslatorService.CreateSessionAsync
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description
+  name: Description
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Description
+  commentId: P:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description
+  nameWithType: GoogleTranslatorService.Description
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description*
+  name: Description
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Description_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Description
+  nameWithType: GoogleTranslatorService.Description
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName
+  name: DisplayName
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_DisplayName
+  commentId: P:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName
+  nameWithType: GoogleTranslatorService.DisplayName
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName*
+  name: DisplayName
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_DisplayName_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.DisplayName
+  nameWithType: GoogleTranslatorService.DisplayName
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose
+  name: Dispose()
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Dispose
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose()
+  nameWithType: GoogleTranslatorService.Dispose()
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose*
+  name: Dispose
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Dispose_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Dispose
+  nameWithType: GoogleTranslatorService.Dispose
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId
+  name: EngineId
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_EngineId
+  commentId: P:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId
+  nameWithType: GoogleTranslatorService.EngineId
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId*
+  name: EngineId
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_EngineId_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.EngineId
+  nameWithType: GoogleTranslatorService.EngineId
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable
+  name: IsAvailable
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_IsAvailable
+  commentId: P:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable
+  nameWithType: GoogleTranslatorService.IsAvailable
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable*
+  name: IsAvailable
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_IsAvailable_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.IsAvailable
+  nameWithType: GoogleTranslatorService.IsAvailable
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings
+  name: Settings
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Settings
+  commentId: P:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings
+  nameWithType: GoogleTranslatorService.Settings
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings*
+  name: Settings
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorService_Settings_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.Settings
+  nameWithType: GoogleTranslatorService.Settings
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  name: GoogleTranslatorSession
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html
+  commentId: T:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  nameWithType: GoogleTranslatorSession
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose
+  name: Dispose()
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorSession_Dispose
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose()
+  nameWithType: GoogleTranslatorSession.Dispose()
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose*
+  name: Dispose
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorSession_Dispose_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.Dispose
+  nameWithType: GoogleTranslatorSession.Dispose
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  nameWithType: GoogleTranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  nameWithType.vb: GoogleTranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name: TranslateAsync(string, CancellationToken)
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TranslateAsync(String, CancellationToken)
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  nameWithType: GoogleTranslatorSession.TranslateAsync(string, CancellationToken)
+  nameWithType.vb: GoogleTranslatorSession.TranslateAsync(String, CancellationToken)
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync*
+  name: TranslateAsync
+  href: api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html#Zaya_Translator_Impl_Google_Services_GoogleTranslatorSession_TranslateAsync_
+  commentId: Overload:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.TranslateAsync
+  nameWithType: GoogleTranslatorSession.TranslateAsync
+- uid: Zaya.Translator.Impl.Yandex
+  name: Zaya.Translator.Impl.Yandex
+  href: api/Zaya.Translator.Impl.Yandex.html
+  commentId: N:Zaya.Translator.Impl.Yandex
+  fullName: Zaya.Translator.Impl.Yandex
+  nameWithType: Zaya.Translator.Impl.Yandex
+- uid: Zaya.Translator.Impl.Yandex.Services
+  name: Zaya.Translator.Impl.Yandex.Services
+  href: api/Zaya.Translator.Impl.Yandex.Services.html
+  commentId: N:Zaya.Translator.Impl.Yandex.Services
+  fullName: Zaya.Translator.Impl.Yandex.Services
+  nameWithType: Zaya.Translator.Impl.Yandex.Services
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  name: YandexTranslatorService
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html
+  commentId: T:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  nameWithType: YandexTranslatorService
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name: CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_CreateSessionAsync_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name.vb: CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary<string, object>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary(Of String, Object), System.Threading.CancellationToken)
+  nameWithType: YandexTranslatorService.CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  nameWithType.vb: YandexTranslatorService.CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  name: CreateSessionAsync(CancellationToken)
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_CreateSessionAsync_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  nameWithType: YandexTranslatorService.CreateSessionAsync(CancellationToken)
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync*
+  name: CreateSessionAsync
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_CreateSessionAsync_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.CreateSessionAsync
+  nameWithType: YandexTranslatorService.CreateSessionAsync
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description
+  name: Description
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Description
+  commentId: P:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description
+  nameWithType: YandexTranslatorService.Description
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description*
+  name: Description
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Description_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Description
+  nameWithType: YandexTranslatorService.Description
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName
+  name: DisplayName
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_DisplayName
+  commentId: P:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName
+  nameWithType: YandexTranslatorService.DisplayName
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName*
+  name: DisplayName
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_DisplayName_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.DisplayName
+  nameWithType: YandexTranslatorService.DisplayName
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose
+  name: Dispose()
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Dispose
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose()
+  nameWithType: YandexTranslatorService.Dispose()
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose*
+  name: Dispose
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Dispose_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Dispose
+  nameWithType: YandexTranslatorService.Dispose
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId
+  name: EngineId
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_EngineId
+  commentId: P:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId
+  nameWithType: YandexTranslatorService.EngineId
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId*
+  name: EngineId
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_EngineId_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.EngineId
+  nameWithType: YandexTranslatorService.EngineId
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable
+  name: IsAvailable
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_IsAvailable
+  commentId: P:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable
+  nameWithType: YandexTranslatorService.IsAvailable
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable*
+  name: IsAvailable
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_IsAvailable_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.IsAvailable
+  nameWithType: YandexTranslatorService.IsAvailable
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings
+  name: Settings
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Settings
+  commentId: P:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings
+  nameWithType: YandexTranslatorService.Settings
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings*
+  name: Settings
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorService_Settings_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.Settings
+  nameWithType: YandexTranslatorService.Settings
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  name: YandexTranslatorSession
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html
+  commentId: T:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  nameWithType: YandexTranslatorSession
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose
+  name: Dispose()
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorSession_Dispose
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose()
+  nameWithType: YandexTranslatorSession.Dispose()
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose*
+  name: Dispose
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorSession_Dispose_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.Dispose
+  nameWithType: YandexTranslatorSession.Dispose
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  nameWithType: YandexTranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  nameWithType.vb: YandexTranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name: TranslateAsync(string, CancellationToken)
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TranslateAsync(String, CancellationToken)
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  nameWithType: YandexTranslatorSession.TranslateAsync(string, CancellationToken)
+  nameWithType.vb: YandexTranslatorSession.TranslateAsync(String, CancellationToken)
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync*
+  name: TranslateAsync
+  href: api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html#Zaya_Translator_Impl_Yandex_Services_YandexTranslatorSession_TranslateAsync_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.TranslateAsync
+  nameWithType: YandexTranslatorSession.TranslateAsync
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  name: YandexTranslateParseException
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  nameWithType: YandexTranslateParseException
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.#ctor
+  name: YandexTranslateParseException()
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html#Zaya_Translator_Impl_Yandex_YandexTranslateParseException__ctor
+  commentId: M:Zaya.Translator.Impl.Yandex.YandexTranslateParseException.#ctor
+  name.vb: New()
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.YandexTranslateParseException()
+  fullName.vb: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.New()
+  nameWithType: YandexTranslateParseException.YandexTranslateParseException()
+  nameWithType.vb: YandexTranslateParseException.New()
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.#ctor*
+  name: YandexTranslateParseException
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html#Zaya_Translator_Impl_Yandex_YandexTranslateParseException__ctor_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.YandexTranslateParseException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.YandexTranslateParseException
+  fullName.vb: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.New
+  nameWithType: YandexTranslateParseException.YandexTranslateParseException
+  nameWithType.vb: YandexTranslateParseException.New
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  name: GetLocalizedMessage(CultureInfo)
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html#Zaya_Translator_Impl_Yandex_YandexTranslateParseException_GetLocalizedMessage_System_Globalization_CultureInfo_
+  commentId: M:Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  nameWithType: YandexTranslateParseException.GetLocalizedMessage(CultureInfo)
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage*
+  name: GetLocalizedMessage
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html#Zaya_Translator_Impl_Yandex_YandexTranslateParseException_GetLocalizedMessage_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.GetLocalizedMessage
+  nameWithType: YandexTranslateParseException.GetLocalizedMessage
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  name: YandexTranslateRequestException
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  nameWithType: YandexTranslateRequestException
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.#ctor(System.String)
+  name: YandexTranslateRequestException(string)
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException__ctor_System_String_
+  commentId: M:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.YandexTranslateRequestException(string)
+  fullName.vb: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.New(String)
+  nameWithType: YandexTranslateRequestException.YandexTranslateRequestException(string)
+  nameWithType.vb: YandexTranslateRequestException.New(String)
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.#ctor*
+  name: YandexTranslateRequestException
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException__ctor_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.YandexTranslateRequestException
+  fullName.vb: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.New
+  nameWithType: YandexTranslateRequestException.YandexTranslateRequestException
+  nameWithType.vb: YandexTranslateRequestException.New
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail
+  name: Detail
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException_Detail
+  commentId: P:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail
+  nameWithType: YandexTranslateRequestException.Detail
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail*
+  name: Detail
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException_Detail_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.Detail
+  nameWithType: YandexTranslateRequestException.Detail
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  name: GetLocalizedMessage(CultureInfo)
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException_GetLocalizedMessage_System_Globalization_CultureInfo_
+  commentId: M:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage(System.Globalization.CultureInfo)
+  nameWithType: YandexTranslateRequestException.GetLocalizedMessage(CultureInfo)
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage*
+  name: GetLocalizedMessage
+  href: api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html#Zaya_Translator_Impl_Yandex_YandexTranslateRequestException_GetLocalizedMessage_
+  commentId: Overload:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage
+  isSpec: "True"
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.GetLocalizedMessage
+  nameWithType: YandexTranslateRequestException.GetLocalizedMessage
+- uid: Zaya.Translator.Services
+  name: Zaya.Translator.Services
+  href: api/Zaya.Translator.Services.html
+  commentId: N:Zaya.Translator.Services
+  fullName: Zaya.Translator.Services
+  nameWithType: Zaya.Translator.Services
+- uid: Zaya.Translator.Services.ITranslationCache
+  name: ITranslationCache
+  href: api/Zaya.Translator.Services.ITranslationCache.html
+  commentId: T:Zaya.Translator.Services.ITranslationCache
+  fullName: Zaya.Translator.Services.ITranslationCache
+  nameWithType: ITranslationCache
+- uid: Zaya.Translator.Services.ITranslationCache.Clear
+  name: Clear()
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Clear
+  commentId: M:Zaya.Translator.Services.ITranslationCache.Clear
+  fullName: Zaya.Translator.Services.ITranslationCache.Clear()
+  nameWithType: ITranslationCache.Clear()
+- uid: Zaya.Translator.Services.ITranslationCache.Clear*
+  name: Clear
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Clear_
+  commentId: Overload:Zaya.Translator.Services.ITranslationCache.Clear
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslationCache.Clear
+  nameWithType: ITranslationCache.Clear
+- uid: Zaya.Translator.Services.ITranslationCache.Set(System.String,System.String)
+  name: Set(string, string)
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Set_System_String_System_String_
+  commentId: M:Zaya.Translator.Services.ITranslationCache.Set(System.String,System.String)
+  name.vb: Set(String, String)
+  fullName: Zaya.Translator.Services.ITranslationCache.Set(string, string)
+  fullName.vb: Zaya.Translator.Services.ITranslationCache.Set(String, String)
+  nameWithType: ITranslationCache.Set(string, string)
+  nameWithType.vb: ITranslationCache.Set(String, String)
+- uid: Zaya.Translator.Services.ITranslationCache.Set*
+  name: Set
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Set_
+  commentId: Overload:Zaya.Translator.Services.ITranslationCache.Set
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslationCache.Set
+  nameWithType: ITranslationCache.Set
+- uid: Zaya.Translator.Services.ITranslationCache.TryGet(System.String,System.String@)
+  name: TryGet(string, out string?)
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_TryGet_System_String_System_String__
+  commentId: M:Zaya.Translator.Services.ITranslationCache.TryGet(System.String,System.String@)
+  name.vb: TryGet(String, String)
+  fullName: Zaya.Translator.Services.ITranslationCache.TryGet(string, out string?)
+  fullName.vb: Zaya.Translator.Services.ITranslationCache.TryGet(String, String)
+  nameWithType: ITranslationCache.TryGet(string, out string?)
+  nameWithType.vb: ITranslationCache.TryGet(String, String)
+- uid: Zaya.Translator.Services.ITranslationCache.TryGet*
+  name: TryGet
+  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_TryGet_
+  commentId: Overload:Zaya.Translator.Services.ITranslationCache.TryGet
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslationCache.TryGet
+  nameWithType: ITranslationCache.TryGet
+- uid: Zaya.Translator.Services.ITranslatorService
+  name: ITranslatorService
+  href: api/Zaya.Translator.Services.ITranslatorService.html
+  commentId: T:Zaya.Translator.Services.ITranslatorService
+  fullName: Zaya.Translator.Services.ITranslatorService
+  nameWithType: ITranslatorService
+- uid: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name: CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_CreateSessionAsync_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name.vb: CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary<string, object>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Collections.Generic.IReadOnlyDictionary(Of String, Object), System.Threading.CancellationToken)
+  nameWithType: ITranslatorService.CreateSessionAsync(IReadOnlyDictionary<string, object>, CancellationToken)
+  nameWithType.vb: ITranslatorService.CreateSessionAsync(IReadOnlyDictionary(Of String, Object), CancellationToken)
+- uid: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  name: CreateSessionAsync(CancellationToken)
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_CreateSessionAsync_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync(System.Threading.CancellationToken)
+  nameWithType: ITranslatorService.CreateSessionAsync(CancellationToken)
+- uid: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync*
+  name: CreateSessionAsync
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_CreateSessionAsync_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.CreateSessionAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.CreateSessionAsync
+  nameWithType: ITranslatorService.CreateSessionAsync
+- uid: Zaya.Translator.Services.ITranslatorService.Description
+  name: Description
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_Description
+  commentId: P:Zaya.Translator.Services.ITranslatorService.Description
+  fullName: Zaya.Translator.Services.ITranslatorService.Description
+  nameWithType: ITranslatorService.Description
+- uid: Zaya.Translator.Services.ITranslatorService.Description*
+  name: Description
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_Description_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.Description
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.Description
+  nameWithType: ITranslatorService.Description
+- uid: Zaya.Translator.Services.ITranslatorService.DisplayName
+  name: DisplayName
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_DisplayName
+  commentId: P:Zaya.Translator.Services.ITranslatorService.DisplayName
+  fullName: Zaya.Translator.Services.ITranslatorService.DisplayName
+  nameWithType: ITranslatorService.DisplayName
+- uid: Zaya.Translator.Services.ITranslatorService.DisplayName*
+  name: DisplayName
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_DisplayName_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.DisplayName
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.DisplayName
+  nameWithType: ITranslatorService.DisplayName
+- uid: Zaya.Translator.Services.ITranslatorService.EngineId
+  name: EngineId
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_EngineId
+  commentId: P:Zaya.Translator.Services.ITranslatorService.EngineId
+  fullName: Zaya.Translator.Services.ITranslatorService.EngineId
+  nameWithType: ITranslatorService.EngineId
+- uid: Zaya.Translator.Services.ITranslatorService.EngineId*
+  name: EngineId
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_EngineId_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.EngineId
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.EngineId
+  nameWithType: ITranslatorService.EngineId
+- uid: Zaya.Translator.Services.ITranslatorService.IsAvailable
+  name: IsAvailable
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_IsAvailable
+  commentId: P:Zaya.Translator.Services.ITranslatorService.IsAvailable
+  fullName: Zaya.Translator.Services.ITranslatorService.IsAvailable
+  nameWithType: ITranslatorService.IsAvailable
+- uid: Zaya.Translator.Services.ITranslatorService.IsAvailable*
+  name: IsAvailable
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_IsAvailable_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.IsAvailable
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.IsAvailable
+  nameWithType: ITranslatorService.IsAvailable
+- uid: Zaya.Translator.Services.ITranslatorService.Settings
+  name: Settings
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_Settings
+  commentId: P:Zaya.Translator.Services.ITranslatorService.Settings
+  fullName: Zaya.Translator.Services.ITranslatorService.Settings
+  nameWithType: ITranslatorService.Settings
+- uid: Zaya.Translator.Services.ITranslatorService.Settings*
+  name: Settings
+  href: api/Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_Settings_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorService.Settings
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorService.Settings
+  nameWithType: ITranslatorService.Settings
+- uid: Zaya.Translator.Services.ITranslatorSession
+  name: ITranslatorSession
+  href: api/Zaya.Translator.Services.ITranslatorSession.html
+  commentId: T:Zaya.Translator.Services.ITranslatorSession
+  fullName: Zaya.Translator.Services.ITranslatorSession
+  nameWithType: ITranslatorSession
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  href: api/Zaya.Translator.Services.ITranslatorSession.html#Zaya_Translator_Services_ITranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  nameWithType: ITranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  nameWithType.vb: ITranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name: TranslateAsync(string, CancellationToken)
+  href: api/Zaya.Translator.Services.ITranslatorSession.html#Zaya_Translator_Services_ITranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TranslateAsync(String, CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITranslatorSession.TranslateAsync(string, CancellationToken)
+  nameWithType.vb: ITranslatorSession.TranslateAsync(String, CancellationToken)
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync*
+  name: TranslateAsync
+  href: api/Zaya.Translator.Services.ITranslatorSession.html#Zaya_Translator_Services_ITranslatorSession_TranslateAsync_
+  commentId: Overload:Zaya.Translator.Services.ITranslatorSession.TranslateAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync
+  nameWithType: ITranslatorSession.TranslateAsync
+- uid: Zaya.Translator.Services.Impl
+  name: Zaya.Translator.Services.Impl
+  href: api/Zaya.Translator.Services.Impl.html
+  commentId: N:Zaya.Translator.Services.Impl
+  fullName: Zaya.Translator.Services.Impl
+  nameWithType: Zaya.Translator.Services.Impl
+- uid: Zaya.Translator.Services.Impl.CacheFactory
+  name: CacheFactory
+  href: api/Zaya.Translator.Services.Impl.CacheFactory.html
+  commentId: T:Zaya.Translator.Services.Impl.CacheFactory
+  fullName: Zaya.Translator.Services.Impl.CacheFactory
+  nameWithType: CacheFactory
+- uid: Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession,Zaya.Primitives.SettingDescriptorList)
+  name: TryWrap(ITranslatorSession, SettingDescriptorList)
+  href: api/Zaya.Translator.Services.Impl.CacheFactory.html#Zaya_Translator_Services_Impl_CacheFactory_TryWrap_Zaya_Translator_Services_ITranslatorSession_Zaya_Primitives_SettingDescriptorList_
+  commentId: M:Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession,Zaya.Primitives.SettingDescriptorList)
+  fullName: Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession, Zaya.Primitives.SettingDescriptorList)
+  nameWithType: CacheFactory.TryWrap(ITranslatorSession, SettingDescriptorList)
+- uid: Zaya.Translator.Services.Impl.CacheFactory.TryWrap*
+  name: TryWrap
+  href: api/Zaya.Translator.Services.Impl.CacheFactory.html#Zaya_Translator_Services_Impl_CacheFactory_TryWrap_
+  commentId: Overload:Zaya.Translator.Services.Impl.CacheFactory.TryWrap
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.Impl.CacheFactory.TryWrap
+  nameWithType: CacheFactory.TryWrap
+- uid: Zaya.Translator.Services.Impl.CacheSettingDescriptors
+  name: CacheSettingDescriptors
+  href: api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.html
+  commentId: T:Zaya.Translator.Services.Impl.CacheSettingDescriptors
+  fullName: Zaya.Translator.Services.Impl.CacheSettingDescriptors
+  nameWithType: CacheSettingDescriptors
+- uid: Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
+  name: All
+  href: api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.html#Zaya_Translator_Services_Impl_CacheSettingDescriptors_All
+  commentId: F:Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
+  fullName: Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
+  nameWithType: CacheSettingDescriptors.All
+- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys
+  name: CacheSettingsKeys
+  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html
+  commentId: T:Zaya.Translator.Services.Impl.CacheSettingsKeys
+  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys
+  nameWithType: CacheSettingsKeys
+- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
+  name: CacheTtlMinutes
+  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html#Zaya_Translator_Services_Impl_CacheSettingsKeys_CacheTtlMinutes
+  commentId: F:Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
+  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
+  nameWithType: CacheSettingsKeys.CacheTtlMinutes
+- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
+  name: EnableCache
+  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html#Zaya_Translator_Services_Impl_CacheSettingsKeys_EnableCache
+  commentId: F:Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
+  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
+  nameWithType: CacheSettingsKeys.EnableCache
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession
+  name: CachingTranslatorSession
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html
+  commentId: T:Zaya.Translator.Services.Impl.CachingTranslatorSession
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession
+  nameWithType: CachingTranslatorSession
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.Translator.Services.ITranslationCache)
+  name: CachingTranslatorSession(ITranslatorSession, ITranslationCache)
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession__ctor_Zaya_Translator_Services_ITranslatorSession_Zaya_Translator_Services_ITranslationCache_
+  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.Translator.Services.ITranslationCache)
+  name.vb: New(ITranslatorSession, ITranslationCache)
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.CachingTranslatorSession(Zaya.Translator.Services.ITranslatorSession, Zaya.Translator.Services.ITranslationCache)
+  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.New(Zaya.Translator.Services.ITranslatorSession, Zaya.Translator.Services.ITranslationCache)
+  nameWithType: CachingTranslatorSession.CachingTranslatorSession(ITranslatorSession, ITranslationCache)
+  nameWithType.vb: CachingTranslatorSession.New(ITranslatorSession, ITranslationCache)
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor*
+  name: CachingTranslatorSession
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession__ctor_
+  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.CachingTranslatorSession
+  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.New
+  nameWithType: CachingTranslatorSession.CachingTranslatorSession
+  nameWithType.vb: CachingTranslatorSession.New
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  name: Dispose()
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_Dispose
+  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose()
+  nameWithType: CachingTranslatorSession.Dispose()
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose*
+  name: Dispose
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_Dispose_
+  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  nameWithType: CachingTranslatorSession.Dispose
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  nameWithType: CachingTranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  nameWithType.vb: CachingTranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name: TranslateAsync(string, CancellationToken)
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  name.vb: TranslateAsync(String, CancellationToken)
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  nameWithType: CachingTranslatorSession.TranslateAsync(string, CancellationToken)
+  nameWithType.vb: CachingTranslatorSession.TranslateAsync(String, CancellationToken)
+- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync*
+  name: TranslateAsync
+  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_
+  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync
+  nameWithType: CachingTranslatorSession.TranslateAsync
+- uid: Zaya.Translator.Services.MemoryTranslationCache
+  name: MemoryTranslationCache
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html
+  commentId: T:Zaya.Translator.Services.MemoryTranslationCache
+  fullName: Zaya.Translator.Services.MemoryTranslationCache
+  nameWithType: MemoryTranslationCache
+- uid: Zaya.Translator.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
+  name: MemoryTranslationCache(TimeSpan?)
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache__ctor_System_Nullable_System_TimeSpan__
+  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
+  name.vb: New(TimeSpan?)
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.MemoryTranslationCache(System.TimeSpan?)
+  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.New(System.TimeSpan?)
+  nameWithType: MemoryTranslationCache.MemoryTranslationCache(TimeSpan?)
+  nameWithType.vb: MemoryTranslationCache.New(TimeSpan?)
+- uid: Zaya.Translator.Services.MemoryTranslationCache.#ctor*
+  name: MemoryTranslationCache
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache__ctor_
+  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.MemoryTranslationCache
+  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.New
+  nameWithType: MemoryTranslationCache.MemoryTranslationCache
+  nameWithType.vb: MemoryTranslationCache.New
+- uid: Zaya.Translator.Services.MemoryTranslationCache.Clear
+  name: Clear()
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Clear
+  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.Clear
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.Clear()
+  nameWithType: MemoryTranslationCache.Clear()
+- uid: Zaya.Translator.Services.MemoryTranslationCache.Clear*
+  name: Clear
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Clear_
+  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.Clear
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.Clear
+  nameWithType: MemoryTranslationCache.Clear
+- uid: Zaya.Translator.Services.MemoryTranslationCache.Set(System.String,System.String)
+  name: Set(string, string)
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Set_System_String_System_String_
+  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.Set(System.String,System.String)
+  name.vb: Set(String, String)
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.Set(string, string)
+  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.Set(String, String)
+  nameWithType: MemoryTranslationCache.Set(string, string)
+  nameWithType.vb: MemoryTranslationCache.Set(String, String)
+- uid: Zaya.Translator.Services.MemoryTranslationCache.Set*
+  name: Set
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Set_
+  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.Set
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.Set
+  nameWithType: MemoryTranslationCache.Set
+- uid: Zaya.Translator.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
+  name: TryGet(string, out string?)
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_TryGet_System_String_System_String__
+  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
+  name.vb: TryGet(String, String)
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.TryGet(string, out string?)
+  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.TryGet(String, String)
+  nameWithType: MemoryTranslationCache.TryGet(string, out string?)
+  nameWithType.vb: MemoryTranslationCache.TryGet(String, String)
+- uid: Zaya.Translator.Services.MemoryTranslationCache.TryGet*
+  name: TryGet
+  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_TryGet_
+  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.TryGet
+  isSpec: "True"
+  fullName: Zaya.Translator.Services.MemoryTranslationCache.TryGet
+  nameWithType: MemoryTranslationCache.TryGet

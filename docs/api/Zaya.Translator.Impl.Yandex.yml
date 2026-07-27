@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Impl.Yandex
+  commentId: N:Zaya.Translator.Impl.Yandex
+  id: Zaya.Translator.Impl.Yandex
+  children:
+  - Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  - Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  langs:
+  - csharp
+  - vb
+  name: Zaya.Translator.Impl.Yandex
+  nameWithType: Zaya.Translator.Impl.Yandex
+  fullName: Zaya.Translator.Impl.Yandex
+  type: Namespace
+  assemblies:
+  - Zaya.Translator.Impl.Yandex
+references:
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  href: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html
+  name: YandexTranslateRequestException
+  nameWithType: YandexTranslateRequestException
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+  href: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html
+  name: YandexTranslateParseException
+  nameWithType: YandexTranslateParseException
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Impl.Google
+  commentId: N:Zaya.Translator.Impl.Google
+  id: Zaya.Translator.Impl.Google
+  children:
+  - Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  - Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  langs:
+  - csharp
+  - vb
+  name: Zaya.Translator.Impl.Google
+  nameWithType: Zaya.Translator.Impl.Google
+  fullName: Zaya.Translator.Impl.Google
+  type: Namespace
+  assemblies:
+  - Zaya.Translator.Impl.Google
+references:
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  href: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html
+  name: GoogleTranslateRequestException
+  nameWithType: GoogleTranslateRequestException
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateParseException
+  href: Zaya.Translator.Impl.Google.GoogleTranslateParseException.html
+  name: GoogleTranslateParseException
+  nameWithType: GoogleTranslateParseException
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException

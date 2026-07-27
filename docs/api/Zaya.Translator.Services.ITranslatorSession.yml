@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Services.ITranslatorSession
+  commentId: T:Zaya.Translator.Services.ITranslatorSession
+  id: ITranslatorSession
+  parent: Zaya.Translator.Services
+  children:
+  - Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  - Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITranslatorSession
+  nameWithType: ITranslatorSession
+  fullName: Zaya.Translator.Services.ITranslatorSession
+  type: Interface
+  source:
+    remote:
+      path: src/Zaya.Translator/Services/ITranslatorSession.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: ITranslatorSession
+    path: src/Zaya.Translator/Services/ITranslatorSession.cs
+    startLine: 5
+  assemblies:
+  - Zaya.Translator
+  namespace: Zaya.Translator.Services
+  summary: Represents an active translation session with a fixed language pair and configuration.
+  example: []
+  syntax:
+    content: 'public interface ITranslatorSession : IDisposable'
+    content.vb: Public Interface ITranslatorSession Inherits IDisposable
+  derivedClasses:
+  - Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  - Zaya.Translator.Services.Impl.CachingTranslatorSession
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  id: TranslateAsync(System.String,System.Threading.CancellationToken)
+  parent: Zaya.Translator.Services.ITranslatorSession
+  langs:
+  - csharp
+  - vb
+  name: TranslateAsync(string, CancellationToken)
+  nameWithType: ITranslatorSession.TranslateAsync(string, CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Zaya.Translator/Services/ITranslatorSession.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: TranslateAsync
+    path: src/Zaya.Translator/Services/ITranslatorSession.cs
+    startLine: 14
+  assemblies:
+  - Zaya.Translator
+  namespace: Zaya.Translator.Services
+  summary: Translates the specified text to the target language configured at session creation.
+  example: []
+  syntax:
+    content: Task<string> TranslateAsync(string text, CancellationToken cancellationToken = default)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to translate. Must not be null.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Token to cancel the translation operation.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The translated text.
+    content.vb: Function TranslateAsync(text As String, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: Zaya.Translator.Services.ITranslatorSession.TranslateAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">text</code> is null.
+  nameWithType.vb: ITranslatorSession.TranslateAsync(String, CancellationToken)
+  fullName.vb: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  name.vb: TranslateAsync(String, CancellationToken)
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  commentId: M:Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  id: TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  parent: Zaya.Translator.Services.ITranslatorSession
+  langs:
+  - csharp
+  - vb
+  name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  nameWithType: ITranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Zaya.Translator/Services/ITranslatorSession.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: TranslateAsync
+    path: src/Zaya.Translator/Services/ITranslatorSession.cs
+    startLine: 23
+  assemblies:
+  - Zaya.Translator
+  namespace: Zaya.Translator.Services
+  summary: Translates a batch of texts to the target language configured at session creation.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<string>> TranslateAsync(IReadOnlyList<string> texts, CancellationToken cancellationToken = default)
+    parameters:
+    - id: texts
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: The texts to translate. Must not be null.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Token to cancel the translation operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{System.String}}
+      description: The translated texts in the same order.
+    content.vb: Function TranslateAsync(texts As IReadOnlyList(Of String), cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of String))
+  overload: Zaya.Translator.Services.ITranslatorSession.TranslateAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">texts</code> is null.
+  nameWithType.vb: ITranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+  fullName.vb: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
+references:
+- uid: Zaya.Translator.Services
+  commentId: N:Zaya.Translator.Services
+  href: Zaya.html
+  name: Zaya.Translator.Services
+  nameWithType: Zaya.Translator.Services
+  fullName: Zaya.Translator.Services
+  spec.csharp:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.Translator
+    name: Translator
+    href: Zaya.Translator.html
+  - name: .
+  - uid: Zaya.Translator.Services
+    name: Services
+    href: Zaya.Translator.Services.html
+  spec.vb:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.Translator
+    name: Translator
+    href: Zaya.Translator.html
+  - name: .
+  - uid: Zaya.Translator.Services
+    name: Services
+    href: Zaya.Translator.Services.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync*
+  commentId: Overload:Zaya.Translator.Services.ITranslatorSession.TranslateAsync
+  href: Zaya.Translator.Services.ITranslatorSession.html#Zaya_Translator_Services_ITranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  name: TranslateAsync
+  nameWithType: ITranslatorSession.TranslateAsync
+  fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<string>>
+  nameWithType: Task<IReadOnlyList<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<string>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of String))
+  name.vb: Task(Of IReadOnlyList(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

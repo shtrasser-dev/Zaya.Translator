@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Impl.Yandex.Services
+  commentId: N:Zaya.Translator.Impl.Yandex.Services
+  id: Zaya.Translator.Impl.Yandex.Services
+  children:
+  - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  langs:
+  - csharp
+  - vb
+  name: Zaya.Translator.Impl.Yandex.Services
+  nameWithType: Zaya.Translator.Impl.Yandex.Services
+  fullName: Zaya.Translator.Impl.Yandex.Services
+  type: Namespace
+  assemblies:
+  - Zaya.Translator.Impl.Yandex
+references:
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  commentId: T:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  href: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html
+  name: YandexTranslatorService
+  nameWithType: YandexTranslatorService
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  commentId: T:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
+  href: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html
+  name: YandexTranslatorSession
+  nameWithType: YandexTranslatorSession
+  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession

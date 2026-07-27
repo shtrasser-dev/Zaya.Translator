@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.Translator.Impl.Google.Services
+  commentId: N:Zaya.Translator.Impl.Google.Services
+  id: Zaya.Translator.Impl.Google.Services
+  children:
+  - Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  - Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  langs:
+  - csharp
+  - vb
+  name: Zaya.Translator.Impl.Google.Services
+  nameWithType: Zaya.Translator.Impl.Google.Services
+  fullName: Zaya.Translator.Impl.Google.Services
+  type: Namespace
+  assemblies:
+  - Zaya.Translator.Impl.Google
+references:
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  commentId: T:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  href: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html
+  name: GoogleTranslatorService
+  nameWithType: GoogleTranslatorService
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  commentId: T:Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
+  href: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html
+  name: GoogleTranslatorSession
+  nameWithType: GoogleTranslatorSession
+  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession

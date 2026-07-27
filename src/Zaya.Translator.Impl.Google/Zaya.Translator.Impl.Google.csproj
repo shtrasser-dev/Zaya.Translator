@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>0.1.0</Version>
+
+    <PackageId>Zaya.Translator.Impl.Google</PackageId>
+    <Description>Google Translate engine for Zaya.Translator (unofficial translate.googleapis.com endpoint).</Description>
+    <PackageTags>translation;google</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>SHTrassEr</Authors>
+    <RepositoryUrl>https://github.com/shtrasser-dev/Zaya.Translator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://shtrasser-dev.github.io/Zaya.Translator</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zaya.Translator\Zaya.Translator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Zaya.Translator.Impl.Google.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
