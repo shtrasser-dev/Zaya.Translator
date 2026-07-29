@@ -4,45 +4,50 @@ setlocal enabledelayedexpansion
 set ROOT=%~dp0
 set STAGEDIR=%TEMP%\Zaya.Translator\staging
 
-echo === Building Zaya.Translator.Impl.Yandex ===
+if "%CI%"=="true" (
+    set BUILD_CONFIG=Release
+) else (
+    set BUILD_CONFIG=Debug
+)
 
-dotnet build "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -c Release
+echo === Building Zaya.Translator.Impl.Yandex (%BUILD_CONFIG%) ===
+
+dotnet build "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -c %BUILD_CONFIG%
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
-echo === Building Zaya.Translator.Impl.Google ===
+echo === Building Zaya.Translator.Impl.Google (%BUILD_CONFIG%) ===
 
-dotnet build "%ROOT%src\Zaya.Translator.Impl.Google\Zaya.Translator.Impl.Google.csproj" -c Release
+dotnet build "%ROOT%src\Zaya.Translator.Impl.Google\Zaya.Translator.Impl.Google.csproj" -c %BUILD_CONFIG%
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
-echo === Detecting versions ===
+echo === Detecting version ===
 
-for /f "tokens=*" %%a in ('findstr /i "<Version>" "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj"') do set INF_LINE=%%a
-set INF_LINE=!INF_LINE:^<Version^>=!
-set INF_LINE=!INF_LINE:^</Version^>=!
-set INF_MAJOR=!INF_LINE:~0,1!
-if "!INF_MAJOR!"=="" set INF_MAJOR=0
+for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj" -getProperty:Version -nologo -v:q`) do set VER=%%a
+set VER=!VER: =!
+if "!VER!"=="" set VER=0.4.0
 
-for /f "tokens=*" %%a in ('findstr /i "<Version>" "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj"') do set YANDEX_VER=%%a
-set YANDEX_VER=!YANDEX_VER:^<Version^>=!
-set YANDEX_VER=!YANDEX_VER:^</Version^>=!
-if "!YANDEX_VER!"=="" set YANDEX_VER=0.1.0
-
-for /f "tokens=*" %%a in ('findstr /i "<Version>" "%ROOT%src\Zaya.Translator.Impl.Google\Zaya.Translator.Impl.Google.csproj"') do set GOOGLE_VER=%%a
-set GOOGLE_VER=!GOOGLE_VER:^<Version^>=!
-set GOOGLE_VER=!GOOGLE_VER:^</Version^>=!
-if "!GOOGLE_VER!"=="" set GOOGLE_VER=0.1.0
+for /f "tokens=1,2,3 delims=." %%a in ("!VER!") do (
+    set VER_MAJOR=%%a
+    set VER_MINOR=%%b
+    set VER_PATCH=%%c
+)
+set CHANNEL=!VER_MAJOR!.!VER_MINOR!
+echo   Version=!VER!  Channel=!CHANNEL!
 
 echo === Preparing output directory ===
 
 rmdir /s /q "%ROOT%out" 2>nul
 mkdir "%ROOT%out" 2>nul
 
+echo !VER!>"%ROOT%out\version.txt"
+echo !CHANNEL!>"%ROOT%out\channel.txt"
+
 echo === Creating Zaya.Translator.Impl.Yandex plugin.zip ===
 
 rmdir /s /q "%STAGEDIR%" 2>nul
 mkdir "%STAGEDIR%"
 
-set YANDEX_TFM=%ROOT%src\Zaya.Translator.Impl.Yandex\bin\Release\net8.0
+set YANDEX_TFM=%ROOT%src\Zaya.Translator.Impl.Yandex\bin\%BUILD_CONFIG%\net8.0
 
 copy /y "%YANDEX_TFM%\Zaya.Translator.Impl.Yandex.dll" "%STAGEDIR%"
 if %ERRORLEVEL% neq 0 (
@@ -58,19 +63,21 @@ echo {>"%PLUGIN_JSON%"
 echo   "id": "Yandex",>>"%PLUGIN_JSON%"
 echo   "type": "translator",>>"%PLUGIN_JSON%"
 echo   "interface": "Zaya.Translator",>>"%PLUGIN_JSON%"
-echo   "interfaceVersion": "!INF_MAJOR!.0.0",>>"%PLUGIN_JSON%"
-echo   "pluginVersion": "!YANDEX_VER!">>"%PLUGIN_JSON%"
+echo   "interfaceVersion": "!VER!",>>"%PLUGIN_JSON%"
+echo   "pluginVersion": "!VER!",>>"%PLUGIN_JSON%"
+echo   "primitivesChannel": "!CHANNEL!">>"%PLUGIN_JSON%"
 echo }>>"%PLUGIN_JSON%"
 
-powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\Zaya.Translator.Impl.Yandex-!YANDEX_VER!.zip' -Force"
-echo   out\Zaya.Translator.Impl.Yandex-!YANDEX_VER!.zip
+REM Stable asset name (no version in filename) for host updater.
+powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\Zaya.Translator.Impl.Yandex.zip' -Force"
+echo   out\Zaya.Translator.Impl.Yandex.zip
 
 echo === Creating Zaya.Translator.Impl.Google plugin.zip ===
 
 rmdir /s /q "%STAGEDIR%" 2>nul
 mkdir "%STAGEDIR%"
 
-set GOOGLE_TFM=%ROOT%src\Zaya.Translator.Impl.Google\bin\Release\net8.0
+set GOOGLE_TFM=%ROOT%src\Zaya.Translator.Impl.Google\bin\%BUILD_CONFIG%\net8.0
 
 copy /y "%GOOGLE_TFM%\Zaya.Translator.Impl.Google.dll" "%STAGEDIR%"
 if %ERRORLEVEL% neq 0 (
@@ -86,29 +93,30 @@ echo {>"%PLUGIN_JSON%"
 echo   "id": "Google",>>"%PLUGIN_JSON%"
 echo   "type": "translator",>>"%PLUGIN_JSON%"
 echo   "interface": "Zaya.Translator",>>"%PLUGIN_JSON%"
-echo   "interfaceVersion": "!INF_MAJOR!.0.0",>>"%PLUGIN_JSON%"
-echo   "pluginVersion": "!GOOGLE_VER!">>"%PLUGIN_JSON%"
+echo   "interfaceVersion": "!VER!",>>"%PLUGIN_JSON%"
+echo   "pluginVersion": "!VER!",>>"%PLUGIN_JSON%"
+echo   "primitivesChannel": "!CHANNEL!">>"%PLUGIN_JSON%"
 echo }>>"%PLUGIN_JSON%"
 
-powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\Zaya.Translator.Impl.Google-!GOOGLE_VER!.zip' -Force"
-echo   out\Zaya.Translator.Impl.Google-!GOOGLE_VER!.zip
+powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\Zaya.Translator.Impl.Google.zip' -Force"
+echo   out\Zaya.Translator.Impl.Google.zip
 
 echo === Packing NuGet packages ===
 
-dotnet pack "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -c Release -o "%ROOT%out" --no-build
+dotnet pack "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -c %BUILD_CONFIG% -o "%ROOT%out" --no-build
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
-dotnet pack "%ROOT%src\Zaya.Translator.Impl.Google\Zaya.Translator.Impl.Google.csproj" -c Release -o "%ROOT%out" --no-build
+dotnet pack "%ROOT%src\Zaya.Translator.Impl.Google\Zaya.Translator.Impl.Google.csproj" -c %BUILD_CONFIG% -o "%ROOT%out" --no-build
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
-dotnet pack "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj" -c Release -o "%ROOT%out" --no-build
+dotnet pack "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj" -c %BUILD_CONFIG% -o "%ROOT%out" --no-build
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 echo === Cleaning up ===
 
 rmdir /s /q "%STAGEDIR%" 2>nul
 
-echo === Done: Yandex !YANDEX_VER! ^| Google !GOOGLE_VER! ===
+echo === Done: version !VER! channel !CHANNEL! ===
 goto :eof
 
 :CopySatellites

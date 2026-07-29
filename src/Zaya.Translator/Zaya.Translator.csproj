@@ -5,7 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>0.1.0</Version>
 
     <PackageId>Zaya.Translator</PackageId>
     <Description>Translation abstractions for the Zaya ecosystem: interfaces for pluggable text translation services.</Description>
@@ -23,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Zaya.Primitives" Version="0.2.5" />
+    <PackageReference Include="Zaya.Primitives" Version="$(ZayaPrimitivesVersion)" />
   </ItemGroup>
 
   <Target Name="Docs">

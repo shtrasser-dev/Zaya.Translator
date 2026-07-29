@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
     <LangVersion>13</LangVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>0.1.0</Version>
 
     <PackageId>Zaya.Translator.Impl.Yandex</PackageId>
     <Description>Yandex Translate engine for Zaya.Translator (Cloud API v2 and free browser endpoint).</Description>

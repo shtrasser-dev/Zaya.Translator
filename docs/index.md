@@ -6,9 +6,11 @@ Pluggable translation abstractions for the Zaya ecosystem — engines expose met
 
 | Package | Version | Role |
 |---------|---------|------|
-| **Zaya.Translator** | 0.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession`, translation cache |
-| **Zaya.Translator.Impl.Google** | 0.1.0 | Unofficial Google Translate |
-| **Zaya.Translator.Impl.Yandex** | 0.1.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.Translator** | 0.4.0 | Abstractions: `ITranslatorService`, `ITranslatorSession`, translation cache |
+| **Zaya.Translator.Impl.Google** | 0.4.0 | Unofficial Google Translate |
+| **Zaya.Translator.Impl.Yandex** | 0.4.0 | Yandex Cloud API v2 and free browser endpoint |
+
+Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **0.4.0** (channel `0.4`). See [versioning](versioning.md).
 
 ## Features
 
@@ -22,8 +24,8 @@ There is no separate `InitializeAsync`: create a session and translate.
 ## Installation
 
 ```xml
-<PackageReference Include="Zaya.Translator" Version="0.1.0" />
-<PackageReference Include="Zaya.Translator.Impl.Google" Version="0.1.0" />
+<PackageReference Include="Zaya.Translator" Version="0.4.0" />
+<PackageReference Include="Zaya.Translator.Impl.Google" Version="0.4.0" />
 ```
 
 ## Quick Start

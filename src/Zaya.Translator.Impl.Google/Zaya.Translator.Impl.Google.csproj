@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
     <LangVersion>13</LangVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>0.1.0</Version>
 
     <PackageId>Zaya.Translator.Impl.Google</PackageId>
     <Description>Google Translate engine for Zaya.Translator (unofficial translate.googleapis.com endpoint).</Description>
