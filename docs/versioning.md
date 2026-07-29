@@ -1,46 +1,13 @@
 # Versioning (Zaya.Translator)
 
-Aligned with the ScreenTranslator updater plan and **Zaya.Primitives** compatibility channel.
+Three independent axes — do not bump them together unless required.
 
-## Versions
+| Axis | Source | Example |
+|------|--------|---------|
+| **primitivesChannel** | `ZayaPrimitivesVersion` → `MAJOR.MINOR` | `0.4` |
+| **interfaceVersion** | Version of package **Zaya.Translator** | `0.4.0` |
+| **pluginVersion** | Version of each **Impl** (Google / Yandex) | may differ per engine |
 
-| Artifact | Rule | Example |
-|----------|------|---------|
-| `Zaya.Primitives` | `MAJOR.MINOR.0` | `0.4.0` |
-| This repo (`Directory.Build.props`) | Same `MAJOR.MINOR`, own `PATCH` | `0.4.0` |
-| GitHub Release (immutable) | `plugin-v{MAJOR.MINOR.PATCH}` | `plugin-v0.4.0` |
-| GitHub Release (floating) | `plugin-v{MAJOR.MINOR}-latest` | `plugin-v0.4-latest` |
+Host must ship the same **Zaya.Translator** assembly as `interfaceVersion`. Engine-only fixes: bump only that Impl’s `<Version>`.
 
-All NuGet packages and plugin zips use the same `Version` from [`Directory.Build.props`](../Directory.Build.props).
-
-## Plugin zips
-
-Stable names (no version in the filename), multi-asset release:
-
-- `Zaya.Translator.Impl.Google.zip`
-- `Zaya.Translator.Impl.Yandex.zip`
-
-Each contains `plugin.json`:
-
-```json
-{
-  "id": "Google",
-  "type": "translator",
-  "interface": "Zaya.Translator",
-  "interfaceVersion": "0.4.0",
-  "pluginVersion": "0.4.0",
-  "primitivesChannel": "0.4"
-}
-```
-
-Hosts discover updates via:
-
-`GET /repos/shtrasser-dev/Zaya.Translator/releases/tags/plugin-v0.4-latest`
-
-Release `name` is `Plugin v0.4.0` (semver for comparison without downloading the zip).
-
-## Bumping
-
-1. Edit `Version` / `ZayaPrimitivesVersion` in `Directory.Build.props`.
-2. Run `build.cmd` (or publish workflow).
-3. CI creates `plugin-v{ver}` and refreshes `plugin-v{channel}-latest`.
+Release body lists `Zaya.Translator.Impl.Google.zip=0.4.0` lines for the host updater. Floating tag: `plugin-v{channel}-latest`.
