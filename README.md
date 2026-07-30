@@ -6,11 +6,11 @@ Pluggable translation abstractions for the Zaya ecosystem — engines expose met
 
 | Package | Version | Role |
 |---------|---------|------|
-| **Zaya.Translator** | 0.4.0 | Abstractions: `ITranslatorService`, `ITranslatorSession`, translation cache |
-| **Zaya.Translator.Impl.Google** | 0.4.0 | Unofficial Google Translate (`translate.googleapis.com`) |
-| **Zaya.Translator.Impl.Yandex** | 0.4.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.Translator** | 1.0.0 | Abstractions: `ITranslatorService`, `ITranslatorSession`, translation cache |
+| **Zaya.Translator.Impl.Google** | 1.0.0.0 | Unofficial Google Translate (`translate.googleapis.com`) |
+| **Zaya.Translator.Impl.Yandex** | 1.0.0.0 | Yandex Cloud API v2 and free browser endpoint |
 
-Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **0.4.0** (compatibility channel `0.4`). See [versioning](docs/versioning.md).
+Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. Update channel: `plugin-v1.0-latest`. See [versioning](docs/versioning.md).
 
 Docs: [API & articles](https://shtrasser-dev.github.io/Zaya.Translator)
 
@@ -26,13 +26,13 @@ There is no separate `InitializeAsync`: create a session with defaults or an exp
 ## Installation
 
 ```xml
-<PackageReference Include="Zaya.Translator" Version="0.4.0" />
-<PackageReference Include="Zaya.Translator.Impl.Google" Version="0.4.0" />
+<PackageReference Include="Zaya.Translator" Version="1.0.0" />
+<PackageReference Include="Zaya.Translator.Impl.Google" Version="1.0.0.0" />
 <!-- or -->
-<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="0.4.0" />
+<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="1.0.0.0" />
 ```
 
-Plugin zips for ScreenTranslator hosts (stable names) from GitHub Releases (`plugin-v0.4-latest`):
+Plugin zips for ScreenTranslator hosts (stable names) from GitHub Releases (`plugin-v1.0-latest`):
 
 - `Zaya.Translator.Impl.Google.zip`
 - `Zaya.Translator.Impl.Yandex.zip`

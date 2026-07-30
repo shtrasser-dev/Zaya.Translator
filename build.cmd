@@ -24,14 +24,10 @@ echo === Detecting versions ===
 
 for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj" -getProperty:Version -nologo -v:q`) do set IFACE=%%a
 set IFACE=!IFACE: =!
-if "!IFACE!"=="" set IFACE=0.4.0
+if "!IFACE!"=="" set IFACE=1.0.0
 
-for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.Translator\Zaya.Translator.csproj" -getProperty:ZayaPrimitivesVersion -nologo -v:q`) do set PRIM=%%a
-set PRIM=!PRIM: =!
-if "!PRIM!"=="" set PRIM=0.4.0
-
-for /f "tokens=1,2 delims=." %%a in ("!PRIM!") do set CHANNEL=%%a.%%b
-if "!CHANNEL!"=="." set CHANNEL=0.4
+for /f "tokens=1,2 delims=." %%a in ("!IFACE!") do set CHANNEL=%%a.%%b
+if "!CHANNEL!"=="." set CHANNEL=1.0
 
 for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -getProperty:Version -nologo -v:q`) do set VER_YANDEX=%%a
 set VER_YANDEX=!VER_YANDEX: =!
@@ -44,7 +40,7 @@ if "!VER_GOOGLE!"=="" set VER_GOOGLE=!IFACE!
 set MAXVER=!VER_YANDEX!
 if "!VER_GOOGLE!" gtr "!MAXVER!" set MAXVER=!VER_GOOGLE!
 
-echo   Interface=!IFACE!  Channel=!CHANNEL!  MaxPlugin=!MAXVER!
+echo   Interface=!IFACE!  UpdateChannel=!CHANNEL!  MaxPlugin=!MAXVER!
 echo   Yandex=!VER_YANDEX!  Google=!VER_GOOGLE!
 
 echo === Preparing output directory ===
@@ -79,7 +75,7 @@ echo === Cleaning up ===
 
 rmdir /s /q "%STAGEDIR%" 2>nul
 
-echo === Done: interface !IFACE! channel !CHANNEL! release !MAXVER! ===
+echo === Done: interface !IFACE! updateChannel !CHANNEL! release !MAXVER! ===
 goto :eof
 
 :MakeZip
@@ -107,8 +103,7 @@ goto :eof
     echo   "type": "!ZIP_TYPE!",>>"%PLUGIN_JSON%"
     echo   "interface": "Zaya.Translator",>>"%PLUGIN_JSON%"
     echo   "interfaceVersion": "!IFACE!",>>"%PLUGIN_JSON%"
-    echo   "pluginVersion": "!ZIP_PVER!",>>"%PLUGIN_JSON%"
-    echo   "primitivesChannel": "!CHANNEL!">>"%PLUGIN_JSON%"
+    echo   "pluginVersion": "!ZIP_PVER!">>"%PLUGIN_JSON%"
     echo }>>"%PLUGIN_JSON%"
 
     powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\!ZIP_NAME!' -Force"
