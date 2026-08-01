@@ -1,7 +1,6 @@
 using Zaya.Primitives;
 using Zaya.Translator.Impl.Google.Constants;
 using Zaya.Translator.Services;
-using Zaya.Translator.Services.Impl;
 
 namespace Zaya.Translator.Impl.Google.Services;
 
@@ -62,8 +61,7 @@ public sealed class GoogleTranslatorService : ITranslatorService
         var sourceLang = autoDetect ? null : settings.GetValueAsString(SettingsConstants.SourceLanguage);
         var targetLang = settings.GetValueAsString(SettingsConstants.TargetLanguage);
 
-        var session = new GoogleTranslatorSession(sourceLang, targetLang) as ITranslatorSession;
-        session = CacheFactory.TryWrap(session, settings);
+        ITranslatorSession session = new GoogleTranslatorSession(sourceLang, targetLang);
         return Task.FromResult(session);
     }
 
@@ -98,7 +96,6 @@ public sealed class GoogleTranslatorService : ITranslatorService
                 DefaultValue = "ru",
                 Options = Languages.All,
             },
-            ..CacheSettingDescriptors.All,
         ];
     }
 }

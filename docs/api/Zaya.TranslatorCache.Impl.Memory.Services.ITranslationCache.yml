@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  id: ITranslationCache
+  parent: Zaya.TranslatorCache.Impl.Memory.Services
+  children:
+  - Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  - Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(System.String,System.String)
+  - Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(System.String,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: ITranslationCache
+  nameWithType: ITranslationCache
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  type: Interface
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: ITranslationCache
+    path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+    startLine: 7
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Services
+  summary: A cache store for translation results, keyed by source text.
+  example: []
+  syntax:
+    content: public interface ITranslationCache
+    content.vb: Public Interface ITranslationCache
+  derivedClasses:
+  - Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(System.String,System.String@)
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(System.String,System.String@)
+  id: TryGet(System.String,System.String@)
+  parent: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  langs:
+  - csharp
+  - vb
+  name: TryGet(string, out string?)
+  nameWithType: ITranslationCache.TryGet(string, out string?)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(string, out string?)
+  type: Method
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: TryGet
+    path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+    startLine: 12
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Services
+  summary: Attempts to retrieve a cached translation for the specified source text.
+  example: []
+  syntax:
+    content: bool TryGet(string sourceText, out string? translation)
+    parameters:
+    - id: sourceText
+      type: System.String
+    - id: translation
+      type: System.String
+      attributes:
+      - type: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute
+        ctor: System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.#ctor(System.Boolean)
+        arguments:
+        - type: System.Boolean
+          value: true
+    return:
+      type: System.Boolean
+    content.vb: Function TryGet(sourceText As String, translation As String) As Boolean
+  overload: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet*
+  nameWithType.vb: ITranslationCache.TryGet(String, String)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(String, String)
+  name.vb: TryGet(String, String)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(System.String,System.String)
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(System.String,System.String)
+  id: Set(System.String,System.String)
+  parent: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  langs:
+  - csharp
+  - vb
+  name: Set(string, string)
+  nameWithType: ITranslationCache.Set(string, string)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: Set
+    path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+    startLine: 17
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Services
+  summary: Stores a translation result for the specified source text.
+  example: []
+  syntax:
+    content: void Set(string sourceText, string translation)
+    parameters:
+    - id: sourceText
+      type: System.String
+    - id: translation
+      type: System.String
+    content.vb: Sub [Set](sourceText As String, translation As String)
+  overload: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set*
+  nameWithType.vb: ITranslationCache.Set(String, String)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(String, String)
+  name.vb: Set(String, String)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  id: Clear
+  parent: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ITranslationCache.Clear()
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: Clear
+    path: src/Zaya.TranslatorCache.Impl.Memory/Services/ITranslationCache.cs
+    startLine: 22
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Services
+  summary: Removes all entries from the cache.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear*
+references:
+- uid: Zaya.TranslatorCache.Impl.Memory.Services
+  commentId: N:Zaya.TranslatorCache.Impl.Memory.Services
+  href: Zaya.html
+  name: Zaya.TranslatorCache.Impl.Memory.Services
+  nameWithType: Zaya.TranslatorCache.Impl.Memory.Services
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services
+  spec.csharp:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl
+    name: Impl
+    href: Zaya.TranslatorCache.Impl.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory
+    name: Memory
+    href: Zaya.TranslatorCache.Impl.Memory.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services
+    name: Services
+    href: Zaya.TranslatorCache.Impl.Memory.Services.html
+  spec.vb:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl
+    name: Impl
+    href: Zaya.TranslatorCache.Impl.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory
+    name: Memory
+    href: Zaya.TranslatorCache.Impl.Memory.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services
+    name: Services
+    href: Zaya.TranslatorCache.Impl.Memory.Services.html
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet*
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet
+  href: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_TryGet_System_String_System_String__
+  name: TryGet
+  nameWithType: ITranslationCache.TryGet
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set*
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set
+  href: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Set_System_String_System_String_
+  name: Set
+  nameWithType: ITranslationCache.Set
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear*
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  href: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Clear
+  name: Clear
+  nameWithType: ITranslationCache.Clear
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear

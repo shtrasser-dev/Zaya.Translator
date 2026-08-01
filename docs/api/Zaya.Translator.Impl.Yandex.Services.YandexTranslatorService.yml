@@ -27,7 +27,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: YandexTranslatorService
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: EngineId
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: DisplayName
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -135,7 +135,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Description
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -168,7 +168,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: IsAvailable
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -201,7 +201,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Settings
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 35
+    startLine: 34
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -234,7 +234,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: CreateSessionAsync
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -271,7 +271,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: CreateSessionAsync
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services
@@ -314,7 +314,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Dispose
     path: src/Zaya.Translator.Impl.Yandex/Services/YandexTranslatorService.cs
-    startLine: 73
+    startLine: 71
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Zaya.Translator.Impl.Yandex.Services

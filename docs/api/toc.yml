@@ -7,6 +7,9 @@ items:
   - uid: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions
     name: GoogleTranslatorServiceCollectionExtensions
     type: Class
+  - uid: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+    name: MemoryTranslatorCacheServiceCollectionExtensions
+    type: Class
   - uid: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
     name: YandexTranslatorServiceCollectionExtensions
     type: Class
@@ -54,32 +57,46 @@ items:
   name: Zaya.Translator.Services
   type: Namespace
   items:
-  - uid: Zaya.Translator.Services.ITranslationCache
-    name: ITranslationCache
-    type: Interface
   - uid: Zaya.Translator.Services.ITranslatorService
     name: ITranslatorService
     type: Interface
   - uid: Zaya.Translator.Services.ITranslatorSession
     name: ITranslatorSession
     type: Interface
-  - uid: Zaya.Translator.Services.MemoryTranslationCache
-    name: MemoryTranslationCache
-    type: Class
-- uid: Zaya.Translator.Services.Impl
-  name: Zaya.Translator.Services.Impl
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants
+  name: Zaya.TranslatorCache.Impl.Memory.Constants
   type: Namespace
   items:
-  - uid: Zaya.Translator.Services.Impl.CacheFactory
-    name: CacheFactory
-    type: Class
-  - uid: Zaya.Translator.Services.Impl.CacheSettingDescriptors
-    name: CacheSettingDescriptors
-    type: Class
-  - uid: Zaya.Translator.Services.Impl.CacheSettingsKeys
+  - uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
     name: CacheSettingsKeys
     type: Class
-  - uid: Zaya.Translator.Services.Impl.CachingTranslatorSession
+- uid: Zaya.TranslatorCache.Impl.Memory.Services
+  name: Zaya.TranslatorCache.Impl.Memory.Services
+  type: Namespace
+  items:
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors
+    name: CacheSettingDescriptors
+    type: Class
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
     name: CachingTranslatorSession
     type: Class
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+    name: ITranslationCache
+    type: Interface
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
+    name: MemoryTranslationCache
+    type: Class
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+    name: MemoryTranslatorCacheService
+    type: Class
+  - uid: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions
+    name: TranslationCacheOptions
+    type: Class
+- uid: Zaya.TranslatorCache.Services
+  name: Zaya.TranslatorCache.Services
+  type: Namespace
+  items:
+  - uid: Zaya.TranslatorCache.Services.ITranslatorCacheService
+    name: ITranslatorCacheService
+    type: Interface
 memberLayout: SamePage

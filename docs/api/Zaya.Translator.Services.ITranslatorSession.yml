@@ -33,7 +33,7 @@ items:
   derivedClasses:
   - Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
   - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
-  - Zaya.Translator.Services.Impl.CachingTranslatorSession
+  - Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
   inheritedMembers:
   - System.IDisposable.Dispose
 - uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)

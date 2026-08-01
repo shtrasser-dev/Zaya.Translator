@@ -2,7 +2,7 @@
 
 ## Overview
 
-Zaya.Translator provides pluggable translation engines. Hosts discover `ITranslatorService` implementations, bind `SettingDescriptor`s, then call `CreateSessionAsync` and `TranslateAsync`.
+Zaya.Translator provides pluggable translation engines. Hosts discover `ITranslatorService` implementations, bind `SettingDescriptor`s, then call `CreateSessionAsync` and `TranslateAsync`. Optional caching is a separate interface in the same repo — see [Translator Cache](translator-cache.md).
 
 ## Google Translate
 
@@ -14,8 +14,6 @@ using var session = await service.CreateSessionAsync(new Dictionary<string, obje
 {
     ["autoDetectLanguage"] = true,
     ["targetLanguage"] = "ru",
-    ["enableCache"] = true,
-    ["cacheTtlMinutes"] = 30,
 });
 
 var translated = await session.TranslateAsync("Good morning");
@@ -43,12 +41,9 @@ using var session = await service.CreateSessionAsync(new Dictionary<string, obje
 - `useApiKey` true → Cloud API v2
 - Language list uses a single Chinese option (`zh`); Simplified/Traditional are not distinguished by the Yandex API
 
-## Shared cache settings
+## Caching
 
-| Key | Default | Notes |
-|-----|---------|--------|
-| `enableCache` | `false` | Wrap session with in-memory cache |
-| `cacheTtlMinutes` | `0` | `0` = no TTL eviction |
+Use `ITranslatorCacheService` / Memory plugin to wrap sessions. See [Translator Cache](translator-cache.md).
 
 ## DI
 
@@ -56,10 +51,12 @@ using var session = await service.CreateSessionAsync(new Dictionary<string, obje
 services.AddGoogleTranslator();
 // or
 services.AddYandexTranslator();
+services.AddMemoryTranslatorCache();
 ```
 
 Register one engine as `ITranslatorService`, or resolve concrete types when hosting multiple engines.
 
 ## Next steps
 
+- **[Translator Cache](translator-cache.md)** — wrap sessions with caching
 - **[API Reference](xref:Zaya.Translator.Services)** — generated from source

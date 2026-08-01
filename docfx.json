@@ -6,7 +6,9 @@
           "files": [
             "src/Zaya.Translator/Zaya.Translator.csproj",
             "src/Zaya.Translator.Impl.Google/Zaya.Translator.Impl.Google.csproj",
-            "src/Zaya.Translator.Impl.Yandex/Zaya.Translator.Impl.Yandex.csproj"
+            "src/Zaya.Translator.Impl.Yandex/Zaya.Translator.Impl.Yandex.csproj",
+            "src/Zaya.TranslatorCache/Zaya.TranslatorCache.csproj",
+            "src/Zaya.TranslatorCache.Impl.Memory/Zaya.TranslatorCache.Impl.Memory.csproj"
           ],
           "src": "."
         }

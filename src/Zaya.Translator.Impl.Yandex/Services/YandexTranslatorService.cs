@@ -1,7 +1,6 @@
 using Zaya.Primitives;
 using Zaya.Translator.Impl.Yandex.Constants;
 using Zaya.Translator.Services;
-using Zaya.Translator.Services.Impl;
 
 namespace Zaya.Translator.Impl.Yandex.Services;
 
@@ -65,8 +64,7 @@ public sealed class YandexTranslatorService : ITranslatorService
         var useApiKey = settings.GetValueAsBool(SettingsConstants.UseApiKey);
         var apiKey = useApiKey ? settings.GetValueAsString(SettingsConstants.ApiKey) : null;
 
-        var session = new YandexTranslatorSession(sourceLang, targetLang, apiKey, useApiKey) as ITranslatorSession;
-        session = CacheFactory.TryWrap(session, settings);
+        ITranslatorSession session = new YandexTranslatorSession(sourceLang, targetLang, apiKey, useApiKey);
         return Task.FromResult(session);
     }
 
@@ -136,7 +134,6 @@ public sealed class YandexTranslatorService : ITranslatorService
                 IsVisible = s => s.GetValueOrDefault(SettingsConstants.UseApiKey) is true,
                 IsRequired = s => s.GetValueOrDefault(SettingsConstants.UseApiKey) is true,
             },
-            ..CacheSettingDescriptors.All,
         ];
     }
 }

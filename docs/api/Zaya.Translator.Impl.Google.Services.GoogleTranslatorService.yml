@@ -27,7 +27,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: GoogleTranslatorService
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: EngineId
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: DisplayName
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -135,7 +135,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Description
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -168,7 +168,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: IsAvailable
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 31
+    startLine: 30
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -201,7 +201,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Settings
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -234,7 +234,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: CreateSessionAsync
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -271,7 +271,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: CreateSessionAsync
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services
@@ -314,7 +314,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Dispose
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 70
+    startLine: 68
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services

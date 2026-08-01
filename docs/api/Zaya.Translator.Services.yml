@@ -4,10 +4,8 @@ items:
   commentId: N:Zaya.Translator.Services
   id: Zaya.Translator.Services
   children:
-  - Zaya.Translator.Services.ITranslationCache
   - Zaya.Translator.Services.ITranslatorService
   - Zaya.Translator.Services.ITranslatorSession
-  - Zaya.Translator.Services.MemoryTranslationCache
   langs:
   - csharp
   - vb
@@ -18,13 +16,6 @@ items:
   assemblies:
   - Zaya.Translator
 references:
-- uid: Zaya.Translator.Services.ITranslationCache
-  commentId: T:Zaya.Translator.Services.ITranslationCache
-  parent: Zaya.Translator.Services
-  href: Zaya.Translator.Services.ITranslationCache.html
-  name: ITranslationCache
-  nameWithType: ITranslationCache
-  fullName: Zaya.Translator.Services.ITranslationCache
 - uid: Zaya.Translator.Services.ITranslatorService
   commentId: T:Zaya.Translator.Services.ITranslatorService
   parent: Zaya.Translator.Services
@@ -39,12 +30,6 @@ references:
   name: ITranslatorSession
   nameWithType: ITranslatorSession
   fullName: Zaya.Translator.Services.ITranslatorSession
-- uid: Zaya.Translator.Services.MemoryTranslationCache
-  commentId: T:Zaya.Translator.Services.MemoryTranslationCache
-  href: Zaya.Translator.Services.MemoryTranslationCache.html
-  name: MemoryTranslationCache
-  nameWithType: MemoryTranslationCache
-  fullName: Zaya.Translator.Services.MemoryTranslationCache
 - uid: Zaya.Translator.Services
   commentId: N:Zaya.Translator.Services
   href: Zaya.html

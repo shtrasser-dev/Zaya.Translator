@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.TranslatorCache.Services
+  commentId: N:Zaya.TranslatorCache.Services
+  id: Zaya.TranslatorCache.Services
+  children:
+  - Zaya.TranslatorCache.Services.ITranslatorCacheService
+  langs:
+  - csharp
+  - vb
+  name: Zaya.TranslatorCache.Services
+  nameWithType: Zaya.TranslatorCache.Services
+  fullName: Zaya.TranslatorCache.Services
+  type: Namespace
+  assemblies:
+  - Zaya.TranslatorCache
+references:
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService
+  commentId: T:Zaya.TranslatorCache.Services.ITranslatorCacheService
+  parent: Zaya.TranslatorCache.Services
+  href: Zaya.TranslatorCache.Services.ITranslatorCacheService.html
+  name: ITranslatorCacheService
+  nameWithType: ITranslatorCacheService
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService
+- uid: Zaya.TranslatorCache.Services
+  commentId: N:Zaya.TranslatorCache.Services
+  href: Zaya.html
+  name: Zaya.TranslatorCache.Services
+  nameWithType: Zaya.TranslatorCache.Services
+  fullName: Zaya.TranslatorCache.Services
+  spec.csharp:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Services
+    name: Services
+    href: Zaya.TranslatorCache.Services.html
+  spec.vb:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Services
+    name: Services
+    href: Zaya.TranslatorCache.Services.html

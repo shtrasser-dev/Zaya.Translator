@@ -5,6 +5,7 @@ items:
   id: Microsoft.Extensions.DependencyInjection
   children:
   - Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions
+  - Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
   - Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
   langs:
   - csharp
@@ -28,3 +29,9 @@ references:
   name: YandexTranslatorServiceCollectionExtensions
   nameWithType: YandexTranslatorServiceCollectionExtensions
   fullName: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+  href: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.html
+  name: MemoryTranslatorCacheServiceCollectionExtensions
+  nameWithType: MemoryTranslatorCacheServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions

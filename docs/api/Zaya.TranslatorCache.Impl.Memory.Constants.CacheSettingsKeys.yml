@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  id: CacheSettingsKeys
+  parent: Zaya.TranslatorCache.Impl.Memory.Constants
+  children:
+  - Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
+  - Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
+  langs:
+  - csharp
+  - vb
+  name: CacheSettingsKeys
+  nameWithType: CacheSettingsKeys
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  type: Class
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: CacheSettingsKeys
+    path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+    startLine: 3
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Constants
+  summary: Machine-readable keys for memory translation-cache settings.
+  example: []
+  syntax:
+    content: public static class CacheSettingsKeys
+    content.vb: Public Module CacheSettingsKeys
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
+  id: EnableCache
+  parent: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  langs:
+  - csharp
+  - vb
+  name: EnableCache
+  nameWithType: CacheSettingsKeys.EnableCache
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
+  type: Field
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: EnableCache
+    path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+    startLine: 6
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Constants
+  summary: Key for the boolean setting that enables or disables translation caching.
+  example: []
+  syntax:
+    content: public const string EnableCache = "enableCache"
+    return:
+      type: System.String
+    content.vb: Public Const EnableCache As String = "enableCache"
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
+  id: CacheTtlMinutes
+  parent: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  langs:
+  - csharp
+  - vb
+  name: CacheTtlMinutes
+  nameWithType: CacheSettingsKeys.CacheTtlMinutes
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
+  type: Field
+  source:
+    remote:
+      path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+      branch: main
+      repo: https://github.com/shtrasser-dev/Zaya.Translator
+    id: CacheTtlMinutes
+    path: src/Zaya.TranslatorCache.Impl.Memory/Constants/CacheSettingsKeys.cs
+    startLine: 9
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+  namespace: Zaya.TranslatorCache.Impl.Memory.Constants
+  summary: Key for the integer setting that specifies cache TTL in minutes (0 = unlimited).
+  example: []
+  syntax:
+    content: public const string CacheTtlMinutes = "cacheTtlMinutes"
+    return:
+      type: System.String
+    content.vb: Public Const CacheTtlMinutes As String = "cacheTtlMinutes"
+references:
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants
+  commentId: N:Zaya.TranslatorCache.Impl.Memory.Constants
+  href: Zaya.html
+  name: Zaya.TranslatorCache.Impl.Memory.Constants
+  nameWithType: Zaya.TranslatorCache.Impl.Memory.Constants
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants
+  spec.csharp:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl
+    name: Impl
+    href: Zaya.TranslatorCache.Impl.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory
+    name: Memory
+    href: Zaya.TranslatorCache.Impl.Memory.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory.Constants
+    name: Constants
+    href: Zaya.TranslatorCache.Impl.Memory.Constants.html
+  spec.vb:
+  - uid: Zaya
+    name: Zaya
+    href: Zaya.html
+  - name: .
+  - uid: Zaya.TranslatorCache
+    name: TranslatorCache
+    href: Zaya.TranslatorCache.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl
+    name: Impl
+    href: Zaya.TranslatorCache.Impl.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory
+    name: Memory
+    href: Zaya.TranslatorCache.Impl.Memory.html
+  - name: .
+  - uid: Zaya.TranslatorCache.Impl.Memory.Constants
+    name: Constants
+    href: Zaya.TranslatorCache.Impl.Memory.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

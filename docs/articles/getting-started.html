@@ -70,7 +70,7 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Zaya.Translator provides pluggable translation engines. Hosts discover <code>ITranslatorService</code> implementations, bind <code>SettingDescriptor</code>s, then call <code>CreateSessionAsync</code> and <code>TranslateAsync</code>.</p>
+<p>Zaya.Translator provides pluggable translation engines. Hosts discover <code>ITranslatorService</code> implementations, bind <code>SettingDescriptor</code>s, then call <code>CreateSessionAsync</code> and <code>TranslateAsync</code>. Optional caching is a separate interface in the same repo — see <a href="translator-cache.html">Translator Cache</a>.</p>
 <h2 id="google-translate">Google Translate</h2>
 <pre><code class="lang-csharp">using Zaya.Translator.Impl.Google.Services;
 
@@ -79,8 +79,6 @@ using var session = await service.CreateSessionAsync(new Dictionary&lt;string, o
 {
     [&quot;autoDetectLanguage&quot;] = true,
     [&quot;targetLanguage&quot;] = &quot;ru&quot;,
-    [&quot;enableCache&quot;] = true,
-    [&quot;cacheTtlMinutes&quot;] = 30,
 });
 
 var translated = await session.TranslateAsync(&quot;Good morning&quot;);
@@ -104,36 +102,18 @@ using var session = await service.CreateSessionAsync(new Dictionary&lt;string, o
 <li><code>useApiKey</code> true → Cloud API v2</li>
 <li>Language list uses a single Chinese option (<code>zh</code>); Simplified/Traditional are not distinguished by the Yandex API</li>
 </ul>
-<h2 id="shared-cache-settings">Shared cache settings</h2>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Default</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>enableCache</code></td>
-<td><code>false</code></td>
-<td>Wrap session with in-memory cache</td>
-</tr>
-<tr>
-<td><code>cacheTtlMinutes</code></td>
-<td><code>0</code></td>
-<td><code>0</code> = no TTL eviction</td>
-</tr>
-</tbody>
-</table>
+<h2 id="caching">Caching</h2>
+<p>Use <code>ITranslatorCacheService</code> / Memory plugin to wrap sessions. See <a href="translator-cache.html">Translator Cache</a>.</p>
 <h2 id="di">DI</h2>
 <pre><code class="lang-csharp">services.AddGoogleTranslator();
 // or
 services.AddYandexTranslator();
+services.AddMemoryTranslatorCache();
 </code></pre>
 <p>Register one engine as <code>ITranslatorService</code>, or resolve concrete types when hosting multiple engines.</p>
 <h2 id="next-steps">Next steps</h2>
 <ul>
+<li><strong><a href="translator-cache.html">Translator Cache</a></strong> — wrap sessions with caching</li>
 <li><strong><a class="xref" href="../api/Zaya.Translator.Services.html">API Reference</a></strong> — generated from source</li>
 </ul>
 

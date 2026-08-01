@@ -26,6 +26,25 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator
   nameWithType: GoogleTranslatorServiceCollectionExtensions.AddGoogleTranslator
+- uid: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+  name: MemoryTranslatorCacheServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions
+  nameWithType: MemoryTranslatorCacheServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddMemoryTranslatorCache(IServiceCollection)
+  href: api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MemoryTranslatorCacheServiceCollectionExtensions_AddMemoryTranslatorCache_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache*
+  name: AddMemoryTranslatorCache
+  href: api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_MemoryTranslatorCacheServiceCollectionExtensions_AddMemoryTranslatorCache_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache
+  nameWithType: MemoryTranslatorCacheServiceCollectionExtensions.AddMemoryTranslatorCache
 - uid: Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions
   name: YandexTranslatorServiceCollectionExtensions
   href: api/Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.html
@@ -553,57 +572,6 @@ references:
   commentId: N:Zaya.Translator.Services
   fullName: Zaya.Translator.Services
   nameWithType: Zaya.Translator.Services
-- uid: Zaya.Translator.Services.ITranslationCache
-  name: ITranslationCache
-  href: api/Zaya.Translator.Services.ITranslationCache.html
-  commentId: T:Zaya.Translator.Services.ITranslationCache
-  fullName: Zaya.Translator.Services.ITranslationCache
-  nameWithType: ITranslationCache
-- uid: Zaya.Translator.Services.ITranslationCache.Clear
-  name: Clear()
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Clear
-  commentId: M:Zaya.Translator.Services.ITranslationCache.Clear
-  fullName: Zaya.Translator.Services.ITranslationCache.Clear()
-  nameWithType: ITranslationCache.Clear()
-- uid: Zaya.Translator.Services.ITranslationCache.Clear*
-  name: Clear
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Clear_
-  commentId: Overload:Zaya.Translator.Services.ITranslationCache.Clear
-  isSpec: "True"
-  fullName: Zaya.Translator.Services.ITranslationCache.Clear
-  nameWithType: ITranslationCache.Clear
-- uid: Zaya.Translator.Services.ITranslationCache.Set(System.String,System.String)
-  name: Set(string, string)
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Set_System_String_System_String_
-  commentId: M:Zaya.Translator.Services.ITranslationCache.Set(System.String,System.String)
-  name.vb: Set(String, String)
-  fullName: Zaya.Translator.Services.ITranslationCache.Set(string, string)
-  fullName.vb: Zaya.Translator.Services.ITranslationCache.Set(String, String)
-  nameWithType: ITranslationCache.Set(string, string)
-  nameWithType.vb: ITranslationCache.Set(String, String)
-- uid: Zaya.Translator.Services.ITranslationCache.Set*
-  name: Set
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_Set_
-  commentId: Overload:Zaya.Translator.Services.ITranslationCache.Set
-  isSpec: "True"
-  fullName: Zaya.Translator.Services.ITranslationCache.Set
-  nameWithType: ITranslationCache.Set
-- uid: Zaya.Translator.Services.ITranslationCache.TryGet(System.String,System.String@)
-  name: TryGet(string, out string?)
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_TryGet_System_String_System_String__
-  commentId: M:Zaya.Translator.Services.ITranslationCache.TryGet(System.String,System.String@)
-  name.vb: TryGet(String, String)
-  fullName: Zaya.Translator.Services.ITranslationCache.TryGet(string, out string?)
-  fullName.vb: Zaya.Translator.Services.ITranslationCache.TryGet(String, String)
-  nameWithType: ITranslationCache.TryGet(string, out string?)
-  nameWithType.vb: ITranslationCache.TryGet(String, String)
-- uid: Zaya.Translator.Services.ITranslationCache.TryGet*
-  name: TryGet
-  href: api/Zaya.Translator.Services.ITranslationCache.html#Zaya_Translator_Services_ITranslationCache_TryGet_
-  commentId: Overload:Zaya.Translator.Services.ITranslationCache.TryGet
-  isSpec: "True"
-  fullName: Zaya.Translator.Services.ITranslationCache.TryGet
-  nameWithType: ITranslationCache.TryGet
 - uid: Zaya.Translator.Services.ITranslatorService
   name: ITranslatorService
   href: api/Zaya.Translator.Services.ITranslatorService.html
@@ -728,191 +696,468 @@ references:
   isSpec: "True"
   fullName: Zaya.Translator.Services.ITranslatorSession.TranslateAsync
   nameWithType: ITranslatorSession.TranslateAsync
-- uid: Zaya.Translator.Services.Impl
-  name: Zaya.Translator.Services.Impl
-  href: api/Zaya.Translator.Services.Impl.html
-  commentId: N:Zaya.Translator.Services.Impl
-  fullName: Zaya.Translator.Services.Impl
-  nameWithType: Zaya.Translator.Services.Impl
-- uid: Zaya.Translator.Services.Impl.CacheFactory
-  name: CacheFactory
-  href: api/Zaya.Translator.Services.Impl.CacheFactory.html
-  commentId: T:Zaya.Translator.Services.Impl.CacheFactory
-  fullName: Zaya.Translator.Services.Impl.CacheFactory
-  nameWithType: CacheFactory
-- uid: Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession,Zaya.Primitives.SettingDescriptorList)
-  name: TryWrap(ITranslatorSession, SettingDescriptorList)
-  href: api/Zaya.Translator.Services.Impl.CacheFactory.html#Zaya_Translator_Services_Impl_CacheFactory_TryWrap_Zaya_Translator_Services_ITranslatorSession_Zaya_Primitives_SettingDescriptorList_
-  commentId: M:Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession,Zaya.Primitives.SettingDescriptorList)
-  fullName: Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession, Zaya.Primitives.SettingDescriptorList)
-  nameWithType: CacheFactory.TryWrap(ITranslatorSession, SettingDescriptorList)
-- uid: Zaya.Translator.Services.Impl.CacheFactory.TryWrap*
-  name: TryWrap
-  href: api/Zaya.Translator.Services.Impl.CacheFactory.html#Zaya_Translator_Services_Impl_CacheFactory_TryWrap_
-  commentId: Overload:Zaya.Translator.Services.Impl.CacheFactory.TryWrap
-  isSpec: "True"
-  fullName: Zaya.Translator.Services.Impl.CacheFactory.TryWrap
-  nameWithType: CacheFactory.TryWrap
-- uid: Zaya.Translator.Services.Impl.CacheSettingDescriptors
-  name: CacheSettingDescriptors
-  href: api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.html
-  commentId: T:Zaya.Translator.Services.Impl.CacheSettingDescriptors
-  fullName: Zaya.Translator.Services.Impl.CacheSettingDescriptors
-  nameWithType: CacheSettingDescriptors
-- uid: Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
-  name: All
-  href: api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.html#Zaya_Translator_Services_Impl_CacheSettingDescriptors_All
-  commentId: F:Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
-  fullName: Zaya.Translator.Services.Impl.CacheSettingDescriptors.All
-  nameWithType: CacheSettingDescriptors.All
-- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants
+  name: Zaya.TranslatorCache.Impl.Memory.Constants
+  href: api/Zaya.TranslatorCache.Impl.Memory.Constants.html
+  commentId: N:Zaya.TranslatorCache.Impl.Memory.Constants
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants
+  nameWithType: Zaya.TranslatorCache.Impl.Memory.Constants
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
   name: CacheSettingsKeys
-  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html
-  commentId: T:Zaya.Translator.Services.Impl.CacheSettingsKeys
-  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys
+  href: api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
   nameWithType: CacheSettingsKeys
-- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
   name: CacheTtlMinutes
-  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html#Zaya_Translator_Services_Impl_CacheSettingsKeys_CacheTtlMinutes
-  commentId: F:Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
-  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys.CacheTtlMinutes
+  href: api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.html#Zaya_TranslatorCache_Impl_Memory_Constants_CacheSettingsKeys_CacheTtlMinutes
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.CacheTtlMinutes
   nameWithType: CacheSettingsKeys.CacheTtlMinutes
-- uid: Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
+- uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
   name: EnableCache
-  href: api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html#Zaya_Translator_Services_Impl_CacheSettingsKeys_EnableCache
-  commentId: F:Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
-  fullName: Zaya.Translator.Services.Impl.CacheSettingsKeys.EnableCache
+  href: api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.html#Zaya_TranslatorCache_Impl_Memory_Constants_CacheSettingsKeys_EnableCache
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
+  fullName: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.EnableCache
   nameWithType: CacheSettingsKeys.EnableCache
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession
+- uid: Zaya.TranslatorCache.Impl.Memory.Services
+  name: Zaya.TranslatorCache.Impl.Memory.Services
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.html
+  commentId: N:Zaya.TranslatorCache.Impl.Memory.Services
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services
+  nameWithType: Zaya.TranslatorCache.Impl.Memory.Services
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors
+  name: CacheSettingDescriptors
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors
+  nameWithType: CacheSettingDescriptors
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.All
+  name: All
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.html#Zaya_TranslatorCache_Impl_Memory_Services_CacheSettingDescriptors_All
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.All
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.All
+  nameWithType: CacheSettingDescriptors.All
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
   name: CachingTranslatorSession
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html
-  commentId: T:Zaya.Translator.Services.Impl.CachingTranslatorSession
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
   nameWithType: CachingTranslatorSession
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.Translator.Services.ITranslationCache)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache)
   name: CachingTranslatorSession(ITranslatorSession, ITranslationCache)
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession__ctor_Zaya_Translator_Services_ITranslatorSession_Zaya_Translator_Services_ITranslationCache_
-  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.Translator.Services.ITranslationCache)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession__ctor_Zaya_Translator_Services_ITranslatorSession_Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.#ctor(Zaya.Translator.Services.ITranslatorSession,Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache)
   name.vb: New(ITranslatorSession, ITranslationCache)
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.CachingTranslatorSession(Zaya.Translator.Services.ITranslatorSession, Zaya.Translator.Services.ITranslationCache)
-  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.New(Zaya.Translator.Services.ITranslatorSession, Zaya.Translator.Services.ITranslationCache)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.CachingTranslatorSession(Zaya.Translator.Services.ITranslatorSession, Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.New(Zaya.Translator.Services.ITranslatorSession, Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache)
   nameWithType: CachingTranslatorSession.CachingTranslatorSession(ITranslatorSession, ITranslationCache)
   nameWithType.vb: CachingTranslatorSession.New(ITranslatorSession, ITranslationCache)
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.#ctor*
   name: CachingTranslatorSession
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession__ctor_
-  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.#ctor
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession__ctor_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.CachingTranslatorSession
-  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.New
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.CachingTranslatorSession
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.New
   nameWithType: CachingTranslatorSession.CachingTranslatorSession
   nameWithType.vb: CachingTranslatorSession.New
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose
   name: Dispose()
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_Dispose
-  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose()
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession_Dispose
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose()
   nameWithType: CachingTranslatorSession.Dispose()
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose*
   name: Dispose
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_Dispose_
-  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession_Dispose_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose
   isSpec: "True"
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.Dispose
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.Dispose
   nameWithType: CachingTranslatorSession.Dispose
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
   name: TranslateAsync(IReadOnlyList<string>, CancellationToken)
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
-  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession_TranslateAsync_System_Collections_Generic_IReadOnlyList_System_String__System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList{System.String},System.Threading.CancellationToken)
   name.vb: TranslateAsync(IReadOnlyList(Of String), CancellationToken)
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
-  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList<string>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.Collections.Generic.IReadOnlyList(Of String), System.Threading.CancellationToken)
   nameWithType: CachingTranslatorSession.TranslateAsync(IReadOnlyList<string>, CancellationToken)
   nameWithType.vb: CachingTranslatorSession.TranslateAsync(IReadOnlyList(Of String), CancellationToken)
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
   name: TranslateAsync(string, CancellationToken)
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession_TranslateAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)
   name.vb: TranslateAsync(String, CancellationToken)
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
-  fullName.vb: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync(String, System.Threading.CancellationToken)
   nameWithType: CachingTranslatorSession.TranslateAsync(string, CancellationToken)
   nameWithType.vb: CachingTranslatorSession.TranslateAsync(String, CancellationToken)
-- uid: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync*
   name: TranslateAsync
-  href: api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html#Zaya_Translator_Services_Impl_CachingTranslatorSession_TranslateAsync_
-  commentId: Overload:Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html#Zaya_TranslatorCache_Impl_Memory_Services_CachingTranslatorSession_TranslateAsync_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync
   isSpec: "True"
-  fullName: Zaya.Translator.Services.Impl.CachingTranslatorSession.TranslateAsync
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.TranslateAsync
   nameWithType: CachingTranslatorSession.TranslateAsync
-- uid: Zaya.Translator.Services.MemoryTranslationCache
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  name: ITranslationCache
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
+  nameWithType: ITranslationCache
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  name: Clear()
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Clear
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear()
+  nameWithType: ITranslationCache.Clear()
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear*
+  name: Clear
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Clear_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Clear
+  nameWithType: ITranslationCache.Clear
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(System.String,System.String)
+  name: Set(string, string)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Set_System_String_System_String_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(System.String,System.String)
+  name.vb: Set(String, String)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(string, string)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set(String, String)
+  nameWithType: ITranslationCache.Set(string, string)
+  nameWithType.vb: ITranslationCache.Set(String, String)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set*
+  name: Set
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_Set_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.Set
+  nameWithType: ITranslationCache.Set
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(System.String,System.String@)
+  name: TryGet(string, out string?)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_TryGet_System_String_System_String__
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(System.String,System.String@)
+  name.vb: TryGet(String, String)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(string, out string?)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet(String, String)
+  nameWithType: ITranslationCache.TryGet(string, out string?)
+  nameWithType.vb: ITranslationCache.TryGet(String, String)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet*
+  name: TryGet
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_ITranslationCache_TryGet_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.TryGet
+  nameWithType: ITranslationCache.TryGet
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
   name: MemoryTranslationCache
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html
-  commentId: T:Zaya.Translator.Services.MemoryTranslationCache
-  fullName: Zaya.Translator.Services.MemoryTranslationCache
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
   nameWithType: MemoryTranslationCache
-- uid: Zaya.Translator.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
   name: MemoryTranslationCache(TimeSpan?)
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache__ctor_System_Nullable_System_TimeSpan__
-  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache__ctor_System_Nullable_System_TimeSpan__
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor(System.Nullable{System.TimeSpan})
   name.vb: New(TimeSpan?)
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.MemoryTranslationCache(System.TimeSpan?)
-  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.New(System.TimeSpan?)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.MemoryTranslationCache(System.TimeSpan?)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.New(System.TimeSpan?)
   nameWithType: MemoryTranslationCache.MemoryTranslationCache(TimeSpan?)
   nameWithType.vb: MemoryTranslationCache.New(TimeSpan?)
-- uid: Zaya.Translator.Services.MemoryTranslationCache.#ctor*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor(Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions)
+  name: MemoryTranslationCache(TranslationCacheOptions)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache__ctor_Zaya_TranslatorCache_Impl_Memory_Services_TranslationCacheOptions_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor(Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions)
+  name.vb: New(TranslationCacheOptions)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.MemoryTranslationCache(Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.New(Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions)
+  nameWithType: MemoryTranslationCache.MemoryTranslationCache(TranslationCacheOptions)
+  nameWithType.vb: MemoryTranslationCache.New(TranslationCacheOptions)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor*
   name: MemoryTranslationCache
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache__ctor_
-  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.#ctor
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache__ctor_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.MemoryTranslationCache
-  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.New
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.MemoryTranslationCache
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.New
   nameWithType: MemoryTranslationCache.MemoryTranslationCache
   nameWithType.vb: MemoryTranslationCache.New
-- uid: Zaya.Translator.Services.MemoryTranslationCache.Clear
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear
   name: Clear()
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Clear
-  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.Clear
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.Clear()
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_Clear
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear()
   nameWithType: MemoryTranslationCache.Clear()
-- uid: Zaya.Translator.Services.MemoryTranslationCache.Clear*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear*
   name: Clear
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Clear_
-  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.Clear
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_Clear_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear
   isSpec: "True"
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.Clear
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Clear
   nameWithType: MemoryTranslationCache.Clear
-- uid: Zaya.Translator.Services.MemoryTranslationCache.Set(System.String,System.String)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set(System.String,System.String)
   name: Set(string, string)
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Set_System_String_System_String_
-  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.Set(System.String,System.String)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_Set_System_String_System_String_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set(System.String,System.String)
   name.vb: Set(String, String)
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.Set(string, string)
-  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.Set(String, String)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set(string, string)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set(String, String)
   nameWithType: MemoryTranslationCache.Set(string, string)
   nameWithType.vb: MemoryTranslationCache.Set(String, String)
-- uid: Zaya.Translator.Services.MemoryTranslationCache.Set*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set*
   name: Set
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_Set_
-  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.Set
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_Set_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set
   isSpec: "True"
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.Set
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.Set
   nameWithType: MemoryTranslationCache.Set
-- uid: Zaya.Translator.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
   name: TryGet(string, out string?)
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_TryGet_System_String_System_String__
-  commentId: M:Zaya.Translator.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_TryGet_System_String_System_String__
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet(System.String,System.String@)
   name.vb: TryGet(String, String)
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.TryGet(string, out string?)
-  fullName.vb: Zaya.Translator.Services.MemoryTranslationCache.TryGet(String, String)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet(string, out string?)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet(String, String)
   nameWithType: MemoryTranslationCache.TryGet(string, out string?)
   nameWithType.vb: MemoryTranslationCache.TryGet(String, String)
-- uid: Zaya.Translator.Services.MemoryTranslationCache.TryGet*
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet*
   name: TryGet
-  href: api/Zaya.Translator.Services.MemoryTranslationCache.html#Zaya_Translator_Services_MemoryTranslationCache_TryGet_
-  commentId: Overload:Zaya.Translator.Services.MemoryTranslationCache.TryGet
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslationCache_TryGet_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet
   isSpec: "True"
-  fullName: Zaya.Translator.Services.MemoryTranslationCache.TryGet
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.TryGet
   nameWithType: MemoryTranslationCache.TryGet
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+  name: MemoryTranslatorCacheService
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+  nameWithType: MemoryTranslatorCacheService
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description
+  name: Description
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Description
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description
+  nameWithType: MemoryTranslatorCacheService.Description
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description*
+  name: Description
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Description_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Description
+  nameWithType: MemoryTranslatorCacheService.Description
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName
+  name: DisplayName
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_DisplayName
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName
+  nameWithType: MemoryTranslatorCacheService.DisplayName
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName*
+  name: DisplayName
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_DisplayName_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.DisplayName
+  nameWithType: MemoryTranslatorCacheService.DisplayName
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose
+  name: Dispose()
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Dispose
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose()
+  nameWithType: MemoryTranslatorCacheService.Dispose()
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose*
+  name: Dispose
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Dispose_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Dispose
+  nameWithType: MemoryTranslatorCacheService.Dispose
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId
+  name: EngineId
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_EngineId
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId
+  nameWithType: MemoryTranslatorCacheService.EngineId
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId*
+  name: EngineId
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_EngineId_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineId
+  nameWithType: MemoryTranslatorCacheService.EngineId
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineIdValue
+  name: EngineIdValue
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_EngineIdValue
+  commentId: F:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineIdValue
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.EngineIdValue
+  nameWithType: MemoryTranslatorCacheService.EngineIdValue
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable
+  name: IsAvailable
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_IsAvailable
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable
+  nameWithType: MemoryTranslatorCacheService.IsAvailable
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable*
+  name: IsAvailable
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_IsAvailable_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.IsAvailable
+  nameWithType: MemoryTranslatorCacheService.IsAvailable
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings
+  name: Settings
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Settings
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings
+  nameWithType: MemoryTranslatorCacheService.Settings
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings*
+  name: Settings
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_Settings_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.Settings
+  nameWithType: MemoryTranslatorCacheService.Settings
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name: WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary<string, object>, CancellationToken)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_WrapSessionAsync_Zaya_Translator_Services_ITranslatorSession_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name.vb: WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary(Of String, Object), CancellationToken)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Collections.Generic.IReadOnlyDictionary<string, object>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Collections.Generic.IReadOnlyDictionary(Of String, Object), System.Threading.CancellationToken)
+  nameWithType: MemoryTranslatorCacheService.WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary<string, object>, CancellationToken)
+  nameWithType.vb: MemoryTranslatorCacheService.WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary(Of String, Object), CancellationToken)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Threading.CancellationToken)
+  name: WrapSessionAsync(ITranslatorSession, CancellationToken)
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_WrapSessionAsync_Zaya_Translator_Services_ITranslatorSession_System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Threading.CancellationToken)
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Threading.CancellationToken)
+  nameWithType: MemoryTranslatorCacheService.WrapSessionAsync(ITranslatorSession, CancellationToken)
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync*
+  name: WrapSessionAsync
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html#Zaya_TranslatorCache_Impl_Memory_Services_MemoryTranslatorCacheService_WrapSessionAsync_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.WrapSessionAsync
+  nameWithType: MemoryTranslatorCacheService.WrapSessionAsync
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions
+  name: TranslationCacheOptions
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.html
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions
+  nameWithType: TranslationCacheOptions
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl
+  name: Ttl
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.html#Zaya_TranslatorCache_Impl_Memory_Services_TranslationCacheOptions_Ttl
+  commentId: P:Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl
+  nameWithType: TranslationCacheOptions.Ttl
+- uid: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl*
+  name: Ttl
+  href: api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.html#Zaya_TranslatorCache_Impl_Memory_Services_TranslationCacheOptions_Ttl_
+  commentId: Overload:Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.Ttl
+  nameWithType: TranslationCacheOptions.Ttl
+- uid: Zaya.TranslatorCache.Services
+  name: Zaya.TranslatorCache.Services
+  href: api/Zaya.TranslatorCache.Services.html
+  commentId: N:Zaya.TranslatorCache.Services
+  fullName: Zaya.TranslatorCache.Services
+  nameWithType: Zaya.TranslatorCache.Services
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService
+  name: ITranslatorCacheService
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html
+  commentId: T:Zaya.TranslatorCache.Services.ITranslatorCacheService
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService
+  nameWithType: ITranslatorCacheService
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.Description
+  name: Description
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_Description
+  commentId: P:Zaya.TranslatorCache.Services.ITranslatorCacheService.Description
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.Description
+  nameWithType: ITranslatorCacheService.Description
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.Description*
+  name: Description
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_Description_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.Description
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.Description
+  nameWithType: ITranslatorCacheService.Description
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName
+  name: DisplayName
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_DisplayName
+  commentId: P:Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName
+  nameWithType: ITranslatorCacheService.DisplayName
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName*
+  name: DisplayName
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_DisplayName_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.DisplayName
+  nameWithType: ITranslatorCacheService.DisplayName
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId
+  name: EngineId
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_EngineId
+  commentId: P:Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId
+  nameWithType: ITranslatorCacheService.EngineId
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId*
+  name: EngineId
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_EngineId_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId
+  nameWithType: ITranslatorCacheService.EngineId
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable
+  name: IsAvailable
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_IsAvailable
+  commentId: P:Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable
+  nameWithType: ITranslatorCacheService.IsAvailable
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable*
+  name: IsAvailable
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_IsAvailable_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.IsAvailable
+  nameWithType: ITranslatorCacheService.IsAvailable
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
+  name: Settings
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_Settings
+  commentId: P:Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
+  nameWithType: ITranslatorCacheService.Settings
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings*
+  name: Settings
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_Settings_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
+  nameWithType: ITranslatorCacheService.Settings
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name: WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary<string, object>, CancellationToken)
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_WrapSessionAsync_Zaya_Translator_Services_ITranslatorSession_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Threading.CancellationToken)
+  name.vb: WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary(Of String, Object), CancellationToken)
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Collections.Generic.IReadOnlyDictionary<string, object>, System.Threading.CancellationToken)
+  fullName.vb: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Collections.Generic.IReadOnlyDictionary(Of String, Object), System.Threading.CancellationToken)
+  nameWithType: ITranslatorCacheService.WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary<string, object>, CancellationToken)
+  nameWithType.vb: ITranslatorCacheService.WrapSessionAsync(ITranslatorSession, IReadOnlyDictionary(Of String, Object), CancellationToken)
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Threading.CancellationToken)
+  name: WrapSessionAsync(ITranslatorSession, CancellationToken)
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_WrapSessionAsync_Zaya_Translator_Services_ITranslatorSession_System_Threading_CancellationToken_
+  commentId: M:Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Threading.CancellationToken)
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession, System.Threading.CancellationToken)
+  nameWithType: ITranslatorCacheService.WrapSessionAsync(ITranslatorSession, CancellationToken)
+- uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync*
+  name: WrapSessionAsync
+  href: api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html#Zaya_TranslatorCache_Services_ITranslatorCacheService_WrapSessionAsync_
+  commentId: Overload:Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync
+  isSpec: "True"
+  fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync
+  nameWithType: ITranslatorCacheService.WrapSessionAsync

@@ -72,21 +72,9 @@
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="classes">
-Classes
-</h3>
-      <h4><a class="xref" href="Zaya.Translator.Services.MemoryTranslationCache.html">MemoryTranslationCache</a></h4>
-      <section><p>In-memory implementation of <a class="xref" href="Zaya.Translator.Services.ITranslationCache.html">ITranslationCache</a> with optional
-time-to-live (TTL) eviction. Expired entries are removed lazily on access.
-Thread-safe only for single-threaded consumers (the translation loop is single-threaded).</p>
-</section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-      <h4><a class="xref" href="Zaya.Translator.Services.ITranslationCache.html">ITranslationCache</a></h4>
-      <section><p>A cache store for translation results, keyed by source text.
-Implementations can add custom eviction policies, TTL, or persistence.</p>
-</section>
       <h4><a class="xref" href="Zaya.Translator.Services.ITranslatorService.html">ITranslatorService</a></h4>
       <section><p>Provides text translation capabilities.
 Source and target languages are declared via <a class="xref" href="Zaya.Translator.Services.ITranslatorService.html#Zaya_Translator_Services_ITranslatorService_Settings">Settings</a> and passed at session creation.</p>

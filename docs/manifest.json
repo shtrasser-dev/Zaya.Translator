@@ -18,6 +18,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "docs/api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"docs/api/Microsoft.Extensions.DependencyInjection.MemoryTranslatorCacheServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering the memory translator-cache engine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "docs/api/Microsoft.Extensions.DependencyInjection.YandexTranslatorServiceCollectionExtensions.yml",
       "output": {
         ".html": {
@@ -98,7 +112,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.yml\" sourcestartlinenumber=\"1\">Translation session using Google Translate (unofficial free endpoint).</p>\n"
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.yml\" sourcestartlinenumber=\"1\">Translation session using Google Translate (unofficial free endpoint).\nBatch requests wrap each segment as <code>([…])</code> so multiple blocks share one HTTP call.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -214,20 +228,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.ITranslationCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.ITranslationCache.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.ITranslationCache",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.ITranslationCache.yml\" sourcestartlinenumber=\"1\">A cache store for translation results, keyed by source text.\nImplementations can add custom eviction policies, TTL, or persistence.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "docs/api/Zaya.Translator.Services.ITranslatorService.yml",
       "output": {
         ".html": {
@@ -256,90 +256,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.Impl.CacheFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.Impl.CacheFactory.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.Impl.CacheFactory",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.Impl.CacheFactory.yml\" sourcestartlinenumber=\"1\">Factory that conditionally wraps an <xref href=\"Zaya.Translator.Services.ITranslatorSession\" data-throw-if-not-resolved=\"false\"></xref>\nwith a <xref href=\"Zaya.Translator.Services.Impl.CachingTranslatorSession\" data-throw-if-not-resolved=\"false\"></xref> based on engine settings.\nTranslators call <xref href=\"Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession%2cZaya.Primitives.SettingDescriptorList)\" data-throw-if-not-resolved=\"false\"></xref> in their <code>CreateSessionAsync</code>\nto add caching transparently when enabled by the user.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.Impl.CacheSettingDescriptors",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.Impl.CacheSettingDescriptors.yml\" sourcestartlinenumber=\"1\">Provides the <xref href=\"Zaya.Primitives.SettingDescriptor\" data-throw-if-not-resolved=\"false\"></xref> list for cache configuration.\nTranslators include <xref href=\"Zaya.Translator.Services.Impl.CacheSettingDescriptors.All\" data-throw-if-not-resolved=\"false\"></xref> in their own <code>BuildSettings()</code>\nreturn value so that the cache settings are rendered and read together with\nthe translator's own settings.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.Impl.CacheSettingsKeys.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.Impl.CacheSettingsKeys.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.Impl.CacheSettingsKeys",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.Impl.CacheSettingsKeys.yml\" sourcestartlinenumber=\"1\">Machine-readable keys for translation cache settings.\nThese keys are passed as part of the engine settings dictionary\nand consumed by <xref href=\"Zaya.Translator.Services.Impl.CacheFactory.TryWrap(Zaya.Translator.Services.ITranslatorSession%2cZaya.Primitives.SettingDescriptorList)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.Impl.CachingTranslatorSession.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.Impl.CachingTranslatorSession.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.Impl.CachingTranslatorSession",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.Impl.CachingTranslatorSession.yml\" sourcestartlinenumber=\"1\">Decorator over <xref href=\"Zaya.Translator.Services.ITranslatorSession\" data-throw-if-not-resolved=\"false\"></xref> that caches translation results\nusing an <xref href=\"Zaya.Translator.Services.ITranslationCache\" data-throw-if-not-resolved=\"false\"></xref> instance. Both single-text and batch\n<code>TranslateAsync</code> calls are intercepted: cached texts are returned\nimmediately, and only uncached texts are forwarded to the inner session.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.Impl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.Impl.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.Impl",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Services.MemoryTranslationCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Services.MemoryTranslationCache.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Services.MemoryTranslationCache",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Services.MemoryTranslationCache.yml\" sourcestartlinenumber=\"1\">In-memory implementation of <xref href=\"Zaya.Translator.Services.ITranslationCache\" data-throw-if-not-resolved=\"false\"></xref> with optional\ntime-to-live (TTL) eviction. Expired entries are removed lazily on access.\nThread-safe only for single-threaded consumers (the translation loop is single-threaded).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "docs/api/Zaya.Translator.Services.yml",
       "output": {
         ".html": {
@@ -350,6 +266,160 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Zaya.Translator.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.yml\" sourcestartlinenumber=\"1\">Machine-readable keys for memory translation-cache settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.yml\" sourcestartlinenumber=\"1\">Provides the <xref href=\"Zaya.Primitives.SettingDescriptor\" data-throw-if-not-resolved=\"false\"></xref> list for memory cache configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.yml\" sourcestartlinenumber=\"1\">Decorator over <xref href=\"Zaya.Translator.Services.ITranslatorSession\" data-throw-if-not-resolved=\"false\"></xref> that caches translation results\nusing an <xref href=\"Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.yml\" sourcestartlinenumber=\"1\">A cache store for translation results, keyed by source text.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.yml\" sourcestartlinenumber=\"1\">In-memory exact translation cache with optional TTL eviction.\nThread-safe only for single-threaded consumers (the translation loop is single-threaded).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.yml\" sourcestartlinenumber=\"1\">In-memory translation cache engine (exact dictionary + optional TTL).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.yml\" sourcestartlinenumber=\"1\">Configuration for <xref href=\"Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Impl.Memory.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Services.ITranslatorCacheService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Services.ITranslatorCacheService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Services.ITranslatorCacheService",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Services.ITranslatorCacheService.yml\" sourcestartlinenumber=\"1\">Pluggable translation-cache engine. Hosts discover implementations, bind\n<xref href=\"Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings\" data-throw-if-not-resolved=\"false\"></xref>, then wrap a raw <xref href=\"Zaya.Translator.Services.ITranslatorSession\" data-throw-if-not-resolved=\"false\"></xref>\nvia <xref href=\"Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession%2cSystem.Collections.Generic.IReadOnlyDictionary%7bSystem.String%2cSystem.Object%7d%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.TranslatorCache.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.TranslatorCache.Services",
       "Summary": null
     },
     {
@@ -390,6 +460,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/articles/translator-cache.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/translator-cache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/index.md",
       "output": {
         ".html": {
@@ -407,6 +487,16 @@
         },
         ".json": {
           "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/versioning.md",
+      "output": {
+        ".html": {
+          "relative_path": "versioning.html"
         }
       },
       "version": ""

@@ -43,9 +43,7 @@ public sealed class GoogleTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "autoDetectLanguage");
         Assert.Contains(settings, s => s.Key == "sourceLanguage");
         Assert.Contains(settings, s => s.Key == "targetLanguage");
-        Assert.Contains(settings, s => s.Key == "enableCache");
-        Assert.Contains(settings, s => s.Key == "cacheTtlMinutes");
-        Assert.Equal(5, settings.Count);
+        Assert.Equal(3, settings.Count);
     }
 
     [Fact]

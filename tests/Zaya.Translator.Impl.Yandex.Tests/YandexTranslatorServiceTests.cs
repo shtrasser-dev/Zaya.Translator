@@ -45,9 +45,7 @@ public sealed class YandexTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "targetLanguage");
         Assert.Contains(settings, s => s.Key == "apiKey");
         Assert.Contains(settings, s => s.Key == "useApiKey");
-        Assert.Contains(settings, s => s.Key == "enableCache");
-        Assert.Contains(settings, s => s.Key == "cacheTtlMinutes");
-        Assert.Equal(7, settings.Count);
+        Assert.Equal(5, settings.Count);
     }
 
     [Fact]

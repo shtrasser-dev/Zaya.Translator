@@ -1,2 +1,4 @@
 - name: Getting Started
   href: getting-started.md
+- name: Translator Cache
+  href: translator-cache.md

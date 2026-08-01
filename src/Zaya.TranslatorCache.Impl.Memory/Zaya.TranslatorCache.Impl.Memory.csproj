@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>13</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ZayaVersionRole>plugin</ZayaVersionRole>
+    <ZayaInterfaceCsproj>$(MSBuildThisFileDirectory)..\Zaya.TranslatorCache\Zaya.TranslatorCache.csproj</ZayaInterfaceCsproj>
+    <ZayaVersionImpMajor>0</ZayaVersionImpMajor>
+    <ZayaVersionImpMinor>1</ZayaVersionImpMinor>
+
+    <PackageId>Zaya.TranslatorCache.Impl.Memory</PackageId>
+    <Description>In-memory translation cache for Zaya.TranslatorCache (exact + optional TTL).</Description>
+    <PackageTags>translation;cache;memory</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>SHTrassEr</Authors>
+    <RepositoryUrl>https://github.com/shtrasser-dev/Zaya.Translator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://shtrasser-dev.github.io/Zaya.Translator</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zaya.TranslatorCache\Zaya.TranslatorCache.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Zaya.TranslatorCache.Impl.Memory.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
