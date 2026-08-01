@@ -38,6 +38,9 @@ for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.TranslatorCach
 set IFACE_CACHE=!IFACE_CACHE: =!
 if "!IFACE_CACHE!"=="" set IFACE_CACHE=1.0.0
 
+for /f "tokens=1,2 delims=." %%a in ("!IFACE_CACHE!") do set CHANNEL_CACHE=%%a.%%b
+if "!CHANNEL_CACHE!"=="." set CHANNEL_CACHE=1.0
+
 for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.Translator.Impl.Yandex\Zaya.Translator.Impl.Yandex.csproj" -getProperty:Version -nologo -v:q`) do set VER_YANDEX=%%a
 set VER_YANDEX=!VER_YANDEX: =!
 if "!VER_YANDEX!"=="" set VER_YANDEX=!IFACE!
@@ -50,11 +53,13 @@ for /f "usebackq delims=" %%a in (`dotnet msbuild "%ROOT%src\Zaya.TranslatorCach
 set VER_MEMORY=!VER_MEMORY: =!
 if "!VER_MEMORY!"=="" set VER_MEMORY=!IFACE_CACHE!
 
-set MAXVER=!VER_YANDEX!
-if "!VER_GOOGLE!" gtr "!MAXVER!" set MAXVER=!VER_GOOGLE!
+set VER_TRANSLATOR=!VER_YANDEX!
+if "!VER_GOOGLE!" gtr "!VER_TRANSLATOR!" set VER_TRANSLATOR=!VER_GOOGLE!
+
+set MAXVER=!VER_TRANSLATOR!
 if "!VER_MEMORY!" gtr "!MAXVER!" set MAXVER=!VER_MEMORY!
 
-echo   Interface=!IFACE!  CacheInterface=!IFACE_CACHE!  UpdateChannel=!CHANNEL!  MaxPlugin=!MAXVER!
+echo   TranslatorIface=!IFACE!  CacheIface=!IFACE_CACHE!  Channels=!CHANNEL! / !CHANNEL_CACHE!  MaxPlugin=!MAXVER!
 echo   Yandex=!VER_YANDEX!  Google=!VER_GOOGLE!  Memory=!VER_MEMORY!
 
 echo === Preparing output directory ===
@@ -65,6 +70,14 @@ mkdir "%ROOT%out" 2>nul
 echo !MAXVER!>"%ROOT%out\version.txt"
 echo !CHANNEL!>"%ROOT%out\channel.txt"
 del "%ROOT%out\plugins.versions.txt" 2>nul
+
+REM One floating/immutable GitHub release per interface package.
+> "%ROOT%out\interfaces.json" (
+echo [
+echo   {"interface":"Zaya.Translator","channel":"!CHANNEL!","version":"!VER_TRANSLATOR!","assets":["Zaya.Translator.Impl.Google.zip","Zaya.Translator.Impl.Yandex.zip"]},
+echo   {"interface":"Zaya.TranslatorCache","channel":"!CHANNEL_CACHE!","version":"!VER_MEMORY!","assets":["Zaya.TranslatorCache.Impl.Memory.zip"]}
+echo ]
+)
 
 echo === Creating Zaya.Translator.Impl.Yandex plugin.zip ===
 call :MakeZip Yandex translator Zaya.Translator "%ROOT%src\Zaya.Translator.Impl.Yandex\bin\%BUILD_CONFIG%\net8.0" Zaya.Translator.Impl.Yandex.dll Zaya.Translator.Impl.Yandex.zip !IFACE! !VER_YANDEX!
