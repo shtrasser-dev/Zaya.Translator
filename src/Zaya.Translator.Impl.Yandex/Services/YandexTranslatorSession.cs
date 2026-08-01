@@ -126,9 +126,7 @@ public sealed class YandexTranslatorSession : ITranslatorSession
 
     private async Task<IReadOnlyList<string>> CallBrowserApiAsync(IReadOnlyList<string> texts, CancellationToken ct)
     {
-        var lang = _sourceLanguage is not null
-            ? $"{Norm(_sourceLanguage)}-{Norm(_targetLanguage)}"
-            : $"-{Norm(_targetLanguage)}";
+        var lang = FormatBrowserLang(_sourceLanguage, _targetLanguage);
 
         var baseUrl = $"{BrowserApiUrl}?lang={lang}&srv=browser_video_translation";
         var results = new List<string>(texts.Count);
@@ -200,6 +198,15 @@ public sealed class YandexTranslatorSession : ITranslatorSession
             }
         }
     }
+
+    /// <summary>
+    /// Browser endpoint: <c>en-ru</c> when source is known; target-only (<c>ru</c>) enables auto-detect.
+    /// A leading dash (<c>-ru</c>) is rejected by the API with HTTP 400.
+    /// </summary>
+    internal static string FormatBrowserLang(string? sourceLanguage, string targetLanguage) =>
+        sourceLanguage is not null
+            ? $"{Norm(sourceLanguage)}-{Norm(targetLanguage)}"
+            : Norm(targetLanguage);
 
     private static HttpClient CreateHttpClient()
     {

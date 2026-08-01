@@ -5,6 +5,22 @@ namespace Zaya.Translator.Impl.Google.Tests;
 public sealed class GoogleTranslatorServiceTests
 {
     [Fact]
+    public void AutoDetectLanguage_DefaultsToTrue_AndHidesSourceWhenUnset()
+    {
+        using var service = new GoogleTranslatorService();
+        var auto = Assert.IsType<Zaya.Primitives.BooleanSettingDescriptor>(
+            service.Settings.Single(s => s.Key == "autoDetectLanguage"));
+        Assert.True(auto.DefaultValue);
+
+        var source = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
+            service.Settings.Single(s => s.Key == "sourceLanguage"));
+        var empty = new Dictionary<string, object?>();
+        Assert.False(source.IsVisible(empty));
+        Assert.False(source.IsRequired(empty));
+        Assert.True(source.IsVisible(new Dictionary<string, object?> { ["autoDetectLanguage"] = false }));
+    }
+
+    [Fact]
     public void EngineId_ReturnsGoogle()
     {
         using var service = new GoogleTranslatorService();

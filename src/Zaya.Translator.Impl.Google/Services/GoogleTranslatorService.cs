@@ -86,8 +86,9 @@ public sealed class GoogleTranslatorService : ITranslatorService
             {
                 Description = Loc(LocalizationConstants.SourceLanguage_Desc),
                 DefaultValue = "en",
-                IsVisible = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is not true,
-                IsRequired = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is not true,
+                // Missing key must follow DefaultValue (true): hide source until user turns auto-detect off.
+                IsVisible = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
+                IsRequired = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
                 Options = Languages.All,
             },
             new EnumSettingDescriptor(SettingsConstants.TargetLanguage, Loc(LocalizationConstants.TargetLanguage))

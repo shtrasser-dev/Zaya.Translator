@@ -5,6 +5,22 @@ namespace Zaya.Translator.Impl.Yandex.Tests;
 public sealed class YandexTranslatorServiceTests
 {
     [Fact]
+    public void AutoDetectLanguage_DefaultsToTrue_AndHidesSourceWhenUnset()
+    {
+        using var service = new YandexTranslatorService();
+        var auto = Assert.IsType<Zaya.Primitives.BooleanSettingDescriptor>(
+            service.Settings.Single(s => s.Key == "autoDetectLanguage"));
+        Assert.True(auto.DefaultValue);
+
+        var source = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
+            service.Settings.Single(s => s.Key == "sourceLanguage"));
+        var empty = new Dictionary<string, object?>();
+        Assert.False(source.IsVisible(empty));
+        Assert.False(source.IsRequired(empty));
+        Assert.True(source.IsVisible(new Dictionary<string, object?> { ["autoDetectLanguage"] = false }));
+    }
+
+    [Fact]
     public void EngineId_ReturnsYandex()
     {
         using var service = new YandexTranslatorService();
@@ -72,6 +88,38 @@ public sealed class YandexTranslatorServiceTests
             ["targetLanguage"] = "ru",
             ["useApiKey"] = true,
             ["apiKey"] = apiKey!,
+        };
+
+        using var service = new YandexTranslatorService();
+        using var session = await service.CreateSessionAsync(settingsDict, TestContext.Current.CancellationToken);
+
+        var result = await session.TranslateAsync("Hello", TestContext.Current.CancellationToken);
+        Assert.NotEmpty(result);
+        Assert.NotEqual("Hello", result);
+    }
+
+    [Fact]
+    public void FormatBrowserLang_AutoDetect_UsesTargetOnly()
+    {
+        Assert.Equal("ru", YandexTranslatorSession.FormatBrowserLang(null, "ru"));
+        Assert.Equal("en", YandexTranslatorSession.FormatBrowserLang(null, "en"));
+    }
+
+    [Fact]
+    public void FormatBrowserLang_ExplicitSource_UsesPair()
+    {
+        Assert.Equal("en-ru", YandexTranslatorSession.FormatBrowserLang("en", "ru"));
+        Assert.Equal("zh-ru", YandexTranslatorSession.FormatBrowserLang("zh-Hans", "ru"));
+    }
+
+    [Fact]
+    public async Task TranslateAsync_AutoDetect_BrowserApi_ReturnsTranslation()
+    {
+        var settingsDict = new Dictionary<string, object>
+        {
+            ["autoDetectLanguage"] = true,
+            ["targetLanguage"] = "ru",
+            ["useApiKey"] = false,
         };
 
         using var service = new YandexTranslatorService();

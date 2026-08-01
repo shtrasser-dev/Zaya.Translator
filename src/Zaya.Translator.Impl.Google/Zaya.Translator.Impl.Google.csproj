@@ -8,7 +8,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ZayaVersionRole>plugin</ZayaVersionRole>
     <ZayaVersionImpMajor>0</ZayaVersionImpMajor>
-    <ZayaVersionImpMinor>1</ZayaVersionImpMinor>
+    <ZayaVersionImpMinor>2</ZayaVersionImpMinor>
 
     <PackageId>Zaya.Translator.Impl.Google</PackageId>
     <Description>Google Translate engine for Zaya.Translator (unofficial translate.googleapis.com endpoint).</Description>
