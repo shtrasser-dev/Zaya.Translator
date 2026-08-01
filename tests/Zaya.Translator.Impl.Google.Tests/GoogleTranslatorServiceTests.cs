@@ -56,4 +56,27 @@ public sealed class GoogleTranslatorServiceTests
         var result = await session.TranslateAsync("", TestContext.Current.CancellationToken);
         Assert.Equal("", result);
     }
+
+    [Fact]
+    public void WrapBatch_JoinsSegmentsWithMarkers()
+    {
+        var wrapped = GoogleTranslatorSession.WrapBatch(["Hello", "World"]);
+        Assert.Equal("([Hello])([World])", wrapped);
+    }
+
+    [Fact]
+    public void UnwrapBatch_ParsesMarkedSegments()
+    {
+        var parts = GoogleTranslatorSession.UnwrapBatch(
+            "([Утреннее солнце]) ([Пассажиры двигались])",
+            expectedCount: 2);
+        Assert.Equal(["Утреннее солнце", "Пассажиры двигались"], parts);
+    }
+
+    [Fact]
+    public void UnwrapBatch_WrongCount_Throws()
+    {
+        Assert.Throws<GoogleTranslateParseException>(() =>
+            GoogleTranslatorSession.UnwrapBatch("([only-one])", expectedCount: 2));
+    }
 }
