@@ -13,51 +13,51 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Yandex_EngineName" xml:space="preserve">
-    <value>Яндекс Переводчик</value>
+    <value>Yandex Traduction</value>
   </data>
   <data name="Yandex_EngineDesc" xml:space="preserve">
-    <value>Перевод текста через Яндекс Перевод API</value>
+    <value>Traduire du texte avec l'API Yandex Translate</value>
   </data>
   <data name="Yandex_AutoDetectLanguage" xml:space="preserve">
-    <value>Автоопределение языка</value>
+    <value>Détection automatique de la langue</value>
   </data>
   <data name="Yandex_AutoDetectLanguage_Desc" xml:space="preserve">
-    <value>Позволить сервису определить исходный язык</value>
+    <value>Laisser le service détecter la langue source</value>
   </data>
   <data name="Yandex_SourceLanguage" xml:space="preserve">
-    <value>Исходный язык</value>
+    <value>Langue source</value>
   </data>
   <data name="Yandex_SourceLanguage_Desc" xml:space="preserve">
-    <value>Язык текста для перевода</value>
+    <value>Langue du texte à traduire</value>
   </data>
   <data name="Yandex_TargetLanguage" xml:space="preserve">
-    <value>Целевой язык</value>
+    <value>Langue cible</value>
   </data>
   <data name="Yandex_TargetLanguage_Desc" xml:space="preserve">
-    <value>Язык перевода</value>
+    <value>Langue vers laquelle traduire</value>
   </data>
   <data name="Yandex_ApiKey" xml:space="preserve">
-    <value>API Ключ</value>
+    <value>Clé API</value>
   </data>
   <data name="Yandex_ApiKey_Desc" xml:space="preserve">
-    <value>API ключ Yandex Cloud с правом ai.translate (console.cloud.yandex.com)</value>
+    <value>Clé API Yandex Cloud avec l'autorisation ai.translate (console.cloud.yandex.com)</value>
   </data>
   <data name="Yandex_UseApiKey" xml:space="preserve">
-    <value>Использовать API ключ</value>
+    <value>Utiliser la clé API</value>
   </data>
   <data name="Yandex_UseApiKey_Desc" xml:space="preserve">
-    <value>Включите для Yandex Cloud API (нужен биллинг). Выключите для бесплатного режима браузера.</value>
+    <value>Activez pour l'API Yandex Cloud (facturation requise). Désactivez pour le mode navigateur gratuit.</value>
   </data>
   <data name="Yandex_UserAgent" xml:space="preserve">
     <value>User-Agent</value>
   </data>
   <data name="Yandex_UserAgent_Desc" xml:space="preserve">
-    <value>HTTP User-Agent для бесплатного browser-эндпоинта Translate.</value>
+    <value>User-Agent HTTP pour le point de terminaison Translate navigateur gratuit.</value>
   </data>
   <data name="Yandex_Err_RequestFailed" xml:space="preserve">
-    <value>Ошибка запроса Yandex Translate: {0}</value>
+    <value>Échec de la requête Yandex Translate : {0}</value>
   </data>
   <data name="Yandex_Err_ParseFailed" xml:space="preserve">
-    <value>Yandex Translate вернул неожиданный ответ.</value>
+    <value>Yandex Translate a renvoyé une réponse inattendue.</value>
   </data>
 </root>

@@ -14,6 +14,8 @@ internal static class LocalizationConstants
     public const string ApiKey_Desc = "Yandex_ApiKey_Desc";
     public const string UseApiKey = "Yandex_UseApiKey";
     public const string UseApiKey_Desc = "Yandex_UseApiKey_Desc";
+    public const string UserAgent = "Yandex_UserAgent";
+    public const string UserAgent_Desc = "Yandex_UserAgent_Desc";
     public const string Err_RequestFailed = "Yandex_Err_RequestFailed";
     public const string Err_ParseFailed = "Yandex_Err_ParseFailed";
 }

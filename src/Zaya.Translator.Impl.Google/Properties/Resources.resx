@@ -36,6 +36,12 @@
   <data name="Google_TargetLanguage_Desc" xml:space="preserve">
     <value>Language to translate into</value>
   </data>
+  <data name="Google_UserAgent" xml:space="preserve">
+    <value>User-Agent</value>
+  </data>
+  <data name="Google_UserAgent_Desc" xml:space="preserve">
+    <value>HTTP User-Agent for the Google Translate endpoint.</value>
+  </data>
   <data name="Google_Err_RequestFailed" xml:space="preserve">
     <value>Google Translate request failed: {0}</value>
   </data>

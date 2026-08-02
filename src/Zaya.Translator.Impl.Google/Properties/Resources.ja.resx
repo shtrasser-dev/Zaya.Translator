@@ -13,39 +13,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Google_EngineName" xml:space="preserve">
-    <value>Google Переводчик</value>
+    <value>Google 翻訳</value>
   </data>
   <data name="Google_EngineDesc" xml:space="preserve">
-    <value>Перевод текста через Google Перевод</value>
+    <value>Google 翻訳でテキストを翻訳します</value>
   </data>
   <data name="Google_AutoDetectLanguage" xml:space="preserve">
-    <value>Автоопределение языка</value>
+    <value>言語を自動検出</value>
   </data>
   <data name="Google_AutoDetectLanguage_Desc" xml:space="preserve">
-    <value>Позволить сервису определить исходный язык</value>
+    <value>サービスに元の言語を検出させます</value>
   </data>
   <data name="Google_SourceLanguage" xml:space="preserve">
-    <value>Исходный язык</value>
+    <value>元の言語</value>
   </data>
   <data name="Google_SourceLanguage_Desc" xml:space="preserve">
-    <value>Язык текста для перевода</value>
+    <value>翻訳するテキストの言語</value>
   </data>
   <data name="Google_TargetLanguage" xml:space="preserve">
-    <value>Целевой язык</value>
+    <value>翻訳先の言語</value>
   </data>
   <data name="Google_TargetLanguage_Desc" xml:space="preserve">
-    <value>Язык перевода</value>
+    <value>翻訳後の言語</value>
   </data>
   <data name="Google_UserAgent" xml:space="preserve">
     <value>User-Agent</value>
   </data>
   <data name="Google_UserAgent_Desc" xml:space="preserve">
-    <value>HTTP User-Agent для эндпоинта Google Translate.</value>
+    <value>Google Translate エンドポイント用の HTTP User-Agent。</value>
   </data>
   <data name="Google_Err_RequestFailed" xml:space="preserve">
-    <value>Ошибка запроса Google Translate: {0}</value>
+    <value>Google Translate のリクエストに失敗しました: {0}</value>
   </data>
   <data name="Google_Err_ParseFailed" xml:space="preserve">
-    <value>Google Translate вернул неожиданный ответ.</value>
+    <value>Google Translate から予期しない応答が返りました。</value>
   </data>
 </root>

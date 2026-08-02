@@ -314,7 +314,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Dispose
     path: src/Zaya.Translator.Impl.Google/Services/GoogleTranslatorService.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Zaya.Translator.Impl.Google.Services

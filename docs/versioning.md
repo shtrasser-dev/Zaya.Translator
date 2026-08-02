@@ -5,7 +5,7 @@
 | **ZayaPrimitivesVersion** | `Directory.Build.props` (supplies **Major**) | `1.0.0` |
 | **translator interfaceVersion** | `Zaya.Translator.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `1.1.0` |
 | **cache interfaceVersion** | `Zaya.TranslatorCache.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `1.0.0` |
-| **pluginVersion** | Each Impl → **`ZayaVersionImpMajor`** + **`ZayaVersionImpMinor`**; Interface read from that plugin’s abstractions csproj via `ZayaInterfaceCsproj` → `Major.Interface.ImpMajor.ImpMinor` | `1.1.0.0` / `1.0.0.1` |
+| **pluginVersion** | Each Impl → **`ZayaVersionImpMajor`** + **`ZayaVersionImpMinor`**; Interface read from that plugin’s abstractions csproj via `ZayaInterfaceCsproj` → `Major.Interface.ImpMajor.ImpMinor` | `1.1.0.1` / `1.0.0.2` |
 | **updateChannel** | Per interface `MAJOR.Interface` | Translator `1.1`, Cache `1.0` |
 
 Rules:
@@ -29,7 +29,7 @@ Translator engine:
   "type": "translator",
   "interface": "Zaya.Translator",
   "interfaceVersion": "1.1.0",
-  "pluginVersion": "1.1.0.0"
+  "pluginVersion": "1.1.0.1"
 }
 ```
 
@@ -41,7 +41,7 @@ Cache engine:
   "type": "translator-cache",
   "interface": "Zaya.TranslatorCache",
   "interfaceVersion": "1.0.0",
-  "pluginVersion": "1.0.0.1"
+  "pluginVersion": "1.0.0.2"
 }
 ```
 

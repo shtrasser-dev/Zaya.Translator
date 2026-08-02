@@ -7,12 +7,14 @@ Pluggable translation and translation-cache abstractions for the Zaya ecosystem.
 | Package | Version | Role |
 |---------|---------|------|
 | **Zaya.Translator** | 1.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
-| **Zaya.Translator.Impl.Google** | 1.1.0.0 | Unofficial Google Translate |
-| **Zaya.Translator.Impl.Yandex** | 1.1.0.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.Translator.Impl.Google** | 1.1.0.1 | Unofficial Google Translate |
+| **Zaya.Translator.Impl.Yandex** | 1.1.0.1 | Yandex Cloud API v2 and free browser endpoint |
 | **Zaya.TranslatorCache** | 1.0.0 | Abstractions: `ITranslatorCacheService` |
-| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.0 | In-memory exact + TTL + fuzzy recent |
+| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.2 | In-memory exact + TTL + fuzzy recent |
 
 Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. See [versioning](versioning.md).
+
+Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.TranslatorCache-v1.0-latest`.
 
 ## Features
 

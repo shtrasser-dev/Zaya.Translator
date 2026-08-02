@@ -13,39 +13,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Google_EngineName" xml:space="preserve">
-    <value>Google Переводчик</value>
+    <value>Google Tradutor</value>
   </data>
   <data name="Google_EngineDesc" xml:space="preserve">
-    <value>Перевод текста через Google Перевод</value>
+    <value>Traduzir texto com o Google Tradutor</value>
   </data>
   <data name="Google_AutoDetectLanguage" xml:space="preserve">
-    <value>Автоопределение языка</value>
+    <value>Detetar idioma automaticamente</value>
   </data>
   <data name="Google_AutoDetectLanguage_Desc" xml:space="preserve">
-    <value>Позволить сервису определить исходный язык</value>
+    <value>Permitir que o serviço detete o idioma de origem</value>
   </data>
   <data name="Google_SourceLanguage" xml:space="preserve">
-    <value>Исходный язык</value>
+    <value>Idioma de origem</value>
   </data>
   <data name="Google_SourceLanguage_Desc" xml:space="preserve">
-    <value>Язык текста для перевода</value>
+    <value>Idioma do texto a traduzir</value>
   </data>
   <data name="Google_TargetLanguage" xml:space="preserve">
-    <value>Целевой язык</value>
+    <value>Idioma de destino</value>
   </data>
   <data name="Google_TargetLanguage_Desc" xml:space="preserve">
-    <value>Язык перевода</value>
+    <value>Idioma para o qual traduzir</value>
   </data>
   <data name="Google_UserAgent" xml:space="preserve">
     <value>User-Agent</value>
   </data>
   <data name="Google_UserAgent_Desc" xml:space="preserve">
-    <value>HTTP User-Agent для эндпоинта Google Translate.</value>
+    <value>User-Agent HTTP para o endpoint do Google Translate.</value>
   </data>
   <data name="Google_Err_RequestFailed" xml:space="preserve">
-    <value>Ошибка запроса Google Translate: {0}</value>
+    <value>Falha no pedido ao Google Translate: {0}</value>
   </data>
   <data name="Google_Err_ParseFailed" xml:space="preserve">
-    <value>Google Translate вернул неожиданный ответ.</value>
+    <value>O Google Translate devolveu uma resposta inesperada.</value>
   </data>
 </root>

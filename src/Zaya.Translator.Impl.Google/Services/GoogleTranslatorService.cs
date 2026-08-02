@@ -60,8 +60,11 @@ public sealed class GoogleTranslatorService : ITranslatorService
         var autoDetect = settings.GetValueAsBool(SettingsConstants.AutoDetectLanguage);
         var sourceLang = autoDetect ? null : settings.GetValueAsString(SettingsConstants.SourceLanguage);
         var targetLang = settings.GetValueAsString(SettingsConstants.TargetLanguage);
+        var userAgent = settings.GetValueAsString(SettingsConstants.UserAgent);
+        if (string.IsNullOrWhiteSpace(userAgent))
+            userAgent = SettingsConstants.DefaultUserAgent;
 
-        ITranslatorSession session = new GoogleTranslatorSession(sourceLang, targetLang);
+        ITranslatorSession session = new GoogleTranslatorSession(sourceLang, targetLang, userAgent);
         return Task.FromResult(session);
     }
 
@@ -83,7 +86,7 @@ public sealed class GoogleTranslatorService : ITranslatorService
             new EnumSettingDescriptor(SettingsConstants.SourceLanguage, Loc(LocalizationConstants.SourceLanguage))
             {
                 Description = Loc(LocalizationConstants.SourceLanguage_Desc),
-                DefaultValue = "en",
+                DefaultValue = LanguageCodeConstants.English,
                 // Missing key must follow DefaultValue (true): hide source until user turns auto-detect off.
                 IsVisible = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
                 IsRequired = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
@@ -93,8 +96,15 @@ public sealed class GoogleTranslatorService : ITranslatorService
             {
                 Description = Loc(LocalizationConstants.TargetLanguage_Desc),
                 IsRequired = static _ => true,
-                DefaultValue = "ru",
+                DefaultValue = LanguageCodeConstants.English,
                 Options = Languages.All,
+            },
+            new StringSettingDescriptor(SettingsConstants.UserAgent, Loc(LocalizationConstants.UserAgent))
+            {
+                Description = Loc(LocalizationConstants.UserAgent_Desc),
+                DefaultValue = SettingsConstants.DefaultUserAgent,
+                IsVisible = static _ => false,
+                IsRequired = static _ => false,
             },
         ];
     }

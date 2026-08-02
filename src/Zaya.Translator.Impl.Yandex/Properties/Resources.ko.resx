@@ -13,51 +13,51 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Yandex_EngineName" xml:space="preserve">
-    <value>Яндекс Переводчик</value>
+    <value>Yandex 번역</value>
   </data>
   <data name="Yandex_EngineDesc" xml:space="preserve">
-    <value>Перевод текста через Яндекс Перевод API</value>
+    <value>Yandex Translate API로 텍스트 번역</value>
   </data>
   <data name="Yandex_AutoDetectLanguage" xml:space="preserve">
-    <value>Автоопределение языка</value>
+    <value>언어 자동 감지</value>
   </data>
   <data name="Yandex_AutoDetectLanguage_Desc" xml:space="preserve">
-    <value>Позволить сервису определить исходный язык</value>
+    <value>서비스가 원본 언어를 감지하도록 허용</value>
   </data>
   <data name="Yandex_SourceLanguage" xml:space="preserve">
-    <value>Исходный язык</value>
+    <value>원본 언어</value>
   </data>
   <data name="Yandex_SourceLanguage_Desc" xml:space="preserve">
-    <value>Язык текста для перевода</value>
+    <value>번역할 텍스트의 언어</value>
   </data>
   <data name="Yandex_TargetLanguage" xml:space="preserve">
-    <value>Целевой язык</value>
+    <value>대상 언어</value>
   </data>
   <data name="Yandex_TargetLanguage_Desc" xml:space="preserve">
-    <value>Язык перевода</value>
+    <value>번역할 언어</value>
   </data>
   <data name="Yandex_ApiKey" xml:space="preserve">
-    <value>API Ключ</value>
+    <value>API 키</value>
   </data>
   <data name="Yandex_ApiKey_Desc" xml:space="preserve">
-    <value>API ключ Yandex Cloud с правом ai.translate (console.cloud.yandex.com)</value>
+    <value>ai.translate 권한이 있는 Yandex Cloud API 키(console.cloud.yandex.com)</value>
   </data>
   <data name="Yandex_UseApiKey" xml:space="preserve">
-    <value>Использовать API ключ</value>
+    <value>API 키 사용</value>
   </data>
   <data name="Yandex_UseApiKey_Desc" xml:space="preserve">
-    <value>Включите для Yandex Cloud API (нужен биллинг). Выключите для бесплатного режима браузера.</value>
+    <value>Yandex Cloud API용으로 사용하려면 켭니다(결제 필요). 무료 브라우저 모드에서는 끕니다.</value>
   </data>
   <data name="Yandex_UserAgent" xml:space="preserve">
     <value>User-Agent</value>
   </data>
   <data name="Yandex_UserAgent_Desc" xml:space="preserve">
-    <value>HTTP User-Agent для бесплатного browser-эндпоинта Translate.</value>
+    <value>무료 브라우저 Translate 엔드포인트용 HTTP User-Agent.</value>
   </data>
   <data name="Yandex_Err_RequestFailed" xml:space="preserve">
-    <value>Ошибка запроса Yandex Translate: {0}</value>
+    <value>Yandex Translate 요청 실패: {0}</value>
   </data>
   <data name="Yandex_Err_ParseFailed" xml:space="preserve">
-    <value>Yandex Translate вернул неожиданный ответ.</value>
+    <value>Yandex Translate가 예기치 않은 응답을 반환했습니다.</value>
   </data>
 </root>

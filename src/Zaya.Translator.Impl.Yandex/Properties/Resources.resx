@@ -48,6 +48,12 @@
   <data name="Yandex_UseApiKey_Desc" xml:space="preserve">
     <value>Enable for Yandex Cloud API (requires billing). Disable for free browser mode.</value>
   </data>
+  <data name="Yandex_UserAgent" xml:space="preserve">
+    <value>User-Agent</value>
+  </data>
+  <data name="Yandex_UserAgent_Desc" xml:space="preserve">
+    <value>HTTP User-Agent for the free browser Translate endpoint.</value>
+  </data>
   <data name="Yandex_Err_RequestFailed" xml:space="preserve">
     <value>Yandex Translate request failed: {0}</value>
   </data>

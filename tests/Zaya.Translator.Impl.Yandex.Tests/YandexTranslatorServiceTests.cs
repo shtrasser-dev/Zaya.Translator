@@ -1,3 +1,4 @@
+using Zaya.Translator.Impl.Yandex.Constants;
 using Zaya.Translator.Impl.Yandex.Services;
 
 namespace Zaya.Translator.Impl.Yandex.Tests;
@@ -45,7 +46,14 @@ public sealed class YandexTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "targetLanguage");
         Assert.Contains(settings, s => s.Key == "apiKey");
         Assert.Contains(settings, s => s.Key == "useApiKey");
-        Assert.Equal(5, settings.Count);
+        Assert.Contains(settings, s => s.Key == "userAgent");
+        Assert.Equal(6, settings.Count);
+
+        var userAgent = Assert.IsType<Zaya.Primitives.StringSettingDescriptor>(
+            settings.Single(s => s.Key == "userAgent"));
+        Assert.False(userAgent.IsVisible(new Dictionary<string, object?>()));
+        Assert.False(userAgent.IsRequired(new Dictionary<string, object?>()));
+        Assert.False(string.IsNullOrWhiteSpace(userAgent.DefaultValue));
     }
 
     [Fact]
@@ -82,7 +90,7 @@ public sealed class YandexTranslatorServiceTests
         var settingsDict = new Dictionary<string, object>
         {
             ["autoDetectLanguage"] = false,
-            ["sourceLanguage"] = "en",
+            ["sourceLanguage"] = LanguageCodeConstants.English,
             ["targetLanguage"] = "ru",
             ["useApiKey"] = true,
             ["apiKey"] = apiKey!,
@@ -100,14 +108,14 @@ public sealed class YandexTranslatorServiceTests
     public void FormatBrowserLang_AutoDetect_UsesTargetOnly()
     {
         Assert.Equal("ru", YandexTranslatorSession.FormatBrowserLang(null, "ru"));
-        Assert.Equal("en", YandexTranslatorSession.FormatBrowserLang(null, "en"));
+        Assert.Equal(LanguageCodeConstants.English, YandexTranslatorSession.FormatBrowserLang(null, LanguageCodeConstants.English));
     }
 
     [Fact]
     public void FormatBrowserLang_ExplicitSource_UsesPair()
     {
-        Assert.Equal("en-ru", YandexTranslatorSession.FormatBrowserLang("en", "ru"));
-        Assert.Equal("zh-ru", YandexTranslatorSession.FormatBrowserLang("zh-Hans", "ru"));
+        Assert.Equal("en-ru", YandexTranslatorSession.FormatBrowserLang(LanguageCodeConstants.English, "ru"));
+        Assert.Equal("zh-ru", YandexTranslatorSession.FormatBrowserLang(LanguageCodeConstants.ChineseSimplified, "ru"));
     }
 
     [Fact]
@@ -134,7 +142,7 @@ public sealed class YandexTranslatorServiceTests
         using var service = new YandexTranslatorService();
         var target = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
             service.Settings.Single(s => s.Key == "targetLanguage"));
-        Assert.Contains(target.Options, o => o.Value == "zh");
-        Assert.DoesNotContain(target.Options, o => o.Value is "zh-Hans" or "zh-Hant");
+        Assert.Contains(target.Options, o => o.Value == LanguageCodeConstants.Chinese);
+        Assert.DoesNotContain(target.Options, o => o.Value is LanguageCodeConstants.ChineseSimplified or LanguageCodeConstants.ChineseTraditional);
     }
 }

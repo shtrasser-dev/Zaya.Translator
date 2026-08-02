@@ -43,7 +43,14 @@ public sealed class GoogleTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "autoDetectLanguage");
         Assert.Contains(settings, s => s.Key == "sourceLanguage");
         Assert.Contains(settings, s => s.Key == "targetLanguage");
-        Assert.Equal(3, settings.Count);
+        Assert.Contains(settings, s => s.Key == "userAgent");
+        Assert.Equal(4, settings.Count);
+
+        var userAgent = Assert.IsType<Zaya.Primitives.StringSettingDescriptor>(
+            settings.Single(s => s.Key == "userAgent"));
+        Assert.False(userAgent.IsVisible(new Dictionary<string, object?>()));
+        Assert.False(userAgent.IsRequired(new Dictionary<string, object?>()));
+        Assert.False(string.IsNullOrWhiteSpace(userAgent.DefaultValue));
     }
 
     [Fact]

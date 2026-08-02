@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cache_EngineName" xml:space="preserve">
+    <value>Cache de traduction en mémoire</value>
+  </data>
+  <data name="Cache_EngineDesc" xml:space="preserve">
+    <value>Cache en mémoire avec TTL optionnel</value>
+  </data>
+  <data name="Cache_EnableCache" xml:space="preserve">
+    <value>Activer le cache</value>
+  </data>
+  <data name="Cache_EnableCache_Desc" xml:space="preserve">
+    <value>Mettre en cache les résultats de traduction pour éviter les appels API répétés</value>
+  </data>
+  <data name="Cache_CacheTtlMinutes" xml:space="preserve">
+    <value>TTL du cache (minutes)</value>
+  </data>
+  <data name="Cache_CacheTtlMinutes_Desc" xml:space="preserve">
+    <value>Durée de vie des traductions en cache en minutes (0 = illimité)</value>
+  </data>
+</root>

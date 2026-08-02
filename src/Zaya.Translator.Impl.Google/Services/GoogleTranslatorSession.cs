@@ -1,7 +1,7 @@
-using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using Zaya.Translator.Impl.Google.Constants;
 using Zaya.Translator.Services;
 
 namespace Zaya.Translator.Impl.Google.Services;
@@ -12,24 +12,23 @@ namespace Zaya.Translator.Impl.Google.Services;
 /// </summary>
 public sealed class GoogleTranslatorSession : ITranslatorSession
 {
-    private const string BaseUrl = "https://translate.googleapis.com/translate_a/single";
-    private const string MarkerOpen = "([";
-    private const string MarkerClose = "])";
-    private const int MaxUrlLength = 1800;
-
     private static readonly HttpClient SharedHttp = CreateHttpClient();
     private static readonly Regex BatchSegmentRegex = new(
-        @"\(\[(.*?)\]\)",
+        GoogleApiConstants.BatchSegmentPattern,
         RegexOptions.Singleline | RegexOptions.Compiled);
 
     private readonly string? _sourceLanguage;
     private readonly string _targetLanguage;
+    private readonly string _userAgent;
     private bool _disposed;
 
-    internal GoogleTranslatorSession(string? sourceLanguage, string targetLanguage)
+    internal GoogleTranslatorSession(string? sourceLanguage, string targetLanguage, string userAgent)
     {
         _sourceLanguage = sourceLanguage;
         _targetLanguage = targetLanguage;
+        _userAgent = string.IsNullOrWhiteSpace(userAgent)
+            ? SettingsConstants.DefaultUserAgent
+            : userAgent;
     }
 
     /// <inheritdoc />
@@ -39,7 +38,7 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
         ArgumentNullException.ThrowIfNull(text);
 
         if (text.Length == 0)
-            return "";
+            return string.Empty;
 
         return await TranslateRawAsync(text, cancellationToken).ConfigureAwait(false);
     }
@@ -59,8 +58,8 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
             return [await TranslateAsync(texts[0], cancellationToken).ConfigureAwait(false)];
 
         // Markers must stay unique delimiters; fall back if a segment already contains them.
-        if (texts.Any(t => t.Contains(MarkerOpen, StringComparison.Ordinal)
-                           || t.Contains(MarkerClose, StringComparison.Ordinal)))
+        if (texts.Any(t => t.Contains(GoogleApiConstants.MarkerOpen, StringComparison.Ordinal)
+                           || t.Contains(GoogleApiConstants.MarkerClose, StringComparison.Ordinal)))
         {
             var sequential = new List<string>(texts.Count);
             foreach (var text in texts)
@@ -77,7 +76,7 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
         {
             var candidate = WrapBatch(chunkTexts.Append(texts[i]));
             var encodedLength = Uri.EscapeDataString(candidate).Length;
-            if (chunkTexts.Count > 0 && urlPrefix.Length + encodedLength > MaxUrlLength)
+            if (chunkTexts.Count > 0 && urlPrefix.Length + encodedLength > GoogleApiConstants.MaxUrlLength)
             {
                 await TranslateChunkAsync(chunkTexts, chunkIndices, results, cancellationToken)
                     .ConfigureAwait(false);
@@ -109,7 +108,7 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
     {
         var sb = new StringBuilder();
         foreach (var text in texts)
-            sb.Append(MarkerOpen).Append(text).Append(MarkerClose);
+            sb.Append(GoogleApiConstants.MarkerOpen).Append(text).Append(GoogleApiConstants.MarkerClose);
         return sb.ToString();
     }
 
@@ -150,10 +149,23 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
     {
         var url = BuildUrlPrefix() + Uri.EscapeDataString(text);
 
+        using var request = new HttpRequestMessage(HttpMethod.Get, url);
+        request.Headers.TryAddWithoutValidation(HttpHeaderConstants.UserAgent, _userAgent);
+
         string response;
         try
         {
-            response = await SharedHttp.GetStringAsync(url, cancellationToken).ConfigureAwait(false);
+            using var httpResponse = await SharedHttp.SendAsync(request, cancellationToken).ConfigureAwait(false);
+            response = await httpResponse.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+            if (!httpResponse.IsSuccessStatusCode)
+            {
+                throw new GoogleTranslateRequestException(
+                    $"Google Translate {(int)httpResponse.StatusCode} ({httpResponse.ReasonPhrase}): {response}");
+            }
+        }
+        catch (GoogleTranslateRequestException)
+        {
+            throw;
         }
         catch (HttpRequestException ex)
         {
@@ -202,9 +214,14 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
 
     private string BuildUrlPrefix()
     {
-        var sl = _sourceLanguage is not null ? Norm(_sourceLanguage) : "auto";
+        var sl = _sourceLanguage is not null ? Norm(_sourceLanguage) : LanguageCodeConstants.Auto;
         var tl = Norm(_targetLanguage);
-        return $"{BaseUrl}?client=gtx&sl={sl}&tl={tl}&dt=t&q=";
+        return $"{GoogleApiConstants.TranslateUrl}" +
+               $"?{GoogleApiConstants.ClientQuery}={GoogleApiConstants.ClientGtx}" +
+               $"&{GoogleApiConstants.SourceLanguageQuery}={sl}" +
+               $"&{GoogleApiConstants.TargetLanguageQuery}={tl}" +
+               $"&{GoogleApiConstants.DataTypeQuery}={GoogleApiConstants.DataTypeTranslation}" +
+               $"&{GoogleApiConstants.QueryText}=";
     }
 
     private static HttpClient CreateHttpClient()
@@ -218,8 +235,8 @@ public sealed class GoogleTranslatorSession : ITranslatorSession
 
     private static string Norm(string bcp47) => bcp47 switch
     {
-        "zh-Hans" => "zh-CN",
-        "zh-Hant" => "zh-TW",
+        LanguageCodeConstants.ChineseSimplified => LanguageCodeConstants.ChineseChina,
+        LanguageCodeConstants.ChineseTraditional => LanguageCodeConstants.ChineseTaiwan,
         _ => bcp47,
     };
 }

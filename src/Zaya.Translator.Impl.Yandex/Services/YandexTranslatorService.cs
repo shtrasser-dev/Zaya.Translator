@@ -63,8 +63,11 @@ public sealed class YandexTranslatorService : ITranslatorService
         var targetLang = settings.GetValueAsString(SettingsConstants.TargetLanguage);
         var useApiKey = settings.GetValueAsBool(SettingsConstants.UseApiKey);
         var apiKey = useApiKey ? settings.GetValueAsString(SettingsConstants.ApiKey) : null;
+        var userAgent = settings.GetValueAsString(SettingsConstants.UserAgent);
+        if (string.IsNullOrWhiteSpace(userAgent))
+            userAgent = SettingsConstants.DefaultUserAgent;
 
-        ITranslatorSession session = new YandexTranslatorSession(sourceLang, targetLang, apiKey, useApiKey);
+        ITranslatorSession session = new YandexTranslatorSession(sourceLang, targetLang, apiKey, useApiKey, userAgent);
         return Task.FromResult(session);
     }
 
@@ -84,11 +87,11 @@ public sealed class YandexTranslatorService : ITranslatorService
         var chineseAdded = false;
         foreach (var option in Languages.All)
         {
-            if (option.Value is "zh-Hans" or "zh-Hant")
+            if (option.Value is LanguageCodeConstants.ChineseSimplified or LanguageCodeConstants.ChineseTraditional)
             {
                 if (chineseAdded)
                     continue;
-                options.Add(new EnumOption("zh", option.DisplayName, option.Description));
+                options.Add(new EnumOption(LanguageCodeConstants.Chinese, option.DisplayName, option.Description));
                 chineseAdded = true;
                 continue;
             }
@@ -110,8 +113,7 @@ public sealed class YandexTranslatorService : ITranslatorService
             new EnumSettingDescriptor(SettingsConstants.SourceLanguage, Loc(LocalizationConstants.SourceLanguage))
             {
                 Description = Loc(LocalizationConstants.SourceLanguage_Desc),
-                DefaultValue = "en",
-                // Missing key must follow DefaultValue (true): hide source until user turns auto-detect off.
+                DefaultValue = LanguageCodeConstants.English,
                 IsVisible = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
                 IsRequired = s => s.GetValueOrDefault(SettingsConstants.AutoDetectLanguage) is false,
                 Options = LanguageOptions,
@@ -120,7 +122,7 @@ public sealed class YandexTranslatorService : ITranslatorService
             {
                 Description = Loc(LocalizationConstants.TargetLanguage_Desc),
                 IsRequired = static _ => true,
-                DefaultValue = "ru",
+                DefaultValue = LanguageCodeConstants.English,
                 Options = LanguageOptions,
             },
             new BooleanSettingDescriptor(SettingsConstants.UseApiKey, Loc(LocalizationConstants.UseApiKey))
@@ -133,6 +135,13 @@ public sealed class YandexTranslatorService : ITranslatorService
                 Description = Loc(LocalizationConstants.ApiKey_Desc),
                 IsVisible = s => s.GetValueOrDefault(SettingsConstants.UseApiKey) is true,
                 IsRequired = s => s.GetValueOrDefault(SettingsConstants.UseApiKey) is true,
+            },
+            new StringSettingDescriptor(SettingsConstants.UserAgent, Loc(LocalizationConstants.UserAgent))
+            {
+                Description = Loc(LocalizationConstants.UserAgent_Desc),
+                DefaultValue = SettingsConstants.DefaultUserAgent,
+                IsVisible = static _ => false,
+                IsRequired = static _ => false,
             },
         ];
     }

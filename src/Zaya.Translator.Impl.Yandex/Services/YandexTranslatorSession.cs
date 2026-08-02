@@ -1,6 +1,6 @@
-using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using Zaya.Translator.Impl.Yandex.Constants;
 using Zaya.Translator.Services;
 
 namespace Zaya.Translator.Impl.Yandex.Services;
@@ -11,24 +11,29 @@ namespace Zaya.Translator.Impl.Yandex.Services;
 /// </summary>
 public sealed class YandexTranslatorSession : ITranslatorSession
 {
-    private const string CloudApiUrl = "https://translate.api.cloud.yandex.net/translate/v2/translate";
-    private const string BrowserApiUrl = "https://browser.translate.yandex.net/api/v1/tr.json/translate";
-    private const int MaxBrowserUrlLength = 1800;
-
     private static readonly HttpClient SharedHttp = CreateHttpClient();
 
     private readonly string? _sourceLanguage;
     private readonly string _targetLanguage;
     private readonly string? _apiKey;
     private readonly bool _useCloudApi;
+    private readonly string _userAgent;
     private bool _disposed;
 
-    internal YandexTranslatorSession(string? sourceLanguage, string targetLanguage, string? apiKey, bool useApiKey)
+    internal YandexTranslatorSession(
+        string? sourceLanguage,
+        string targetLanguage,
+        string? apiKey,
+        bool useApiKey,
+        string userAgent)
     {
         _sourceLanguage = sourceLanguage;
         _targetLanguage = targetLanguage;
         _apiKey = apiKey;
         _useCloudApi = useApiKey && !string.IsNullOrWhiteSpace(apiKey);
+        _userAgent = string.IsNullOrWhiteSpace(userAgent)
+            ? SettingsConstants.DefaultUserAgent
+            : userAgent;
     }
 
     /// <inheritdoc />
@@ -38,7 +43,7 @@ public sealed class YandexTranslatorSession : ITranslatorSession
         ArgumentNullException.ThrowIfNull(text);
 
         if (text.Length == 0)
-            return "";
+            return string.Empty;
 
         var result = await CallApiAsync(new[] { text }, cancellationToken);
         return result[0];
@@ -74,17 +79,22 @@ public sealed class YandexTranslatorSession : ITranslatorSession
     {
         var body = new Dictionary<string, object>
         {
-            ["targetLanguageCode"] = Norm(_targetLanguage),
-            ["texts"] = texts,
-            ["format"] = "PLAIN_TEXT",
+            [YandexApiConstants.TargetLanguageCode] = Norm(_targetLanguage),
+            [YandexApiConstants.Texts] = texts,
+            [YandexApiConstants.Format] = YandexApiConstants.FormatPlainText,
         };
 
         if (_sourceLanguage is not null)
-            body["sourceLanguageCode"] = Norm(_sourceLanguage);
+            body[YandexApiConstants.SourceLanguageCode] = Norm(_sourceLanguage);
 
-        using var request = new HttpRequestMessage(HttpMethod.Post, CloudApiUrl);
-        request.Headers.TryAddWithoutValidation("Authorization", $"Api-Key {_apiKey}");
-        request.Content = new StringContent(JsonSerializer.Serialize(body), Encoding.UTF8, "application/json");
+        using var request = new HttpRequestMessage(HttpMethod.Post, YandexApiConstants.CloudTranslateUrl);
+        request.Headers.TryAddWithoutValidation(
+            HttpHeaderConstants.Authorization,
+            YandexApiConstants.ApiKeyAuthorizationPrefix + _apiKey);
+        request.Content = new StringContent(
+            JsonSerializer.Serialize(body),
+            Encoding.UTF8,
+            YandexApiConstants.ApplicationJson);
 
         HttpResponseMessage response;
         try
@@ -113,8 +123,8 @@ public sealed class YandexTranslatorSession : ITranslatorSession
             {
                 using var doc = JsonDocument.Parse(responseJson);
                 var results = new List<string>();
-                foreach (var t in doc.RootElement.GetProperty("translations").EnumerateArray())
-                    results.Add(t.GetProperty("text").GetString() ?? "");
+                foreach (var t in doc.RootElement.GetProperty(YandexApiConstants.Translations).EnumerateArray())
+                    results.Add(t.GetProperty(YandexApiConstants.Text).GetString() ?? string.Empty);
                 return results;
             }
             catch (Exception ex) when (ex is JsonException or KeyNotFoundException or InvalidOperationException)
@@ -128,15 +138,17 @@ public sealed class YandexTranslatorSession : ITranslatorSession
     {
         var lang = FormatBrowserLang(_sourceLanguage, _targetLanguage);
 
-        var baseUrl = $"{BrowserApiUrl}?lang={lang}&srv=browser_video_translation";
+        var baseUrl =
+            $"{YandexApiConstants.BrowserTranslateUrl}?{YandexApiConstants.LangQuery}={lang}" +
+            $"&{YandexApiConstants.SrvQuery}={YandexApiConstants.BrowserSrvValue}";
         var results = new List<string>(texts.Count);
         var chunk = new List<string>();
         var url = baseUrl;
 
         foreach (var text in texts)
         {
-            var addition = $"&text={Uri.EscapeDataString(text)}";
-            if (chunk.Count > 0 && url.Length + addition.Length > MaxBrowserUrlLength)
+            var addition = $"&{YandexApiConstants.TextQuery}={Uri.EscapeDataString(text)}";
+            if (chunk.Count > 0 && url.Length + addition.Length > YandexApiConstants.MaxBrowserUrlLength)
             {
                 results.AddRange(await SendBrowserChunkAsync(url, ct));
                 chunk.Clear();
@@ -153,13 +165,12 @@ public sealed class YandexTranslatorSession : ITranslatorSession
         return results;
     }
 
-    private static async Task<IReadOnlyList<string>> SendBrowserChunkAsync(string url, CancellationToken ct)
+    private async Task<IReadOnlyList<string>> SendBrowserChunkAsync(string url, CancellationToken ct)
     {
         using var request = new HttpRequestMessage(HttpMethod.Get, url);
-        request.Headers.TryAddWithoutValidation("User-Agent",
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
-        request.Headers.TryAddWithoutValidation("Origin", "https://translate.yandex.com");
-        request.Headers.Referrer = new Uri("https://translate.yandex.com/");
+        request.Headers.TryAddWithoutValidation(HttpHeaderConstants.UserAgent, _userAgent);
+        request.Headers.TryAddWithoutValidation(HttpHeaderConstants.Origin, YandexApiConstants.WebsiteOrigin);
+        request.Headers.Referrer = new Uri(YandexApiConstants.WebsiteReferrer);
 
         HttpResponseMessage response;
         try
@@ -188,8 +199,8 @@ public sealed class YandexTranslatorSession : ITranslatorSession
             {
                 using var doc = JsonDocument.Parse(responseJson);
                 var results = new List<string>();
-                foreach (var elem in doc.RootElement.GetProperty("text").EnumerateArray())
-                    results.Add(elem.GetString() ?? "");
+                foreach (var elem in doc.RootElement.GetProperty(YandexApiConstants.Text).EnumerateArray())
+                    results.Add(elem.GetString() ?? string.Empty);
                 return results;
             }
             catch (Exception ex) when (ex is JsonException or KeyNotFoundException or InvalidOperationException)
@@ -223,7 +234,8 @@ public sealed class YandexTranslatorSession : ITranslatorSession
     /// </summary>
     private static string Norm(string bcp47) => bcp47 switch
     {
-        "zh-Hans" or "zh-Hant" or "zh" => "zh",
+        LanguageCodeConstants.ChineseSimplified or LanguageCodeConstants.ChineseTraditional or LanguageCodeConstants.Chinese
+            => LanguageCodeConstants.Chinese,
         _ => bcp47,
     };
 }

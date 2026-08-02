@@ -7,12 +7,19 @@ Pluggable translation and translation-cache abstractions for the Zaya ecosystem 
 | Package | Version | Role |
 |---------|---------|------|
 | **Zaya.Translator** | 1.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
-| **Zaya.Translator.Impl.Google** | 1.1.0.0 | Unofficial Google Translate (`translate.googleapis.com`) |
-| **Zaya.Translator.Impl.Yandex** | 1.1.0.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.Translator.Impl.Google** | 1.1.0.1 | Unofficial Google Translate (`translate.googleapis.com`) |
+| **Zaya.Translator.Impl.Yandex** | 1.1.0.1 | Yandex Cloud API v2 and free browser endpoint |
 | **Zaya.TranslatorCache** | 1.0.0 | Abstractions: `ITranslatorCacheService` |
-| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.0 | In-memory exact + TTL + fuzzy recent cache |
+| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.2 | In-memory exact + TTL + fuzzy recent cache |
 
-Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. Update channel: `plugin-v1.1-latest`. See [versioning](docs/versioning.md).
+Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**.
+
+Update channels (GitHub Releases):
+
+- Translator engines: [`plugin-Zaya.Translator-v1.1-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.Translator-v1.1-latest)
+- Cache engine: [`plugin-Zaya.TranslatorCache-v1.0-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.TranslatorCache-v1.0-latest)
+
+See [versioning](docs/versioning.md).
 
 Docs: [API & articles](https://shtrasser-dev.github.io/Zaya.Translator)
 
@@ -22,6 +29,7 @@ Docs: [API & articles](https://shtrasser-dev.github.io/Zaya.Translator)
 - **ITranslatorSession** — `TranslateAsync(string)` / batch `TranslateAsync(IReadOnlyList<string>)`
 - **ITranslatorCacheService** — wrap a raw session via `WrapSessionAsync` (exact/TTL/fuzzy settings on Memory)
 - Failures surface as `LocalizedException` for host UI
+- UI strings for engines/cache: `en`, `ru`, `zh-Hans`, `uk`, `de`, `pt`, `ja`, `ko`, `fr`, `tr`, `pl`
 
 There is no separate `InitializeAsync`: create a session with defaults or an explicit settings dictionary.
 
@@ -29,14 +37,14 @@ There is no separate `InitializeAsync`: create a session with defaults or an exp
 
 ```xml
 <PackageReference Include="Zaya.Translator" Version="1.1.0" />
-<PackageReference Include="Zaya.Translator.Impl.Google" Version="1.1.0.0" />
+<PackageReference Include="Zaya.Translator.Impl.Google" Version="1.1.0.1" />
 <!-- or -->
-<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="1.1.0.0" />
+<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="1.1.0.1" />
 <PackageReference Include="Zaya.TranslatorCache" Version="1.0.0" />
-<PackageReference Include="Zaya.TranslatorCache.Impl.Memory" Version="1.0.0.0" />
+<PackageReference Include="Zaya.TranslatorCache.Impl.Memory" Version="1.0.0.2" />
 ```
 
-Plugin zips for ScreenTranslator hosts (stable names) from GitHub Releases (`plugin-v1.1-latest`):
+Plugin zips for ScreenTranslator hosts (stable names) from the floating tags above:
 
 - `Zaya.Translator.Impl.Google.zip`
 - `Zaya.Translator.Impl.Yandex.zip`
@@ -85,11 +93,12 @@ Resolve ITranslatorCacheService
   → Dispose session / services
 ```
 
-## Yandex notes
+## Google / Yandex notes
 
-- `useApiKey` = false → free browser endpoint (unofficial)
-- `useApiKey` = true → Yandex Cloud Translate API v2 (requires API key)
-- Yandex exposes a single Chinese code (`zh`); the UI shows one Chinese option (not Simplified/Traditional separately)
+- Both engines accept a hidden `userAgent` setting (default Chrome desktop UA) for HTTP requests.
+- Google batch mode wraps segments as `([…])` when the text does not already contain those markers.
+- Yandex: `useApiKey` = false → free browser endpoint (unofficial); `useApiKey` = true → Yandex Cloud Translate API v2.
+- Yandex exposes a single Chinese code (`zh`); the UI shows one Chinese option (not Simplified/Traditional separately).
 
 ## License
 
