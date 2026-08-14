@@ -6,18 +6,18 @@ Pluggable translation and translation-cache abstractions for the Zaya ecosystem 
 
 | Package | Version | Role |
 |---------|---------|------|
-| **Zaya.Translator** | 1.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
-| **Zaya.Translator.Impl.Google** | 1.1.0.2 | Unofficial Google Translate (`translate.googleapis.com`) |
-| **Zaya.Translator.Impl.Yandex** | 1.1.0.2 | Yandex Cloud API v2 and free browser endpoint |
-| **Zaya.TranslatorCache** | 1.0.0 | Abstractions: `ITranslatorCacheService` |
-| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.3 | In-memory exact + TTL cache |
+| **Zaya.Translator** | 1.2.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
+| **Zaya.Translator.Impl.Google** | 1.2.0.0 | Unofficial Google Translate (`translate.googleapis.com`) |
+| **Zaya.Translator.Impl.Yandex** | 1.2.0.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.TranslatorCache** | 1.1.0 | Abstractions: `ITranslatorCacheService` |
+| **Zaya.TranslatorCache.Impl.Memory** | 1.1.0.0 | In-memory exact + TTL cache |
 
 Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. Plugin engines also use [Zaya.Logging](https://github.com/shtrasser-dev/Zaya.Logging) **1.0.0**.
 
 Update channels (GitHub Releases):
 
-- Translator engines: [`plugin-Zaya.Translator-v1.1-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.Translator-v1.1-latest)
-- Cache engine: [`plugin-Zaya.TranslatorCache-v1.0-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.TranslatorCache-v1.0-latest)
+- Translator engines: [`plugin-Zaya.Translator-v1.2-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.Translator-v1.2-latest)
+- Cache engine: [`plugin-Zaya.TranslatorCache-v1.1-latest`](https://github.com/shtrasser-dev/Zaya.Translator/releases/tag/plugin-Zaya.TranslatorCache-v1.1-latest)
 
 See [versioning](docs/versioning.md) and [CHANGELOG](CHANGELOG.md).
 
@@ -36,12 +36,12 @@ There is no separate `InitializeAsync`: create a session with defaults or an exp
 ## Installation
 
 ```xml
-<PackageReference Include="Zaya.Translator" Version="1.1.0" />
-<PackageReference Include="Zaya.Translator.Impl.Google" Version="1.1.0.2" />
+<PackageReference Include="Zaya.Translator" Version="1.2.0" />
+<PackageReference Include="Zaya.Translator.Impl.Google" Version="1.2.0.0" />
 <!-- or -->
-<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="1.1.0.2" />
-<PackageReference Include="Zaya.TranslatorCache" Version="1.0.0" />
-<PackageReference Include="Zaya.TranslatorCache.Impl.Memory" Version="1.0.0.3" />
+<PackageReference Include="Zaya.Translator.Impl.Yandex" Version="1.2.0.0" />
+<PackageReference Include="Zaya.TranslatorCache" Version="1.1.0" />
+<PackageReference Include="Zaya.TranslatorCache.Impl.Memory" Version="1.1.0.0" />
 ```
 
 Plugin zips for ScreenTranslator hosts (stable names) from the floating tags above:
