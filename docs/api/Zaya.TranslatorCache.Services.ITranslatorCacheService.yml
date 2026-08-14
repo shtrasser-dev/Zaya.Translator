@@ -41,7 +41,7 @@ items:
     content: 'public interface ITranslatorCacheService : IDisposable'
     content.vb: Public Interface ITranslatorCacheService Inherits IDisposable
   derivedClasses:
-  - Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+  - Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
   inheritedMembers:
   - System.IDisposable.Dispose
 - uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.EngineId

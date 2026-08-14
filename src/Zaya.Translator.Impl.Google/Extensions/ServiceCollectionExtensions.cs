@@ -1,4 +1,4 @@
-using Zaya.Translator.Impl.Google.Services;
+using Zaya.Translator.Impl.Google;
 using Zaya.Translator.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;

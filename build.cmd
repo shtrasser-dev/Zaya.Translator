@@ -80,15 +80,15 @@ echo ]
 )
 
 echo === Creating Zaya.Translator.Impl.Yandex plugin.zip ===
-call :MakeZip Yandex translator Zaya.Translator "%ROOT%src\Zaya.Translator.Impl.Yandex\bin\%BUILD_CONFIG%\net8.0" Zaya.Translator.Impl.Yandex.dll Zaya.Translator.Impl.Yandex.zip !IFACE! !VER_YANDEX!
+call :MakeZip Yandex translator Zaya.Translator "%ROOT%src\Zaya.Translator.Impl.Yandex\bin\%BUILD_CONFIG%\net8.0" Zaya.Translator.Impl.Yandex.dll Zaya.Translator.Impl.Yandex.zip !IFACE! !VER_YANDEX! Zaya.Translator.Impl.Yandex.YandexTranslatorService
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 echo === Creating Zaya.Translator.Impl.Google plugin.zip ===
-call :MakeZip Google translator Zaya.Translator "%ROOT%src\Zaya.Translator.Impl.Google\bin\%BUILD_CONFIG%\net8.0" Zaya.Translator.Impl.Google.dll Zaya.Translator.Impl.Google.zip !IFACE! !VER_GOOGLE!
+call :MakeZip Google translator Zaya.Translator "%ROOT%src\Zaya.Translator.Impl.Google\bin\%BUILD_CONFIG%\net8.0" Zaya.Translator.Impl.Google.dll Zaya.Translator.Impl.Google.zip !IFACE! !VER_GOOGLE! Zaya.Translator.Impl.Google.GoogleTranslatorService
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 echo === Creating Zaya.TranslatorCache.Impl.Memory plugin.zip ===
-call :MakeZip Memory translator-cache Zaya.TranslatorCache "%ROOT%src\Zaya.TranslatorCache.Impl.Memory\bin\%BUILD_CONFIG%\net8.0" Zaya.TranslatorCache.Impl.Memory.dll Zaya.TranslatorCache.Impl.Memory.zip !IFACE_CACHE! !VER_MEMORY!
+call :MakeZip Memory translator-cache Zaya.TranslatorCache "%ROOT%src\Zaya.TranslatorCache.Impl.Memory\bin\%BUILD_CONFIG%\net8.0" Zaya.TranslatorCache.Impl.Memory.dll Zaya.TranslatorCache.Impl.Memory.zip !IFACE_CACHE! !VER_MEMORY! Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
 if %ERRORLEVEL% neq 0 exit /b %ERRORLEVEL%
 
 echo === Packing NuGet packages ===
@@ -124,6 +124,7 @@ goto :eof
     set ZIP_NAME=%~6
     set ZIP_IFACE_VER=%~7
     set ZIP_PVER=%~8
+    set ZIP_ENTRY=%~9
 
     rmdir /s /q "%STAGEDIR%" 2>nul
     mkdir "%STAGEDIR%"
@@ -134,7 +135,7 @@ goto :eof
         exit /b 1
     )
 
-    call :CopySatellites "%ZIP_TFM%" "%STAGEDIR%"
+    call :CopySatellites "%ZIP_TFM%" "%STAGEDIR%" "%ZIP_DLL%"
 
     set PLUGIN_JSON=%STAGEDIR%\plugin.json
     echo {>"%PLUGIN_JSON%"
@@ -142,7 +143,8 @@ goto :eof
     echo   "type": "!ZIP_TYPE!",>>"%PLUGIN_JSON%"
     echo   "interface": "!ZIP_IFACE_NAME!",>>"%PLUGIN_JSON%"
     echo   "interfaceVersion": "!ZIP_IFACE_VER!",>>"%PLUGIN_JSON%"
-    echo   "pluginVersion": "!ZIP_PVER!">>"%PLUGIN_JSON%"
+    echo   "pluginVersion": "!ZIP_PVER!",>>"%PLUGIN_JSON%"
+    echo   "entryPoint": "!ZIP_ENTRY!">>"%PLUGIN_JSON%"
     echo }>>"%PLUGIN_JSON%"
 
     powershell -Command "Compress-Archive -Path '%STAGEDIR%\*' -DestinationPath '%ROOT%out\!ZIP_NAME!' -Force"
@@ -150,11 +152,14 @@ goto :eof
     echo !ZIP_NAME!=!ZIP_PVER!>>"%ROOT%out\plugins.versions.txt"
     exit /b 0
 
+REM Copy culture satellites for the plugin assembly only.
+REM Do not use *.resources.dll — some TFMs ship other *.resources.dll that must not be packed.
 :CopySatellites
+    set "SAT_DLL=%~n3.resources.dll"
     for /d %%d in ("%~1\*") do (
-        if exist "%%d\*.resources.dll" (
+        if exist "%%d\!SAT_DLL!" (
             mkdir "%~2\%%~nxd" 2>nul
-            copy /y "%%d\*" "%~2\%%~nxd\"
+            copy /y "%%d\!SAT_DLL!" "%~2\%%~nxd\"
         )
     )
     exit /b

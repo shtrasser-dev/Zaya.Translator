@@ -3,5 +3,6 @@
     <!-- Pin to published Zaya.Primitives; Major becomes Version Major for all projects. -->
     <ZayaPrimitivesVersion>1.0.0</ZayaPrimitivesVersion>
     <ZayaPrimitivesMajor>$([System.Version]::Parse('$(ZayaPrimitivesVersion)').Major)</ZayaPrimitivesMajor>
+    <ZayaLoggingVersion>1.0.0</ZayaLoggingVersion>
   </PropertyGroup>
 </Project>

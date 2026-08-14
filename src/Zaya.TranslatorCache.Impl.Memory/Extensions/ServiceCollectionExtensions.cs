@@ -1,4 +1,4 @@
-using Zaya.TranslatorCache.Impl.Memory.Services;
+using Zaya.TranslatorCache.Impl.Memory;
 using Zaya.TranslatorCache.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;

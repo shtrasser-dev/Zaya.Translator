@@ -1,5 +1,6 @@
 using Zaya.Translator.Impl.Yandex.Constants;
-using Zaya.Translator.Impl.Yandex.Services;
+using Zaya.Translator.Impl.Yandex;
+using Zaya.Translator.Impl.Yandex.Services.Impl;
 
 namespace Zaya.Translator.Impl.Yandex.Tests;
 

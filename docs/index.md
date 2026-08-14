@@ -7,12 +7,12 @@ Pluggable translation and translation-cache abstractions for the Zaya ecosystem.
 | Package | Version | Role |
 |---------|---------|------|
 | **Zaya.Translator** | 1.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
-| **Zaya.Translator.Impl.Google** | 1.1.0.1 | Unofficial Google Translate |
-| **Zaya.Translator.Impl.Yandex** | 1.1.0.1 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.Translator.Impl.Google** | 1.1.0.2 | Unofficial Google Translate |
+| **Zaya.Translator.Impl.Yandex** | 1.1.0.2 | Yandex Cloud API v2 and free browser endpoint |
 | **Zaya.TranslatorCache** | 1.0.0 | Abstractions: `ITranslatorCacheService` |
-| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.2 | In-memory exact + TTL + fuzzy recent |
+| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.3 | In-memory exact + TTL |
 
-Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. See [versioning](versioning.md).
+Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. Plugin engines also use [Zaya.Logging](https://github.com/shtrasser-dev/Zaya.Logging) **1.0.0**. See [versioning](versioning.md).
 
 Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.TranslatorCache-v1.0-latest`.
 
@@ -20,7 +20,7 @@ Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.Transl
 
 - **ITranslatorService** — engine metadata + `CreateSessionAsync`
 - **ITranslatorSession** — single and batch `TranslateAsync`
-- **ITranslatorCacheService** — `WrapSessionAsync` for optional caching
+- **ITranslatorCacheService** — `WrapSessionAsync`
 - Failures surface as `LocalizedException`
 
 ## Installation
@@ -33,24 +33,28 @@ Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.Transl
 ## Quick Start
 
 ```csharp
-using Zaya.Translator.Impl.Google.Services;
-using Zaya.TranslatorCache.Impl.Memory.Services;
+using Zaya.Translator.Impl.Google;
+using Zaya.TranslatorCache.Impl.Memory;
 
 using var translator = new GoogleTranslatorService();
 using var cache = new MemoryTranslatorCacheService();
+
 using var raw = await translator.CreateSessionAsync(new Dictionary<string, object>
 {
     ["autoDetectLanguage"] = true,
     ["targetLanguage"] = "ru",
 });
-using var session = await cache.WrapSessionAsync(raw);
+using var session = await cache.WrapSessionAsync(raw, new Dictionary<string, object>
+{
+    ["enableCache"] = true,
+});
 
 var text = await session.TranslateAsync("Hello, world!");
-Console.WriteLine(text);
 ```
 
-## Next Steps
+## Next steps
 
-- **[Getting Started](articles/getting-started.md)** — translator engines
-- **[Translator Cache](articles/translator-cache.md)** — cache engines and settings
-- **[API Reference](xref:Zaya.Translator.Services)** — generated from source
+- [Getting started](articles/getting-started.md)
+- [Translator cache](articles/translator-cache.md)
+- [Versioning](versioning.md)
+- [API](api/index.md)

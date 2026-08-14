@@ -23,6 +23,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaya.TranslatorCache.Impl.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zaya.TranslatorCache.Impl.Memory.Tests", "tests\Zaya.TranslatorCache.Impl.Memory.Tests\Zaya.TranslatorCache.Impl.Memory.Tests.csproj", "{46281B59-6F53-4857-886B-34BF86190EFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B4C8E2F1-9A70-4D3E-8B5C-1F6A0D9E3C28}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

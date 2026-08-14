@@ -60,73 +60,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateParseException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.html"
+          "relative_path": "api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateParseException.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Google.GoogleTranslateParseException",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.GoogleTranslateParseException.yml\" sourcestartlinenumber=\"1\">Thrown when the Google Translate response cannot be parsed.</p>\n"
+      "Title": "Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateParseException",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateParseException.yml\" sourcestartlinenumber=\"1\">Thrown when the Google Translate response cannot be parsed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateRequestException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html"
+          "relative_path": "api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateRequestException.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Google.GoogleTranslateRequestException",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.GoogleTranslateRequestException.yml\" sourcestartlinenumber=\"1\">Thrown when a Google Translate HTTP request fails.</p>\n"
+      "Title": "Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateRequestException",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateRequestException.yml\" sourcestartlinenumber=\"1\">Thrown when a Google Translate HTTP request fails.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Exceptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html"
+          "relative_path": "api/Zaya.Translator.Impl.Google.Exceptions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Google.Services.GoogleTranslatorService",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.yml\" sourcestartlinenumber=\"1\">Translation engine using Google Translate (unofficial free endpoint).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession.yml\" sourcestartlinenumber=\"1\">Translation session using Google Translate (unofficial free endpoint).\nBatch requests wrap each segment as <code>([…])</code> so multiple blocks share one HTTP call.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.Services.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Google.Services.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Google.Services",
+      "Title": "Zaya.Translator.Impl.Google.Exceptions",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Google.GoogleTranslatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Zaya.Translator.Impl.Google.GoogleTranslatorService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Zaya.Translator.Impl.Google.GoogleTranslatorService",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Google.GoogleTranslatorService.yml\" sourcestartlinenumber=\"1\">Translation engine using Google Translate (unofficial free endpoint).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -144,73 +130,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateParseException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html"
+          "relative_path": "api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateParseException.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.yml\" sourcestartlinenumber=\"1\">Translation engine using Yandex Translate REST API.</p>\n"
+      "Title": "Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateParseException",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateParseException.yml\" sourcestartlinenumber=\"1\">Thrown when the Yandex Translate response cannot be parsed.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateRequestException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.html"
+          "relative_path": "api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateRequestException.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession.yml\" sourcestartlinenumber=\"1\">Translation session using Yandex Translate.\nUses either the Cloud API v2 (with API key) or the free browser endpoint (without key).</p>\n"
+      "Title": "Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateRequestException",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateRequestException.yml\" sourcestartlinenumber=\"1\">Thrown when a Yandex Translate HTTP request fails.</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Services.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.Exceptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Yandex.Services.html"
+          "relative_path": "api/Zaya.Translator.Impl.Yandex.Exceptions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Yandex.Services",
+      "Title": "Zaya.Translator.Impl.Yandex.Exceptions",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.yml",
+      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.YandexTranslatorService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html"
+          "relative_path": "api/Zaya.Translator.Impl.Yandex.YandexTranslatorService.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Yandex.YandexTranslateParseException",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.YandexTranslateParseException.yml\" sourcestartlinenumber=\"1\">Thrown when the Yandex Translate response cannot be parsed.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.Translator.Impl.Yandex.YandexTranslateRequestException",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.yml\" sourcestartlinenumber=\"1\">Thrown when a Yandex Translate HTTP request fails.</p>\n"
+      "Title": "Zaya.Translator.Impl.Yandex.YandexTranslatorService",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.Translator.Impl.Yandex.YandexTranslatorService.yml\" sourcestartlinenumber=\"1\">Translation engine using Yandex Translate REST API.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -270,128 +242,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.yml",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.html"
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys.yml\" sourcestartlinenumber=\"1\">Machine-readable keys for memory translation-cache settings.</p>\n"
+      "Title": "Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService",
+      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService.yml\" sourcestartlinenumber=\"1\">In-memory translation cache engine (exact dictionary + optional TTL).</p>\n"
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Constants.yml",
+      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Constants.html"
+          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Constants",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors.yml\" sourcestartlinenumber=\"1\">Provides the <xref href=\"Zaya.Primitives.SettingDescriptor\" data-throw-if-not-resolved=\"false\"></xref> list for memory cache configuration.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession.yml\" sourcestartlinenumber=\"1\">Decorator over <xref href=\"Zaya.Translator.Services.ITranslatorSession\" data-throw-if-not-resolved=\"false\"></xref> that caches translation results\nusing an <xref href=\"Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache.yml\" sourcestartlinenumber=\"1\">A cache store for translation results, keyed by source text.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache.yml\" sourcestartlinenumber=\"1\">In-memory exact translation cache with optional TTL eviction.\nThread-safe only for single-threaded consumers (the translation loop is single-threaded).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService.yml\" sourcestartlinenumber=\"1\">In-memory translation cache engine (exact dictionary + optional TTL).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions",
-      "Summary": "<p sourcefile=\"docs/api/Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions.yml\" sourcestartlinenumber=\"1\">Configuration for <xref href=\"Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docs/api/Zaya.TranslatorCache.Impl.Memory.Services.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Zaya.TranslatorCache.Impl.Memory.Services.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Zaya.TranslatorCache.Impl.Memory.Services",
+      "Title": "Zaya.TranslatorCache.Impl.Memory",
       "Summary": null
     },
     {

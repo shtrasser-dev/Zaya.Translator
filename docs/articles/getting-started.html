@@ -72,7 +72,7 @@
 <h2 id="overview">Overview</h2>
 <p>Zaya.Translator provides pluggable translation engines. Hosts discover <code>ITranslatorService</code> implementations, bind <code>SettingDescriptor</code>s, then call <code>CreateSessionAsync</code> and <code>TranslateAsync</code>. Optional caching is a separate interface in the same repo — see <a href="translator-cache.html">Translator Cache</a>.</p>
 <h2 id="google-translate">Google Translate</h2>
-<pre><code class="lang-csharp">using Zaya.Translator.Impl.Google.Services;
+<pre><code class="lang-csharp">using Zaya.Translator.Impl.Google;
 
 using var service = new GoogleTranslatorService();
 using var session = await service.CreateSessionAsync(new Dictionary&lt;string, object&gt;
@@ -85,7 +85,7 @@ var translated = await session.TranslateAsync(&quot;Good morning&quot;);
 </code></pre>
 <p>Uses the unofficial <code>translate.googleapis.com</code> endpoint. Chinese maps to <code>zh-CN</code> / <code>zh-TW</code>.</p>
 <h2 id="yandex-translate">Yandex Translate</h2>
-<pre><code class="lang-csharp">using Zaya.Translator.Impl.Yandex.Services;
+<pre><code class="lang-csharp">using Zaya.Translator.Impl.Yandex;
 
 using var service = new YandexTranslatorService();
 using var session = await service.CreateSessionAsync(new Dictionary&lt;string, object&gt;

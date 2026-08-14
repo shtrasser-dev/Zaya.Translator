@@ -1,4 +1,6 @@
-using Zaya.Translator.Impl.Google.Services;
+using Zaya.Translator.Impl.Google;
+using Zaya.Translator.Impl.Google.Exceptions;
+using Zaya.Translator.Impl.Google.Services.Impl;
 
 namespace Zaya.Translator.Impl.Google.Tests;
 

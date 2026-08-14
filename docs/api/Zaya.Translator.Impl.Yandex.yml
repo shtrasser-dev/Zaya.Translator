@@ -4,8 +4,7 @@ items:
   commentId: N:Zaya.Translator.Impl.Yandex
   id: Zaya.Translator.Impl.Yandex
   children:
-  - Zaya.Translator.Impl.Yandex.YandexTranslateParseException
-  - Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
+  - Zaya.Translator.Impl.Yandex.YandexTranslatorService
   langs:
   - csharp
   - vb
@@ -16,15 +15,9 @@ items:
   assemblies:
   - Zaya.Translator.Impl.Yandex
 references:
-- uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
-  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
-  href: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException.html
-  name: YandexTranslateRequestException
-  nameWithType: YandexTranslateRequestException
-  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
-- uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
-  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslateParseException
-  href: Zaya.Translator.Impl.Yandex.YandexTranslateParseException.html
-  name: YandexTranslateParseException
-  nameWithType: YandexTranslateParseException
-  fullName: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslatorService
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslatorService
+  href: Zaya.Translator.Impl.Yandex.YandexTranslatorService.html
+  name: YandexTranslatorService
+  nameWithType: YandexTranslatorService
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslatorService

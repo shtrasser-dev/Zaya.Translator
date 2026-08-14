@@ -62,7 +62,7 @@ items:
   assemblies:
   - Zaya.Translator.Impl.Yandex
   namespace: Microsoft.Extensions.DependencyInjection
-  summary: Registers <xref href="Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService" data-throw-if-not-resolved="false"></xref> as a singleton <xref href="Zaya.Translator.Services.ITranslatorService" data-throw-if-not-resolved="false"></xref>.
+  summary: Registers <xref href="Zaya.Translator.Impl.Yandex.YandexTranslatorService" data-throw-if-not-resolved="false"></xref> as a singleton <xref href="Zaya.Translator.Services.ITranslatorService" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static IServiceCollection AddYandexTranslator(this IServiceCollection services)
@@ -341,12 +341,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
-  commentId: T:Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
-  href: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService.html
+- uid: Zaya.Translator.Impl.Yandex.YandexTranslatorService
+  commentId: T:Zaya.Translator.Impl.Yandex.YandexTranslatorService
+  href: Zaya.Translator.Impl.Yandex.YandexTranslatorService.html
   name: YandexTranslatorService
   nameWithType: YandexTranslatorService
-  fullName: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  fullName: Zaya.Translator.Impl.Yandex.YandexTranslatorService
 - uid: Zaya.Translator.Services.ITranslatorService
   commentId: T:Zaya.Translator.Services.ITranslatorService
   parent: Zaya.Translator.Services

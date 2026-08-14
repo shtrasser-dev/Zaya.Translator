@@ -17,41 +17,35 @@ items:
   name: Zaya.Translator.Impl.Google
   type: Namespace
   items:
-  - uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException
-    name: GoogleTranslateParseException
-    type: Class
-  - uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
-    name: GoogleTranslateRequestException
-    type: Class
-- uid: Zaya.Translator.Impl.Google.Services
-  name: Zaya.Translator.Impl.Google.Services
-  type: Namespace
-  items:
-  - uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  - uid: Zaya.Translator.Impl.Google.GoogleTranslatorService
     name: GoogleTranslatorService
     type: Class
-  - uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
-    name: GoogleTranslatorSession
+- uid: Zaya.Translator.Impl.Google.Exceptions
+  name: Zaya.Translator.Impl.Google.Exceptions
+  type: Namespace
+  items:
+  - uid: Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateParseException
+    name: GoogleTranslateParseException
+    type: Class
+  - uid: Zaya.Translator.Impl.Google.Exceptions.GoogleTranslateRequestException
+    name: GoogleTranslateRequestException
     type: Class
 - uid: Zaya.Translator.Impl.Yandex
   name: Zaya.Translator.Impl.Yandex
   type: Namespace
   items:
-  - uid: Zaya.Translator.Impl.Yandex.YandexTranslateParseException
-    name: YandexTranslateParseException
-    type: Class
-  - uid: Zaya.Translator.Impl.Yandex.YandexTranslateRequestException
-    name: YandexTranslateRequestException
-    type: Class
-- uid: Zaya.Translator.Impl.Yandex.Services
-  name: Zaya.Translator.Impl.Yandex.Services
-  type: Namespace
-  items:
-  - uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  - uid: Zaya.Translator.Impl.Yandex.YandexTranslatorService
     name: YandexTranslatorService
     type: Class
-  - uid: Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
-    name: YandexTranslatorSession
+- uid: Zaya.Translator.Impl.Yandex.Exceptions
+  name: Zaya.Translator.Impl.Yandex.Exceptions
+  type: Namespace
+  items:
+  - uid: Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateParseException
+    name: YandexTranslateParseException
+    type: Class
+  - uid: Zaya.Translator.Impl.Yandex.Exceptions.YandexTranslateRequestException
+    name: YandexTranslateRequestException
     type: Class
 - uid: Zaya.Translator.Services
   name: Zaya.Translator.Services
@@ -63,34 +57,12 @@ items:
   - uid: Zaya.Translator.Services.ITranslatorSession
     name: ITranslatorSession
     type: Interface
-- uid: Zaya.TranslatorCache.Impl.Memory.Constants
-  name: Zaya.TranslatorCache.Impl.Memory.Constants
+- uid: Zaya.TranslatorCache.Impl.Memory
+  name: Zaya.TranslatorCache.Impl.Memory
   type: Namespace
   items:
-  - uid: Zaya.TranslatorCache.Impl.Memory.Constants.CacheSettingsKeys
-    name: CacheSettingsKeys
-    type: Class
-- uid: Zaya.TranslatorCache.Impl.Memory.Services
-  name: Zaya.TranslatorCache.Impl.Memory.Services
-  type: Namespace
-  items:
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.CacheSettingDescriptors
-    name: CacheSettingDescriptors
-    type: Class
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
-    name: CachingTranslatorSession
-    type: Class
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.ITranslationCache
-    name: ITranslationCache
-    type: Interface
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache
-    name: MemoryTranslationCache
-    type: Class
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslatorCacheService
+  - uid: Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
     name: MemoryTranslatorCacheService
-    type: Class
-  - uid: Zaya.TranslatorCache.Impl.Memory.Services.TranslationCacheOptions
-    name: TranslationCacheOptions
     type: Class
 - uid: Zaya.TranslatorCache.Services
   name: Zaya.TranslatorCache.Services

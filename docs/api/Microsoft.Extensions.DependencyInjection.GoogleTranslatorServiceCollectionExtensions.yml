@@ -62,7 +62,7 @@ items:
   assemblies:
   - Zaya.Translator.Impl.Google
   namespace: Microsoft.Extensions.DependencyInjection
-  summary: Registers <xref href="Zaya.Translator.Impl.Google.Services.GoogleTranslatorService" data-throw-if-not-resolved="false"></xref> as a singleton <xref href="Zaya.Translator.Services.ITranslatorService" data-throw-if-not-resolved="false"></xref>.
+  summary: Registers <xref href="Zaya.Translator.Impl.Google.GoogleTranslatorService" data-throw-if-not-resolved="false"></xref> as a singleton <xref href="Zaya.Translator.Services.ITranslatorService" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static IServiceCollection AddGoogleTranslator(this IServiceCollection services)
@@ -341,12 +341,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
-  commentId: T:Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
-  href: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService.html
+- uid: Zaya.Translator.Impl.Google.GoogleTranslatorService
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslatorService
+  href: Zaya.Translator.Impl.Google.GoogleTranslatorService.html
   name: GoogleTranslatorService
   nameWithType: GoogleTranslatorService
-  fullName: Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslatorService
 - uid: Zaya.Translator.Services.ITranslatorService
   commentId: T:Zaya.Translator.Services.ITranslatorService
   parent: Zaya.Translator.Services

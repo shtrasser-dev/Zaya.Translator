@@ -30,10 +30,6 @@ items:
   syntax:
     content: 'public interface ITranslatorSession : IDisposable'
     content.vb: Public Interface ITranslatorSession Inherits IDisposable
-  derivedClasses:
-  - Zaya.Translator.Impl.Google.Services.GoogleTranslatorSession
-  - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorSession
-  - Zaya.TranslatorCache.Impl.Memory.Services.CachingTranslatorSession
   inheritedMembers:
   - System.IDisposable.Dispose
 - uid: Zaya.Translator.Services.ITranslatorSession.TranslateAsync(System.String,System.Threading.CancellationToken)

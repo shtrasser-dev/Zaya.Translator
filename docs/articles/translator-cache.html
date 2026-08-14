@@ -71,17 +71,13 @@
 
 <p>Zaya.TranslatorCache (same repo as Zaya.Translator) provides pluggable cache engines. Hosts discover <code>ITranslatorCacheService</code> implementations, bind <code>SettingDescriptor</code>s, then call <code>WrapSessionAsync</code> on a raw translator session.</p>
 <h2 id="memory-cache">Memory cache</h2>
-<pre><code class="lang-csharp">using Zaya.TranslatorCache.Impl.Memory.Services;
+<pre><code class="lang-csharp">using Zaya.TranslatorCache.Impl.Memory;
 
 using var cache = new MemoryTranslatorCacheService();
 using var session = await cache.WrapSessionAsync(rawSession, new Dictionary&lt;string, object&gt;
 {
     [&quot;enableCache&quot;] = true,
     [&quot;cacheTtlMinutes&quot;] = 0,
-    [&quot;enableFuzzyRecent&quot;] = true,
-    [&quot;recentWindowSize&quot;] = 10,
-    [&quot;minFuzzyLength&quot;] = 20,
-    [&quot;levenshteinThreshold&quot;] = 8,
 });
 </code></pre>
 <h2 id="settings">Settings</h2>
@@ -104,26 +100,6 @@ using var session = await cache.WrapSessionAsync(rawSession, new Dictionary&lt;s
 <td><code>0</code></td>
 <td><code>0</code> = no TTL eviction</td>
 </tr>
-<tr>
-<td><code>enableFuzzyRecent</code></td>
-<td><code>true</code></td>
-<td>Stabilize OCR flicker via recent fuzzy match</td>
-</tr>
-<tr>
-<td><code>recentWindowSize</code></td>
-<td><code>10</code></td>
-<td>Recent sources kept for fuzzy matching</td>
-</tr>
-<tr>
-<td><code>minFuzzyLength</code></td>
-<td><code>20</code></td>
-<td>Shorter texts use exact cache only</td>
-</tr>
-<tr>
-<td><code>levenshteinThreshold</code></td>
-<td><code>8</code></td>
-<td>Max edit distance as % of longer length</td>
-</tr>
 </tbody>
 </table>
 <h2 id="di">DI</h2>
@@ -131,7 +107,7 @@ using var session = await cache.WrapSessionAsync(rawSession, new Dictionary&lt;s
 </code></pre>
 <h2 id="next-steps">Next steps</h2>
 <ul>
-<li><strong><a class="xref" href="../api/Zaya.TranslatorCache.Services.html">API Reference</a></strong> — generated from source</li>
+<li><a href="../versioning.html">Versioning</a></li>
 </ul>
 
 </article>

@@ -7,7 +7,7 @@ Zaya.Translator provides pluggable translation engines. Hosts discover `ITransla
 ## Google Translate
 
 ```csharp
-using Zaya.Translator.Impl.Google.Services;
+using Zaya.Translator.Impl.Google;
 
 using var service = new GoogleTranslatorService();
 using var session = await service.CreateSessionAsync(new Dictionary<string, object>
@@ -24,7 +24,7 @@ Uses the unofficial `translate.googleapis.com` endpoint. Chinese maps to `zh-CN`
 ## Yandex Translate
 
 ```csharp
-using Zaya.Translator.Impl.Yandex.Services;
+using Zaya.Translator.Impl.Yandex;
 
 using var service = new YandexTranslatorService();
 using var session = await service.CreateSessionAsync(new Dictionary<string, object>

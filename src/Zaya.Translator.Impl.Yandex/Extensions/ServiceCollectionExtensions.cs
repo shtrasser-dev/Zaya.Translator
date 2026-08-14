@@ -1,4 +1,4 @@
-using Zaya.Translator.Impl.Yandex.Services;
+using Zaya.Translator.Impl.Yandex;
 using Zaya.Translator.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;

@@ -4,8 +4,7 @@ items:
   commentId: N:Zaya.Translator.Impl.Google
   id: Zaya.Translator.Impl.Google
   children:
-  - Zaya.Translator.Impl.Google.GoogleTranslateParseException
-  - Zaya.Translator.Impl.Google.GoogleTranslateRequestException
+  - Zaya.Translator.Impl.Google.GoogleTranslatorService
   langs:
   - csharp
   - vb
@@ -16,15 +15,9 @@ items:
   assemblies:
   - Zaya.Translator.Impl.Google
 references:
-- uid: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
-  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateRequestException
-  href: Zaya.Translator.Impl.Google.GoogleTranslateRequestException.html
-  name: GoogleTranslateRequestException
-  nameWithType: GoogleTranslateRequestException
-  fullName: Zaya.Translator.Impl.Google.GoogleTranslateRequestException
-- uid: Zaya.Translator.Impl.Google.GoogleTranslateParseException
-  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslateParseException
-  href: Zaya.Translator.Impl.Google.GoogleTranslateParseException.html
-  name: GoogleTranslateParseException
-  nameWithType: GoogleTranslateParseException
-  fullName: Zaya.Translator.Impl.Google.GoogleTranslateParseException
+- uid: Zaya.Translator.Impl.Google.GoogleTranslatorService
+  commentId: T:Zaya.Translator.Impl.Google.GoogleTranslatorService
+  href: Zaya.Translator.Impl.Google.GoogleTranslatorService.html
+  name: GoogleTranslatorService
+  nameWithType: GoogleTranslatorService
+  fullName: Zaya.Translator.Impl.Google.GoogleTranslatorService

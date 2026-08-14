@@ -77,6 +77,11 @@
 <td><code>1.0.0</code></td>
 </tr>
 <tr>
+<td><strong>ZayaLoggingVersion</strong></td>
+<td><code>Directory.Build.props</code> (plugin engines)</td>
+<td><code>1.0.0</code></td>
+</tr>
+<tr>
 <td><strong>translator interfaceVersion</strong></td>
 <td><code>Zaya.Translator.csproj</code> → <strong><code>ZayaVersionInterface</code></strong> → <code>Major.Interface.0</code></td>
 <td><code>1.1.0</code></td>
@@ -89,7 +94,7 @@
 <tr>
 <td><strong>pluginVersion</strong></td>
 <td>Each Impl → <strong><code>ZayaVersionImpMajor</code></strong> + <strong><code>ZayaVersionImpMinor</code></strong>; Interface read from that plugin’s abstractions csproj via <code>ZayaInterfaceCsproj</code> → <code>Major.Interface.ImpMajor.ImpMinor</code></td>
-<td><code>1.1.0.1</code> / <code>1.0.0.2</code></td>
+<td><code>1.1.0.2</code> / <code>1.0.0.3</code></td>
 </tr>
 <tr>
 <td><strong>updateChannel</strong></td>
@@ -119,7 +124,8 @@
   &quot;type&quot;: &quot;translator&quot;,
   &quot;interface&quot;: &quot;Zaya.Translator&quot;,
   &quot;interfaceVersion&quot;: &quot;1.1.0&quot;,
-  &quot;pluginVersion&quot;: &quot;1.1.0.1&quot;
+  &quot;pluginVersion&quot;: &quot;1.1.0.2&quot;,
+  &quot;entryPoint&quot;: &quot;Zaya.Translator.Impl.Google.GoogleTranslatorService&quot;
 }
 </code></pre>
 <p>Cache engine:</p>
@@ -128,16 +134,26 @@
   &quot;type&quot;: &quot;translator-cache&quot;,
   &quot;interface&quot;: &quot;Zaya.TranslatorCache&quot;,
   &quot;interfaceVersion&quot;: &quot;1.0.0&quot;,
-  &quot;pluginVersion&quot;: &quot;1.0.0.2&quot;
+  &quot;pluginVersion&quot;: &quot;1.0.0.3&quot;,
+  &quot;entryPoint&quot;: &quot;Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService&quot;
 }
 </code></pre>
+<p><code>entryPoint</code> is the fully qualified type that implements the interface (parameterless or <code>ILoggingWrapper</code> ctor).</p>
 <p>Release body lists per-asset plugin versions.</p>
+<h2 id="changelog">Changelog</h2>
+<p>Use root <a href="../CHANGELOG.md"><code>CHANGELOG.md</code></a> (<a href="https://keepachangelog.com/">Keep a Changelog</a>):</p>
+<ol>
+<li>While working, append notes under <code>## [Unreleased]</code>.</li>
+<li>Run the Publish workflow — GitHub Release body is taken from <code>[Unreleased]</code> (plus release metadata). There is no changelog input on the action.</li>
+<li>After a successful publish, move that block to a dated section, e.g. <code>## [1.1.0.2] - 2026-08-13</code>, and leave <code>[Unreleased]</code> empty for the next cycle.</li>
+</ol>
+<p>Do not backfill older releases; history starts from the current line.</p>
 <h2 id="bumping">Bumping</h2>
 <ol>
 <li>Translator interface: raise <code>ZayaVersionInterface</code> in <code>Zaya.Translator.csproj</code>, update host, republish translator plugins.</li>
 <li>Cache interface: raise <code>ZayaVersionInterface</code> in <code>Zaya.TranslatorCache.csproj</code>, update host, republish Memory plugin.</li>
 <li>Single engine: raise <code>ZayaVersionImpMajor</code> / <code>ZayaVersionImpMinor</code> only in that Impl’s <code>.csproj</code>.</li>
-<li>Run <code>build.cmd</code> / Publish workflow.</li>
+<li>Update <code>CHANGELOG.md</code> <code>[Unreleased]</code>, then run <code>build.cmd</code> / Publish workflow.</li>
 </ol>
 
 </article>

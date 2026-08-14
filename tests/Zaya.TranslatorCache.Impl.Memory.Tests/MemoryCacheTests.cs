@@ -1,6 +1,7 @@
 using Zaya.Translator.Services;
-using Zaya.TranslatorCache.Impl.Memory.Services;
-using MemoryCache = Zaya.TranslatorCache.Impl.Memory.Services.MemoryTranslationCache;
+using Zaya.TranslatorCache.Impl.Memory;
+using Zaya.TranslatorCache.Impl.Memory.Services.Impl;
+using MemoryCache = Zaya.TranslatorCache.Impl.Memory.Services.Impl.MemoryTranslationCache;
 
 namespace Zaya.TranslatorCache.Impl.Memory.Tests;
 
@@ -111,7 +112,7 @@ public sealed class MemoryTranslatorCacheServiceTests
     public void EngineId_IsStable()
     {
         using var service = new MemoryTranslatorCacheService();
-        Assert.Equal(MemoryTranslatorCacheService.EngineIdValue, service.EngineId);
+        Assert.Equal("memory-translator-cache", service.EngineId);
     }
 
     [Fact]

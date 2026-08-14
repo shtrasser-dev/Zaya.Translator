@@ -39,8 +39,8 @@ items:
     content: 'public interface ITranslatorService : IDisposable'
     content.vb: Public Interface ITranslatorService Inherits IDisposable
   derivedClasses:
-  - Zaya.Translator.Impl.Google.Services.GoogleTranslatorService
-  - Zaya.Translator.Impl.Yandex.Services.YandexTranslatorService
+  - Zaya.Translator.Impl.Google.GoogleTranslatorService
+  - Zaya.Translator.Impl.Yandex.YandexTranslatorService
   inheritedMembers:
   - System.IDisposable.Dispose
 - uid: Zaya.Translator.Services.ITranslatorService.EngineId

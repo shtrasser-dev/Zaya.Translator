@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Zaya.TranslatorCache.Impl.Memory
+  commentId: N:Zaya.TranslatorCache.Impl.Memory
+  id: Zaya.TranslatorCache.Impl.Memory
+  children:
+  - Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
+  langs:
+  - csharp
+  - vb
+  name: Zaya.TranslatorCache.Impl.Memory
+  nameWithType: Zaya.TranslatorCache.Impl.Memory
+  fullName: Zaya.TranslatorCache.Impl.Memory
+  type: Namespace
+  assemblies:
+  - Zaya.TranslatorCache.Impl.Memory
+references:
+- uid: Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
+  commentId: T:Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
+  href: Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService.html
+  name: MemoryTranslatorCacheService
+  nameWithType: MemoryTranslatorCacheService
+  fullName: Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService
