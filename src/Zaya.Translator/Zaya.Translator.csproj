@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ZayaVersionRole>interface</ZayaVersionRole>
-    <ZayaVersionInterface>1</ZayaVersionInterface>
+    <ZayaVersionInterface>2</ZayaVersionInterface>
 
     <PackageId>Zaya.Translator</PackageId>
     <Description>Translation abstractions for the Zaya ecosystem: interfaces for pluggable text translation services.</Description>

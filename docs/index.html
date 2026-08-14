@@ -75,33 +75,33 @@
 <tbody>
 <tr>
 <td><strong>Zaya.Translator</strong></td>
-<td>1.1.0</td>
+<td>1.2.0</td>
 <td>Abstractions: <code>ITranslatorService</code>, <code>ITranslatorSession</code></td>
 </tr>
 <tr>
 <td><strong>Zaya.Translator.Impl.Google</strong></td>
-<td>1.1.0.2</td>
+<td>1.2.0.0</td>
 <td>Unofficial Google Translate</td>
 </tr>
 <tr>
 <td><strong>Zaya.Translator.Impl.Yandex</strong></td>
-<td>1.1.0.2</td>
+<td>1.2.0.0</td>
 <td>Yandex Cloud API v2 and free browser endpoint</td>
 </tr>
 <tr>
 <td><strong>Zaya.TranslatorCache</strong></td>
-<td>1.0.0</td>
+<td>1.1.0</td>
 <td>Abstractions: <code>ITranslatorCacheService</code></td>
 </tr>
 <tr>
 <td><strong>Zaya.TranslatorCache.Impl.Memory</strong></td>
-<td>1.0.0.3</td>
+<td>1.1.0.0</td>
 <td>In-memory exact + TTL</td>
 </tr>
 </tbody>
 </table>
 <p>Requires <a href="https://github.com/shtrasser-dev/Zaya.Primitives">Zaya.Primitives</a> <strong>1.0.0</strong>. Plugin engines also use <a href="https://github.com/shtrasser-dev/Zaya.Logging">Zaya.Logging</a> <strong>1.0.0</strong>. See <a href="versioning.html">versioning</a>.</p>
-<p>Floating release tags: <code>plugin-Zaya.Translator-v1.1-latest</code>, <code>plugin-Zaya.TranslatorCache-v1.0-latest</code>.</p>
+<p>Floating release tags: <code>plugin-Zaya.Translator-v1.2-latest</code>, <code>plugin-Zaya.TranslatorCache-v1.1-latest</code>.</p>
 <h2 id="features">Features</h2>
 <ul>
 <li><strong>ITranslatorService</strong> — engine metadata + <code>CreateSessionAsync</code></li>
@@ -110,8 +110,8 @@
 <li>Failures surface as <code>LocalizedException</code></li>
 </ul>
 <h2 id="installation">Installation</h2>
-<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Zaya.Translator&quot; Version=&quot;1.1.0&quot; /&gt;
-&lt;PackageReference Include=&quot;Zaya.TranslatorCache&quot; Version=&quot;1.0.0&quot; /&gt;
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Zaya.Translator&quot; Version=&quot;1.2.0&quot; /&gt;
+&lt;PackageReference Include=&quot;Zaya.TranslatorCache&quot; Version=&quot;1.1.0&quot; /&gt;
 </code></pre>
 <h2 id="quick-start">Quick Start</h2>
 <pre><code class="lang-csharp">using Zaya.Translator.Impl.Google;

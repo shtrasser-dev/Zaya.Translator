@@ -7,10 +7,12 @@ History starts at the current release line; older releases are not backfilled.
 
 ## [Unreleased]
 
+## [1.2.0.0] - 2026-08-15
+
 ### Added
 
-- **Google / Yandex `1.1.0.2`:** constructors take `ILoggingWrapper`; sessions via `Wrap`.
-- **Memory `1.0.0.3`:** constructors take `ILoggingWrapper`; wrapped sessions use `Wrap`.
+- **Google / Yandex `1.2.0.0`:** constructors take `ILoggingWrapper`; sessions via `Wrap`.
+- **Memory `1.1.0.0`:** constructors take `ILoggingWrapper`; wrapped sessions use `Wrap`.
 - **`plugin.json`:** `entryPoint` — `Zaya.Translator.Impl.Google.GoogleTranslatorService`, `…Yandex.YandexTranslatorService`, `…Memory.MemoryTranslatorCacheService`.
 
 ### Changed

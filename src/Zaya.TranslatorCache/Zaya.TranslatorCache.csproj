@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <ZayaVersionRole>interface</ZayaVersionRole>
-    <ZayaVersionInterface>0</ZayaVersionInterface>
+    <ZayaVersionInterface>1</ZayaVersionInterface>
 
     <PackageId>Zaya.TranslatorCache</PackageId>
     <Description>Translation cache abstractions for the Zaya ecosystem: pluggable session wrappers with settings.</Description>

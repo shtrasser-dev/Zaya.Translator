@@ -9,7 +9,7 @@
     <ZayaVersionRole>plugin</ZayaVersionRole>
     <ZayaInterfaceCsproj>$(MSBuildThisFileDirectory)..\Zaya.TranslatorCache\Zaya.TranslatorCache.csproj</ZayaInterfaceCsproj>
     <ZayaVersionImpMajor>0</ZayaVersionImpMajor>
-    <ZayaVersionImpMinor>3</ZayaVersionImpMinor>
+    <ZayaVersionImpMinor>0</ZayaVersionImpMinor>
 
     <PackageId>Zaya.TranslatorCache.Impl.Memory</PackageId>
     <Description>In-memory translation cache for Zaya.TranslatorCache (exact + optional TTL).</Description>

@@ -6,15 +6,15 @@ Pluggable translation and translation-cache abstractions for the Zaya ecosystem.
 
 | Package | Version | Role |
 |---------|---------|------|
-| **Zaya.Translator** | 1.1.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
-| **Zaya.Translator.Impl.Google** | 1.1.0.2 | Unofficial Google Translate |
-| **Zaya.Translator.Impl.Yandex** | 1.1.0.2 | Yandex Cloud API v2 and free browser endpoint |
-| **Zaya.TranslatorCache** | 1.0.0 | Abstractions: `ITranslatorCacheService` |
-| **Zaya.TranslatorCache.Impl.Memory** | 1.0.0.3 | In-memory exact + TTL |
+| **Zaya.Translator** | 1.2.0 | Abstractions: `ITranslatorService`, `ITranslatorSession` |
+| **Zaya.Translator.Impl.Google** | 1.2.0.0 | Unofficial Google Translate |
+| **Zaya.Translator.Impl.Yandex** | 1.2.0.0 | Yandex Cloud API v2 and free browser endpoint |
+| **Zaya.TranslatorCache** | 1.1.0 | Abstractions: `ITranslatorCacheService` |
+| **Zaya.TranslatorCache.Impl.Memory** | 1.1.0.0 | In-memory exact + TTL |
 
 Requires [Zaya.Primitives](https://github.com/shtrasser-dev/Zaya.Primitives) **1.0.0**. Plugin engines also use [Zaya.Logging](https://github.com/shtrasser-dev/Zaya.Logging) **1.0.0**. See [versioning](versioning.md).
 
-Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.TranslatorCache-v1.0-latest`.
+Floating release tags: `plugin-Zaya.Translator-v1.2-latest`, `plugin-Zaya.TranslatorCache-v1.1-latest`.
 
 ## Features
 
@@ -26,8 +26,8 @@ Floating release tags: `plugin-Zaya.Translator-v1.1-latest`, `plugin-Zaya.Transl
 ## Installation
 
 ```xml
-<PackageReference Include="Zaya.Translator" Version="1.1.0" />
-<PackageReference Include="Zaya.TranslatorCache" Version="1.0.0" />
+<PackageReference Include="Zaya.Translator" Version="1.2.0" />
+<PackageReference Include="Zaya.TranslatorCache" Version="1.1.0" />
 ```
 
 ## Quick Start
