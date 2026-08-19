@@ -7,6 +7,8 @@ History starts at the current release line; older releases are not backfilled.
 
 ## [Unreleased]
 
+## [2.0.0.0] - 2026-08-19
+
 ### Changed
 
 - **Zaya.Primitives `2.0.0`:** settings types moved to `Zaya.Primitives.Settings`; versions reset to `2.0.0` / `2.0.0.0`.
