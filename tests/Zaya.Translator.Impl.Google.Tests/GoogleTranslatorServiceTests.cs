@@ -10,11 +10,11 @@ public sealed class GoogleTranslatorServiceTests
     public void AutoDetectLanguage_DefaultsToTrue_AndHidesSourceWhenUnset()
     {
         using var service = new GoogleTranslatorService();
-        var auto = Assert.IsType<Zaya.Primitives.BooleanSettingDescriptor>(
+        var auto = Assert.IsType<Zaya.Primitives.Settings.BooleanSettingDescriptor>(
             service.Settings.Single(s => s.Key == "autoDetectLanguage"));
         Assert.True(auto.DefaultValue);
 
-        var source = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
+        var source = Assert.IsType<Zaya.Primitives.Settings.EnumSettingDescriptor>(
             service.Settings.Single(s => s.Key == "sourceLanguage"));
         var empty = new Dictionary<string, object?>();
         Assert.False(source.IsVisible(empty));
@@ -48,7 +48,7 @@ public sealed class GoogleTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "userAgent");
         Assert.Equal(4, settings.Count);
 
-        var userAgent = Assert.IsType<Zaya.Primitives.StringSettingDescriptor>(
+        var userAgent = Assert.IsType<Zaya.Primitives.Settings.StringSettingDescriptor>(
             settings.Single(s => s.Key == "userAgent"));
         Assert.False(userAgent.IsVisible(new Dictionary<string, object?>()));
         Assert.False(userAgent.IsRequired(new Dictionary<string, object?>()));

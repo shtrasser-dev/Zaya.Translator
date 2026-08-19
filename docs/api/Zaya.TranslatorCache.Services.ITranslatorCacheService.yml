@@ -26,7 +26,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: ITranslatorCacheService
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: EngineId
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -96,7 +96,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: DisplayName
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -127,7 +127,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Description
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -158,7 +158,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: IsAvailable
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -189,7 +189,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: Settings
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -199,7 +199,7 @@ items:
     content: IReadOnlyList<SettingDescriptor> Settings { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.IReadOnlyList{Zaya.Primitives.SettingDescriptor}
+      type: System.Collections.Generic.IReadOnlyList{Zaya.Primitives.Settings.SettingDescriptor}
     content.vb: ReadOnly Property Settings As IReadOnlyList(Of SettingDescriptor)
   overload: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings*
 - uid: Zaya.TranslatorCache.Services.ITranslatorCacheService.WrapSessionAsync(Zaya.Translator.Services.ITranslatorSession,System.Threading.CancellationToken)
@@ -220,7 +220,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: WrapSessionAsync
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -258,7 +258,7 @@ items:
       repo: https://github.com/shtrasser-dev/Zaya.Translator
     id: WrapSessionAsync
     path: src/Zaya.TranslatorCache/Services/ITranslatorCacheService.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - Zaya.TranslatorCache
   namespace: Zaya.TranslatorCache.Services
@@ -563,16 +563,16 @@ references:
   name: Settings
   nameWithType: ITranslatorCacheService.Settings
   fullName: Zaya.TranslatorCache.Services.ITranslatorCacheService.Settings
-- uid: System.Collections.Generic.IReadOnlyList{Zaya.Primitives.SettingDescriptor}
-  commentId: T:System.Collections.Generic.IReadOnlyList{Zaya.Primitives.SettingDescriptor}
+- uid: System.Collections.Generic.IReadOnlyList{Zaya.Primitives.Settings.SettingDescriptor}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Zaya.Primitives.Settings.SettingDescriptor}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IReadOnlyList`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   name: IReadOnlyList<SettingDescriptor>
   nameWithType: IReadOnlyList<SettingDescriptor>
-  fullName: System.Collections.Generic.IReadOnlyList<Zaya.Primitives.SettingDescriptor>
+  fullName: System.Collections.Generic.IReadOnlyList<Zaya.Primitives.Settings.SettingDescriptor>
   nameWithType.vb: IReadOnlyList(Of SettingDescriptor)
-  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Zaya.Primitives.SettingDescriptor)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Zaya.Primitives.Settings.SettingDescriptor)
   name.vb: IReadOnlyList(Of SettingDescriptor)
   spec.csharp:
   - uid: System.Collections.Generic.IReadOnlyList`1
@@ -580,7 +580,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
   - name: <
-  - uid: Zaya.Primitives.SettingDescriptor
+  - uid: Zaya.Primitives.Settings.SettingDescriptor
     name: SettingDescriptor
     isExternal: true
   - name: '>'
@@ -592,7 +592,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Zaya.Primitives.SettingDescriptor
+  - uid: Zaya.Primitives.Settings.SettingDescriptor
     name: SettingDescriptor
     isExternal: true
   - name: )

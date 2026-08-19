@@ -10,11 +10,11 @@ public sealed class YandexTranslatorServiceTests
     public void AutoDetectLanguage_DefaultsToTrue_AndHidesSourceWhenUnset()
     {
         using var service = new YandexTranslatorService();
-        var auto = Assert.IsType<Zaya.Primitives.BooleanSettingDescriptor>(
+        var auto = Assert.IsType<Zaya.Primitives.Settings.BooleanSettingDescriptor>(
             service.Settings.Single(s => s.Key == "autoDetectLanguage"));
         Assert.True(auto.DefaultValue);
 
-        var source = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
+        var source = Assert.IsType<Zaya.Primitives.Settings.EnumSettingDescriptor>(
             service.Settings.Single(s => s.Key == "sourceLanguage"));
         var empty = new Dictionary<string, object?>();
         Assert.False(source.IsVisible(empty));
@@ -50,7 +50,7 @@ public sealed class YandexTranslatorServiceTests
         Assert.Contains(settings, s => s.Key == "userAgent");
         Assert.Equal(6, settings.Count);
 
-        var userAgent = Assert.IsType<Zaya.Primitives.StringSettingDescriptor>(
+        var userAgent = Assert.IsType<Zaya.Primitives.Settings.StringSettingDescriptor>(
             settings.Single(s => s.Key == "userAgent"));
         Assert.False(userAgent.IsVisible(new Dictionary<string, object?>()));
         Assert.False(userAgent.IsRequired(new Dictionary<string, object?>()));
@@ -141,7 +141,7 @@ public sealed class YandexTranslatorServiceTests
     public void Settings_LanguageOptions_CollapseChinese()
     {
         using var service = new YandexTranslatorService();
-        var target = Assert.IsType<Zaya.Primitives.EnumSettingDescriptor>(
+        var target = Assert.IsType<Zaya.Primitives.Settings.EnumSettingDescriptor>(
             service.Settings.Single(s => s.Key == "targetLanguage"));
         Assert.Contains(target.Options, o => o.Value == LanguageCodeConstants.Chinese);
         Assert.DoesNotContain(target.Options, o => o.Value is LanguageCodeConstants.ChineseSimplified or LanguageCodeConstants.ChineseTraditional);

@@ -1,5 +1,6 @@
 using Zaya.Logging.Services;
 using Zaya.Primitives;
+using Zaya.Primitives.Settings;
 using Zaya.Translator.Services;
 using Zaya.TranslatorCache.Impl.Memory.Constants;
 using Zaya.TranslatorCache.Impl.Memory.Services.Impl;

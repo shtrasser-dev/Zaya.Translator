@@ -74,7 +74,7 @@
 <tr>
 <td><strong>ZayaPrimitivesVersion</strong></td>
 <td><code>Directory.Build.props</code> (supplies <strong>Major</strong>)</td>
-<td><code>1.0.0</code></td>
+<td><code>2.0.0</code></td>
 </tr>
 <tr>
 <td><strong>ZayaLoggingVersion</strong></td>
@@ -84,22 +84,22 @@
 <tr>
 <td><strong>translator interfaceVersion</strong></td>
 <td><code>Zaya.Translator.csproj</code> → <strong><code>ZayaVersionInterface</code></strong> → <code>Major.Interface.0</code></td>
-<td><code>1.2.0</code></td>
+<td><code>2.0.0</code></td>
 </tr>
 <tr>
 <td><strong>cache interfaceVersion</strong></td>
 <td><code>Zaya.TranslatorCache.csproj</code> → <strong><code>ZayaVersionInterface</code></strong> → <code>Major.Interface.0</code></td>
-<td><code>1.1.0</code></td>
+<td><code>2.0.0</code></td>
 </tr>
 <tr>
 <td><strong>pluginVersion</strong></td>
 <td>Each Impl → <strong><code>ZayaVersionImpMajor</code></strong> + <strong><code>ZayaVersionImpMinor</code></strong>; Interface read from that plugin’s abstractions csproj via <code>ZayaInterfaceCsproj</code> → <code>Major.Interface.ImpMajor.ImpMinor</code></td>
-<td><code>1.2.0.0</code> / <code>1.1.0.0</code></td>
+<td><code>2.0.0.0</code></td>
 </tr>
 <tr>
 <td><strong>updateChannel</strong></td>
 <td>Per interface <code>MAJOR.Interface</code></td>
-<td>Translator <code>1.2</code>, Cache <code>1.1</code></td>
+<td>Translator <code>2.0</code>, Cache <code>2.0</code></td>
 </tr>
 </tbody>
 </table>
@@ -111,8 +111,8 @@
 <li>Host loads a zip only if <code>interfaceVersion</code> <strong>exactly</strong> matches the host-shipped NuGet for that interface (<code>Zaya.Translator</code> or <code>Zaya.TranslatorCache</code>).</li>
 <li><strong>One interface → one floating GitHub tag:</strong> <code>plugin-{Interface}-v{channel}-latest</code> (immutable: <code>plugin-{Interface}-v{pluginVersion}</code>).
 <ul>
-<li><code>plugin-Zaya.Translator-v1.2-latest</code> → Google + Yandex</li>
-<li><code>plugin-Zaya.TranslatorCache-v1.1-latest</code> → Memory</li>
+<li><code>plugin-Zaya.Translator-v2.0-latest</code> → Google + Yandex</li>
+<li><code>plugin-Zaya.TranslatorCache-v2.0-latest</code> → Memory</li>
 </ul>
 </li>
 <li><code>build.cmd</code> writes <code>out/interfaces.json</code> describing those groups for the Publish workflow.</li>
@@ -123,8 +123,8 @@
   &quot;id&quot;: &quot;Google&quot;,
   &quot;type&quot;: &quot;translator&quot;,
   &quot;interface&quot;: &quot;Zaya.Translator&quot;,
-  &quot;interfaceVersion&quot;: &quot;1.2.0&quot;,
-  &quot;pluginVersion&quot;: &quot;1.2.0.0&quot;,
+  &quot;interfaceVersion&quot;: &quot;2.0.0&quot;,
+  &quot;pluginVersion&quot;: &quot;2.0.0.0&quot;,
   &quot;entryPoint&quot;: &quot;Zaya.Translator.Impl.Google.GoogleTranslatorService&quot;
 }
 </code></pre>
@@ -133,8 +133,8 @@
   &quot;id&quot;: &quot;Memory&quot;,
   &quot;type&quot;: &quot;translator-cache&quot;,
   &quot;interface&quot;: &quot;Zaya.TranslatorCache&quot;,
-  &quot;interfaceVersion&quot;: &quot;1.1.0&quot;,
-  &quot;pluginVersion&quot;: &quot;1.1.0.0&quot;,
+  &quot;interfaceVersion&quot;: &quot;2.0.0&quot;,
+  &quot;pluginVersion&quot;: &quot;2.0.0.0&quot;,
   &quot;entryPoint&quot;: &quot;Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService&quot;
 }
 </code></pre>
@@ -145,7 +145,7 @@
 <ol>
 <li>While working, append notes under <code>## [Unreleased]</code>.</li>
 <li>Run the Publish workflow — GitHub Release body is taken from <code>[Unreleased]</code> (plus release metadata). There is no changelog input on the action.</li>
-<li>After a successful publish, move that block to a dated section, e.g. <code>## [1.2.0.0] - 2026-08-13</code>, and leave <code>[Unreleased]</code> empty for the next cycle.</li>
+<li>After a successful publish, move that block to a dated section, e.g. <code>## [2.0.0.0] - 2026-08-19</code>, and leave <code>[Unreleased]</code> empty for the next cycle.</li>
 </ol>
 <p>Do not backfill older releases; history starts from the current line.</p>
 <h2 id="bumping">Bumping</h2>

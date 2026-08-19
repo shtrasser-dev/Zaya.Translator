@@ -1,5 +1,6 @@
 using Zaya.Logging.Services;
 using Zaya.Primitives;
+using Zaya.Primitives.Settings;
 using Zaya.Translator.Impl.Yandex.Constants;
 using Zaya.Translator.Impl.Yandex.Services.Impl;
 using Zaya.Translator.Services;

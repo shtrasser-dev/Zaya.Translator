@@ -2,12 +2,12 @@
 
 | Axis | Source | Example |
 |------|--------|---------|
-| **ZayaPrimitivesVersion** | `Directory.Build.props` (supplies **Major**) | `1.0.0` |
+| **ZayaPrimitivesVersion** | `Directory.Build.props` (supplies **Major**) | `2.0.0` |
 | **ZayaLoggingVersion** | `Directory.Build.props` (plugin engines) | `1.0.0` |
-| **translator interfaceVersion** | `Zaya.Translator.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `1.2.0` |
-| **cache interfaceVersion** | `Zaya.TranslatorCache.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `1.1.0` |
-| **pluginVersion** | Each Impl → **`ZayaVersionImpMajor`** + **`ZayaVersionImpMinor`**; Interface read from that plugin’s abstractions csproj via `ZayaInterfaceCsproj` → `Major.Interface.ImpMajor.ImpMinor` | `1.2.0.0` / `1.1.0.0` |
-| **updateChannel** | Per interface `MAJOR.Interface` | Translator `1.2`, Cache `1.1` |
+| **translator interfaceVersion** | `Zaya.Translator.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `2.0.0` |
+| **cache interfaceVersion** | `Zaya.TranslatorCache.csproj` → **`ZayaVersionInterface`** → `Major.Interface.0` | `2.0.0` |
+| **pluginVersion** | Each Impl → **`ZayaVersionImpMajor`** + **`ZayaVersionImpMinor`**; Interface read from that plugin’s abstractions csproj via `ZayaInterfaceCsproj` → `Major.Interface.ImpMajor.ImpMinor` | `2.0.0.0` |
+| **updateChannel** | Per interface `MAJOR.Interface` | Translator `2.0`, Cache `2.0` |
 
 Rules:
 
@@ -16,8 +16,8 @@ Rules:
 - Do not set `<Version>` manually. `Directory.Build.targets` builds it and checks Major vs Primitives.
 - Host loads a zip only if `interfaceVersion` **exactly** matches the host-shipped NuGet for that interface (`Zaya.Translator` or `Zaya.TranslatorCache`).
 - **One interface → one floating GitHub tag:** `plugin-{Interface}-v{channel}-latest` (immutable: `plugin-{Interface}-v{pluginVersion}`).
-  - `plugin-Zaya.Translator-v1.2-latest` → Google + Yandex
-  - `plugin-Zaya.TranslatorCache-v1.1-latest` → Memory
+  - `plugin-Zaya.Translator-v2.0-latest` → Google + Yandex
+  - `plugin-Zaya.TranslatorCache-v2.0-latest` → Memory
 - `build.cmd` writes `out/interfaces.json` describing those groups for the Publish workflow.
 
 ## plugin.json
@@ -29,8 +29,8 @@ Translator engine:
   "id": "Google",
   "type": "translator",
   "interface": "Zaya.Translator",
-  "interfaceVersion": "1.2.0",
-  "pluginVersion": "1.2.0.0",
+  "interfaceVersion": "2.0.0",
+  "pluginVersion": "2.0.0.0",
   "entryPoint": "Zaya.Translator.Impl.Google.GoogleTranslatorService"
 }
 ```
@@ -42,8 +42,8 @@ Cache engine:
   "id": "Memory",
   "type": "translator-cache",
   "interface": "Zaya.TranslatorCache",
-  "interfaceVersion": "1.1.0",
-  "pluginVersion": "1.1.0.0",
+  "interfaceVersion": "2.0.0",
+  "pluginVersion": "2.0.0.0",
   "entryPoint": "Zaya.TranslatorCache.Impl.Memory.MemoryTranslatorCacheService"
 }
 ```
@@ -58,7 +58,7 @@ Use root [`CHANGELOG.md`](../CHANGELOG.md) ([Keep a Changelog](https://keepachan
 
 1. While working, append notes under `## [Unreleased]`.
 2. Run the Publish workflow — GitHub Release body is taken from `[Unreleased]` (plus release metadata). There is no changelog input on the action.
-3. After a successful publish, move that block to a dated section, e.g. `## [1.2.0.0] - 2026-08-13`, and leave `[Unreleased]` empty for the next cycle.
+3. After a successful publish, move that block to a dated section, e.g. `## [2.0.0.0] - 2026-08-19`, and leave `[Unreleased]` empty for the next cycle.
 
 Do not backfill older releases; history starts from the current line.
 
